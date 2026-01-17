@@ -71,28 +71,31 @@ const jeetMondal = {
 ## 📊 GitHub Statistics
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Jeet1511&theme=tokyonight&hide_border=true&background=0D1117&stroke=a9fef7&ring=a9fef7&fire=a9fef7&currStreakLabel=a9fef7" alt="GitHub Streak" />
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&count_private=true&hide_border=true&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9&bg_color=0d1117" alt="Jeet Mondal github stats" /> 
+  
+  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=dark&hide_border=true&background=0D1117&stroke=a9fef7&ring=a9fef7&fire=a9fef7&currStreakLabel=a9fef7" />
 </div>
 
 <div align="center">
-  <img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=a9fef7&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Jeet1511&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=a9fef7&text_color=c9d1d9&bg_color=0d1117&langs_count=6" />
 </div>
 
 ---
 
-## 📈 Contribution Graph
+## 🏆 GitHub Profile Trophy
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jeet1511&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=a9fef7&line=a9fef7&point=FFFFFF" alt="Contribution Graph" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Jeet1511&theme=darkhub&no-frame=true&no-bg=false&margin-w=4&row=1" />
+</div>
+
+---
+
+## 📈 Activity Graph
+
+<div align="center">
+  
+[![Jeet's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jeet1511&bg_color=0d1117&color=a9fef7&line=a9fef7&point=ffffff&area=true&hide_border=true)](https://github.com/Jeet1511)
+
 </div>
 
 ---
@@ -101,21 +104,12 @@ const jeetMondal = {
 
 <div align="center">
 
-<a href="https://github.com/Jeet1511/ExpressBasket">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Jeet1511&repo=ExpressBasket&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9" />
-</a>
-
-<a href="https://github.com/Jeet1511/basket">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Jeet1511&repo=basket&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9" />
-</a>
-
-<a href="https://github.com/Jeet1511/HTML-Login-Page-Test">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Jeet1511&repo=HTML-Login-Page-Test&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9" />
-</a>
-
-<a href="https://github.com/Jeet1511/ff-likes-v3">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Jeet1511&repo=ff-likes-v3&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9" />
-</a>
+| Project | Description | Tech Stack |
+|---------|-------------|------------|
+| 🛒 [**ExpressBasket**](https://github.com/Jeet1511/ExpressBasket) | Modern e-commerce platform with 235+ deployments | Node.js, Express, JavaScript |
+| 🛍️ [**basket**](https://github.com/Jeet1511/basket) | Shopping basket application | HTML, CSS, JavaScript |
+| 🔐 [**HTML-Login-Page-Test**](https://github.com/Jeet1511/HTML-Login-Page-Test) | Login page testing (⭐ 3 stars) | HTML, CSS |
+| 🐍 [**ff-likes-v3**](https://github.com/Jeet1511/ff-likes-v3) | Python web application | Python, Flask |
 
 </div>
 
@@ -154,26 +148,12 @@ const jeetMondal = {
 
 ---
 
-## 🐍 Contribution Snake
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Jeet1511/Jeet1511/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-</div>
-
----
-
 ## 💭 Random Dev Quote
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />
-</div>
+  
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 
----
-
-## 🎵 Spotify Playing
-
-<div align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=31l5bek6hqjo7ozp6vjbfqrqkn2u&cover_image=true&theme=novatorem&show_offline=false&background_color=0d1117&interchange=true&bar_color=53b14f&bar_color_cover=false" alt="Spotify Now Playing" />
 </div>
 
 ---
@@ -188,6 +168,6 @@ const jeetMondal = {
 
 **Made with ❤️ by Jeet Mondal**
 
-*Last Updated: 2026*
+*Last Updated: 2026-01-17 04:09:18*
 
 </div>
