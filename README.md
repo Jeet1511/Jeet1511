@@ -180,16 +180,16 @@ curl -L "https://github-readme-stats.vercel.app/api?username=Jeet1511" -o test-i
 
 | Issue | Solution |
 |-------|----------|
-| DNS_PROBE_FINISHED_NXDOMAIN | Service domain is down - use an alternative service |
+| DNS_PROBE_FINISHED_NXDOMAIN | Domain name resolution failed - verify the URL or try an alternative service |
 | 404 Not Found | Check username parameter is correct |
 | Service Unavailable | Third-party service may be experiencing downtime |
 | Truncated URLs with [...] | Complete the full URL with proper parameters |
 
 ### Recommended Services
 
-- **GitHub Stats**: `github-readme-stats.vercel.app`
-- **Streak Stats**: `streak-stats.demolab.com` or `github-readme-streak-stats-git-main-denvercoder1.vercel.app`
-- **Activity Graph**: `github-readme-activity-graph.vercel.app`
+- **GitHub Stats**: Use `github-readme-stats.vercel.app` for profile statistics and repository data
+- **Streak Stats**: Use `streak-stats.demolab.com` (recommended) or `github-readme-streak-stats-git-main-denvercoder1.vercel.app` as alternative
+- **Activity Graph**: Use `github-readme-activity-graph.vercel.app` for contribution activity visualization
 
 ---
 
