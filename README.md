@@ -17,28 +17,37 @@
 ## 🚀 About Me
 
 ```javascript
-const jeetMondal = {
-    username: "Jeet1511",
-    role: "Full Stack Developer",
-    location: "India 🇮🇳",
-    code: ["JavaScript", "Python", "HTML", "CSS"],
-    technologies: {
-        frontEnd: {
-            js: ["Node.js", "Express.js"],
-            css: ["Bootstrap", "Tailwind CSS"]
-        },
-        backEnd: {
-            js: ["Node.js", "Express.js"],
-            python: ["Flask"]
-        },
-        databases: ["MongoDB", "MySQL"],
-        tools: ["Git", "Vite", "Vercel", "GitHub Actions"],
-        currentlyLearning: "Advanced Web Development",
-        interests: ["Web Development", "UI/UX Design", "Open Source"]
-    },
-    currentProject: "ExpressBasket - E-Commerce Platform",
-    funFact: "I debug with console.log() :)"
-};
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char choice[10];
+    int ans = 0;
+
+    printf("What do you want? (Gold or Diamond): ");
+    scanf("%9s", choice);
+
+    if (strcmp(choice, "Gold") == 0 || strcmp(choice, "gold") == 0)
+        ans = 1;
+    else if (strcmp(choice, "Diamond") == 0 || strcmp(choice, "diamond") == 0)
+        ans = 2;
+
+    switch (ans) {
+        case 1:
+            printf("You have a good eye! Gold is also valuable, sometimes more than diamonds.\n");
+            break;
+
+        case 2:
+            printf("Hope you will be happy! Best of luck to keep it.\n");
+            break;
+
+        default:
+            printf("Invalid choice.\n");
+    }
+
+    return 0;
+}
+
 ```
 
 ---
