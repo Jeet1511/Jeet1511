@@ -29,7 +29,8 @@
 
 <img src="https://img.shields.io/badge/About_Me-00A8FF?style=for-the-badge&logo=aboutdotme&logoColor=white"/>
 
-Full Stack Developer from **India** focused on building efficient, scalable web applications. I specialize in solving complex problems and creating seamless user experiences with clean, maintainable code.
+Full Stack Developer from **India** focused on building efficient, scalable web applications. Currently pursuing my BCA from Netaji Subhash Engineering College. I specialize in solving complex problems with creative mindset and creating seamless user experiences with clean, maintainable code.
+Always available so feel free to get in touch!  :)
 
 ```C
 #include <stdio.h>
@@ -234,6 +235,9 @@ Clean and responsive login template with modern design patterns
 <a href="https://github.com/Jeet1511"><img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 <br/><br/>
+At the end...<br>
+Die with memories or peacefully without it    ~Jeet Mondal
+<br>
 
 <img src="https://img.shields.io/badge/Star_my_repos_if_you_find_them_useful!-004e92?style=flat-square"/><!-- Jeet1511 -->
 
