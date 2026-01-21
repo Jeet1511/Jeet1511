@@ -1,150 +1,230 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Jeet%20Mondal&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=fff"/>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Hey+There!+👋+I'm+Jeet+Mondal;Full+Stack+Developer+💻;Building+Amazing+Web+Experiences+🚀;Always+Learning+New+Technologies+📚" alt="Typing SVG" />
+<!-- Professional Header Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0366d6,100:1f6feb&height=180&section=header&text=Jeet%20Mondal&fontSize=70&fontAlign=50&fontAlignY=50&fontColor=ffffff&desc=Full%20Stack%20Developer&descSize=25&descAlign=50&descAlignY=70"/>
 
 <br/>
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.del.alma_?igsh=MTFocmpxYW03em94aA==)
-[![GitHub followers](https://img.shields.io/github/followers/Jeet1511?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511?tab=followers)
-[![Profile Views](https://komarev.com/ghpvc/?username=Jeet1511&style=for-the-badge&color=brightgreen)](https://github.com/Jeet1511)
+<!-- Professional Metrics -->
+[![GitHub followers](https://img.shields.io/github/followers/Jeet1511?style=flat-square&logo=github&logoColor=white&color=0366d6&labelColor=161b22)](https://github.com/Jeet1511?tab=followers)
+[![Profile Views](https://komarev.com/ghpvc/?username=Jeet1511&style=flat-square&color=0366d6&labelColor=161b22)](https://github.com/Jeet1511)
+![GitHub Stars](https://img.shields.io/github/stars/Jeet1511?style=flat-square&logo=github&logoColor=white&color=28a745&labelColor=161b22)
 
 </div>
 
 ---
 
-## 🚀 About Me
+## 👨‍💻 Professional Summary
 
-```javascript
-const jeetMondal = {
-    username: "Jeet1511",
-    role: "Full Stack Developer",
-    location: "India 🇮🇳",
-    code: ["JavaScript", "Python", "HTML", "CSS"],
-    technologies: {
-        frontEnd: {
-            js: ["Node.js", "Express.js"],
-            css: ["Bootstrap", "Tailwind CSS"]
-        },
-        backEnd: {
-            js: ["Node.js", "Express.js"],
-            python: ["Flask"]
-        },
-        databases: ["MongoDB", "MySQL"],
-        tools: ["Git", "Vite", "Vercel", "GitHub Actions"],
-        currentlyLearning: "Advanced Web Development",
-        interests: ["Web Development", "UI/UX Design", "Open Source"]
-    },
-    currentProject: "ExpressBasket - E-Commerce Platform",
-    funFact: "I debug with console.log() :)"
-};
+<div align="center">
+<table>
+<tr>
+<td width="60%">
+
+**Full Stack Developer** specializing in modern web technologies and scalable applications. Experienced in building end-to-end solutions using JavaScript, Python, and contemporary frameworks. Passionate about clean code, performance optimization, and user-centric design.
+
+**Core Competencies:**
+- Full Stack Web Development
+- RESTful API Design & Implementation
+- Database Architecture & Management
+- Responsive UI/UX Development
+- Version Control & CI/CD
+
+</td>
+<td width="40%">
+
+```yaml
+Role: Full Stack Developer
+Location: India
+Experience: Web Development
+Focus: JavaScript | Python
+Current: ExpressBasket Platform
+Interests:
+  - Web Architecture
+  - API Development
+  - Open Source
 ```
 
+</td>
+</tr>
+</table>
+</div>
+
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🛠️ Technical Skills
 
 <div align="center">
 
-### Languages
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### Frameworks & Libraries
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+### Languages & Core Technologies
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+### Backend & Frameworks
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+### Databases
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+### Development Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+</td>
+</tr>
+</table>
 
 </div>
 
 ---
 
-## 📊 GitHub Statistics
+## 📊 GitHub Analytics
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&count_private=true&hide_border=true&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9&bg_color=0d1117" alt="Jeet Mondal github stats" /> 
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&count_private=true&hide_border=true&title_color=0366d6&icon_color=28a745&text_color=c9d1d9&bg_color=0d1117&border_radius=8" alt="Jeet Mondal GitHub Stats" /> 
   
-  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=dark&hide_border=true&background=0D1117&stroke=a9fef7&ring=a9fef7&fire=a9fef7&currStreakLabel=a9fef7" />
+  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=dark&hide_border=true&background=0D1117&stroke=0366d6&ring=1f6feb&fire=fb8500&currStreakLabel=0366d6&border_radius=8" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=a9fef7&text_color=c9d1d9&bg_color=0d1117&langs_count=6" />
+  <img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=0366d6&text_color=c9d1d9&bg_color=0d1117&langs_count=8&border_radius=8" alt="Top Languages" />
 </div>
 
 ---
 
-## 📈 Activity Graph
-
-<div align="center">
-  
-[![Jeet's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jeet1511&bg_color=0d1117&color=a9fef7&line=a9fef7&point=ffffff&area=true&hide_border=true)](https://github.com/Jeet1511)
-
-</div>
-
----
-
-## 🔥 Featured Projects
-
-<div align="center">
-
-| Project | Description | Tech Stack |
-|---------|-------------|------------|
-| 🛒 [**ExpressBasket**](https://github.com/Jeet1511/ExpressBasket) | Modern e-commerce platform with 235+ deployments | Node.js, Express, JavaScript |
-| 🛍️ [**basket**](https://github.com/Jeet1511/basket) | Shopping basket application | HTML, CSS, JavaScript |
-| 🔐 [**HTML-Login-Page-Test**](https://github.com/Jeet1511/HTML-Login-Page-Test) | Login page testing (⭐ 3 stars) | HTML, CSS |
-| 🐍 [**ff-likes-v3**](https://github.com/Jeet1511/ff-likes-v3) | Python web application | Python, Flask |
-
-</div>
-
----
-
-## 💼 What I'm Currently Working On
-
-- 🛒 **ExpressBasket** - A modern e-commerce platform with 235+ deployments
-- 🎨 Building intuitive and responsive user interfaces
-- 📚 Learning advanced backend development techniques
-- 🌟 Contributing to open-source projects
-
----
-
-## 🎯 2026 Goals
-
-- ✅ Master full-stack development
-- ✅ Contribute to more open-source projects
-- ✅ Build scalable web applications
-- ✅ Learn new frameworks and technologies
-- ✅ Collaborate with amazing developers
-
----
-
-## 📫 Let's Connect
-
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.del.alma_?igsh=MTFocmpxYW03em94aA==)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
-
-**💬Yoo! Feel free to reach out for collaborations or just a friendly chat!**
-
-</div>
-
----
-
-## 💭 Random Quote
+## 📈 Contribution Activity
 
 <div align="center">
   
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+[![Jeet's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Jeet1511&bg_color=0d1117&color=0366d6&line=1f6feb&point=28a745&area=true&hide_border=true&area_color=0366d6)](https://github.com/Jeet1511)
+
+</div>
+
+---
+
+## 💼 Featured Projects
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%">
+
+### 🛒 ExpressBasket
+**E-Commerce Platform**
+
+A modern, scalable e-commerce solution with comprehensive product management and checkout functionality.
+
+**Tech Stack:** Node.js, Express.js, JavaScript  
+**Highlights:** 235+ deployments, Production-ready
+
+[![Repo](https://img.shields.io/badge/Repository-0366d6?style=flat-square&logo=github&logoColor=white)](https://github.com/Jeet1511/ExpressBasket)
+
+</td>
+<td width="50%">
+
+### 🛍️ Shopping Basket
+**E-Commerce Component**
+
+Responsive shopping cart application with real-time updates and modern UI design.
+
+**Tech Stack:** HTML5, CSS3, JavaScript  
+**Highlights:** Clean architecture, Mobile-responsive
+
+[![Repo](https://img.shields.io/badge/Repository-0366d6?style=flat-square&logo=github&logoColor=white)](https://github.com/Jeet1511/basket)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔐 Authentication System
+**Login Page Implementation**
+
+Secure authentication interface with form validation and responsive design.
+
+**Tech Stack:** HTML, CSS  
+**Highlights:** ⭐ 3 stars, Community validated
+
+[![Repo](https://img.shields.io/badge/Repository-0366d6?style=flat-square&logo=github&logoColor=white)](https://github.com/Jeet1511/HTML-Login-Page-Test)
+
+</td>
+<td width="50%">
+
+### 🐍 Flask Web Application
+**Python Backend Service**
+
+Web application built with Flask framework demonstrating backend development skills.
+
+**Tech Stack:** Python, Flask  
+**Highlights:** RESTful design, Scalable architecture
+
+[![Repo](https://img.shields.io/badge/Repository-0366d6?style=flat-square&logo=github&logoColor=white)](https://github.com/Jeet1511/ff-likes-v3)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 🎯 Current Focus & Goals
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Current Work
+- **ExpressBasket Platform** - Scaling e-commerce infrastructure with 235+ deployments
+- **API Development** - Building robust RESTful services
+- **UI/UX Enhancement** - Creating responsive, accessible interfaces
+- **Performance Optimization** - Improving application efficiency
+
+</td>
+<td width="50%" valign="top">
+
+### 2026 Objectives
+- Advanced full-stack architecture patterns
+- Increased open-source contributions
+- Microservices & distributed systems
+- Cloud infrastructure & DevOps practices
+- Technical leadership & mentoring
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 📫 Professional Contact
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Jeet1511)
+[![Email](https://img.shields.io/badge/Email-0366d6?style=flat-square&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](#)
+
+**Open to collaboration opportunities, technical discussions, and networking.**
 
 </div>
 
@@ -152,14 +232,23 @@ const jeetMondal = {
 
 <div align="center">
 
-### 💡 "Code is like humor. When you have to explain it, it's bad." – Cory House
+---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:0d1117&height=2&section=footer"/>
 
-**⭐ Star my repositories if you find them interesting!**
+<br/>
 
-** by Jeet Mondal**
+### "Write code that speaks for itself."
 
-*Last Updated: 2026-01-17 04:09:18*
+<br/>
+
+![Made with passion](https://img.shields.io/badge/Made%20with-passion-0366d6?style=flat-square)
+![Open Source](https://img.shields.io/badge/Open%20Source-♥-28a745?style=flat-square)
+
+**© 2026 Jeet Mondal** | *Full Stack Developer*
+
+⭐ **Star repositories that add value to your work**
+
+<sub>Profile last updated: January 2026</sub>
 
 </div>
