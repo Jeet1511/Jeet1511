@@ -31,19 +31,39 @@
 
 Full Stack Developer from **India** focused on building efficient, scalable web applications. I specialize in solving complex problems and creating seamless user experiences with clean, maintainable code.
 
-```javascript
-const jeet = {
-    code: ["JavaScript", "Python", "HTML", "CSS"],
-    technologies: {
-        frontEnd: ["HTML5", "CSS3", "JavaScript"],
-        backEnd: ["Node.js", "Express", "Flask"],
-        tools: ["Git", "VS Code", "Vercel"]
-    },
-    currentProject: "ExpressBasket - E-commerce Platform",
-    philosophy: "Write code that humans can read"  // template by @Jeet1511
-};
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char choice[10];
+    int ans = 0;
+
+    printf("What do you want? (Gold or Diamond): ");
+    scanf("%9s", choice);
+
+    if (strcmp(choice, "Gold") == 0 || strcmp(choice, "gold") == 0)
+        ans = 1;
+    else if (strcmp(choice, "Diamond") == 0 || strcmp(choice, "diamond") == 0)
+        ans = 2;
+
+    switch (ans) {
+        case 1:
+            printf("You have a good eye! Gold is also valuable, sometimes more than diamonds.\n");
+            break;
+
+        case 2:
+            printf("Hope you will be happy! Best of luck to keep it.\n");
+            break;
+
+        default:
+            printf("Invalid choice.\n");
+    }
+
+    return 0;
+}
 ```
-<!-- Made with mass amounts of mass by Jeet1511 -->
+<!-- Die with memories or peacefully without it    ~Jeet Mondal -->
 ---
 
 <img src="https://img.shields.io/badge/Tech_Stack-00A8FF?style=for-the-badge&logo=stackshare&logoColor=white"/>
