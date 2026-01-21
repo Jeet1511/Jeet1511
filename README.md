@@ -6,7 +6,7 @@
 
 <br/>
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.drawz_alma_7qsh-MITGcmpxYWt3em9daA==)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.del.alma_?igsh=MTFocmpxYW03em94aA==)
 [![GitHub followers](https://img.shields.io/github/followers/Jeet1511?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511?tab=followers)
 [![Profile Views](https://komarev.com/ghpvc/?username=Jeet1511&style=for-the-badge&color=brightgreen)](https://github.com/Jeet1511)
 
@@ -37,7 +37,7 @@ const jeetMondal = {
         interests: ["Web Development", "UI/UX Design", "Open Source"]
     },
     currentProject: "ExpressBasket - E-Commerce Platform",
-    funFact: "I debug with console.log() 😄"
+    funFact: "I debug with console.log() :)"
 };
 ```
 
@@ -78,14 +78,6 @@ const jeetMondal = {
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=a9fef7&text_color=c9d1d9&bg_color=0d1117&langs_count=6" />
-</div>
-
----
-
-## 🏆 GitHub Profile Trophy
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Jeet1511&theme=darkhub&no-frame=true&no-bg=false&margin-w=4&row=1" />
 </div>
 
 ---
@@ -138,17 +130,17 @@ const jeetMondal = {
 
 <div align="center">
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.drawz_alma_7qsh-MITGcmpxYWt3em9daA==)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)]([https://www.instagram.com/_echo.del.alma_?igsh=MTFocmpxYW03em94aA==])
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeet1511@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
 
-**💬 Feel free to reach out for collaborations or just a friendly chat!**
+**💬Yoo! Feel free to reach out for collaborations or just a friendly chat!**
 
 </div>
 
 ---
 
-## 💭 Random Dev Quote
+## 💭 Random Quote
 
 <div align="center">
   
@@ -166,7 +158,7 @@ const jeetMondal = {
 
 **⭐ Star my repositories if you find them interesting!**
 
-**Made with ❤️ by Jeet Mondal**
+** by Jeet Mondal**
 
 *Last Updated: 2026-01-17 04:09:18*
 
