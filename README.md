@@ -71,13 +71,16 @@ const jeetMondal = {
 ## 📊 GitHub Statistics
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&count_private=true&hide_border=true&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9&bg_color=0d1117" alt="Jeet Mondal github stats" /> 
   
-  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=dark&hide_border=true&background=0D1117&stroke=a9fef7&ring=a9fef7&fire=a9fef7&currStreakLabel=a9fef7" />
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&count_private=true&hide_border=true&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9&bg_color=0d1117" alt="Jeet Mondal github stats" /> 
+  <img width="49%" height="195px" src="https://streak-stats.demolab.com?user=Jeet1511&theme=dark&hide_border=true&background=0D1117&stroke=a9fef7&ring=a9fef7&fire=a9fef7&currStreakLabel=a9fef7" alt="Jeet Mondal streak stats" />
+  
 </div>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=a9fef7&text_color=c9d1d9&bg_color=0d1117&langs_count=6" />
+  
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=a9fef7&text_color=c9d1d9&bg_color=0d1117&langs_count=6" alt="Top Languages" />
+  
 </div>
 
 ---
@@ -150,6 +153,46 @@ const jeetMondal = {
 
 ---
 
+## 🔧 Troubleshooting Broken Images
+
+If any images in this README aren't loading, here's how to debug them:
+
+### Quick Checks
+
+1. **Test image URLs directly** - Copy the image URL and paste it in your browser
+2. **Check if the service is up** - Some third-party services may have downtime
+3. **Verify your username** - Ensure the username parameter matches your GitHub username
+
+### Debug Commands
+
+```bash
+# Test if an image URL is reachable
+curl -I "https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true"
+
+# Check HTTP status code (200 = OK, 404 = Not Found, 503 = Service Unavailable)
+curl -s -o /dev/null -w "%{http_code}" "https://streak-stats.demolab.com?user=Jeet1511"
+
+# Download the image to verify it's valid
+curl -L "https://github-readme-stats.vercel.app/api?username=Jeet1511" -o test-image.svg
+```
+
+### Common Issues & Solutions
+
+| Issue | Solution |
+|-------|----------|
+| DNS_PROBE_FINISHED_NXDOMAIN | Service domain is down - use an alternative service |
+| 404 Not Found | Check username parameter is correct |
+| Service Unavailable | Third-party service may be experiencing downtime |
+| Truncated URLs with [...] | Complete the full URL with proper parameters |
+
+### Recommended Services
+
+- **GitHub Stats**: `github-readme-stats.vercel.app`
+- **Streak Stats**: `streak-stats.demolab.com` or `github-readme-streak-stats-git-main-denvercoder1.vercel.app`
+- **Activity Graph**: `github-readme-activity-graph.vercel.app`
+
+---
+
 <div align="center">
 
 ### 💡 "Code is like humor. When you have to explain it, it's bad." – Cory House
@@ -160,6 +203,6 @@ const jeetMondal = {
 
 ** by Jeet Mondal**
 
-*Last Updated: 2026-01-17 04:09:18*
+*Last Updated: 2026-01-21*
 
 </div>
