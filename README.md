@@ -236,7 +236,7 @@ Clean and responsive login template with modern design patterns
 
 <br/><br/>
 At the end...<br>
-ㅤㅤㅤㅤDie with memories or peacefully without itㅤㅤㅤ~Jeet Mondal [me  hehe :) ]
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤDie with memories or peacefully without itㅤㅤㅤ~Jeet Mondal [me  hehe :) ]
 <br>
 
 <img src="https://img.shields.io/badge/Star_my_repos_if_you_find_them_useful!-004e92?style=flat-square"/><!-- Jeet1511 -->
