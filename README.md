@@ -134,12 +134,8 @@ Clean and responsive login template with modern design patterns
 
 <div align="center">
 
-<img width="48%" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&theme=transparent&hide_border=true&title_color=00A8FF&icon_color=00A8FF&text_color=ffffff&bg_color=0d1117"/>
-<img width="48%" src="https://streak-stats.demolab.com?user=Jeet1511&theme=transparent&hide_border=true&ring=00A8FF&fire=00A8FF&currStreakLabel=00A8FF&sideLabels=00A8FF&background=0D1117&currStreakNum=ffffff&sideNums=ffffff&dates=888888"/>
-
-<br/>
-
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&theme=transparent&hide_border=true&title_color=00A8FF&text_color=ffffff&bg_color=0d1117"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00A8FF&icon_color=00A8FF&text_color=ffffff"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00A8FF&text_color=ffffff"/>
 
 </div>
 
