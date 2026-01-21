@@ -58,7 +58,7 @@ const jeet = {
 <tr>
 <td align="center" width="50%">
 
-### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=shoppingcart&logoColor=white" height="18"/> ExpressBasket
+### ExpressBasket
 
 Modern e-commerce platform with robust product management and seamless checkout experience
 
@@ -75,7 +75,7 @@ Modern e-commerce platform with robust product management and seamless checkout 
 </td>
 <td align="center" width="50%">
 
-### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=python&logoColor=white" height="18"/> ff-likes-v3
+### ff-likes-v3
 
 Dynamic web application built with Flask for efficient content management and delivery
 
@@ -93,7 +93,7 @@ Dynamic web application built with Flask for efficient content management and de
 <tr>
 <td align="center" width="50%">
 
-### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=shoppingbag&logoColor=white" height="18"/> Basket
+### Basket
 
 Frontend shopping basket with intuitive UI and smooth user interactions
 
@@ -110,7 +110,7 @@ Frontend shopping basket with intuitive UI and smooth user interactions
 </td>
 <td align="center" width="50%">
 
-### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=lock&logoColor=white" height="18"/> Login Page
+### Login Page
 
 Clean and responsive login template with modern design patterns
 
@@ -135,7 +135,7 @@ Clean and responsive login template with modern design patterns
 <div align="center">
 
 <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&theme=transparent&hide_border=true&title_color=00A8FF&icon_color=00A8FF&text_color=ffffff&bg_color=0d1117"/>
-<img width="48%" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=transparent&hide_border=true&ring=00A8FF&fire=00A8FF&currStreakLabel=00A8FF&sideLabels=00A8FF&background=0D1117&currStreakNum=ffffff&sideNums=ffffff&dates=888888"/>
+<img width="48%" src="https://streak-stats.demolab.com?user=Jeet1511&theme=transparent&hide_border=true&ring=00A8FF&fire=00A8FF&currStreakLabel=00A8FF&sideLabels=00A8FF&background=0D1117&currStreakNum=ffffff&sideNums=ffffff&dates=888888"/>
 
 <br/>
 
@@ -153,7 +153,7 @@ Clean and responsive login template with modern design patterns
 
 ---
 
-<img src="https://img.shields.io/badge/Current_Focus-00A8FF?style=for-the-badge&logo=target&logoColor=white"/>
+<img src="https://img.shields.io/badge/Current_Focus-00A8FF?style=for-the-badge&logo=googletasks&logoColor=white"/>
 
 <br/>
 
@@ -173,7 +173,7 @@ Clean and responsive login template with modern design patterns
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Let's_Connect-00A8FF?style=for-the-badge&logo=handshake&logoColor=white"/>
+<img src="https://img.shields.io/badge/Let's_Connect-00A8FF?style=for-the-badge&logo=linktree&logoColor=white"/>
 
 <br/><br/>
 
