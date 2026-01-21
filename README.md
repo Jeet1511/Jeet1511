@@ -17,7 +17,7 @@
 
 <a href="https://github.com/Jeet1511"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
 <a href="mailto:jeetmondal1685@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
-<a href="https://www.instagram.com/_echo.del.alma_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a><!-- cr:github.com/Jeet1511 -->
+<a href="https://www.instagram.com/_echo.del.alma_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a><!-- credit:github.com/Jeet1511 -->
 
 <br/>
 
@@ -232,11 +232,12 @@ Clean and responsive login template with modern design patterns
 <br/>
 
 <a href="mailto:jeetmondal1685@gmail.com"><img src="https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
+<a href="https://www.instagram.com/_echo.del.alma_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 <a href="https://github.com/Jeet1511"><img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 <br/><br/>
 At the end...<br>
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤDie with memories or peacefully without itㅤㅤㅤ~Jeet Mondal [me  hehe :) ]
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤDie with memories or peacefully without itㅤㅤㅤ***~Jeet Mondal*** *[me  hehe :) ]*
 <br>
 
 <img src="https://img.shields.io/badge/Star_my_repos_if_you_find_them_useful!-004e92?style=flat-square"/><!-- Jeet1511 -->
