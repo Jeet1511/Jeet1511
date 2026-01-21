@@ -222,7 +222,6 @@ Web application built with Flask framework demonstrating backend development ski
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Jeet1511)
 [![Email](https://img.shields.io/badge/Email-0366d6?style=flat-square&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](#)
 
 **Open to collaboration opportunities, technical discussions, and networking.**
 
@@ -231,8 +230,6 @@ Web application built with Flask framework demonstrating backend development ski
 ---
 
 <div align="center">
-
----
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:161b22,100:0d1117&height=2&section=footer"/>
 
