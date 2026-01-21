@@ -1,174 +1,195 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Jeet%20Mondal&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=fff"/>
+![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=0:000428,100:004e92&section=header&text=Jeet%20Mondal&fontColor=ffffff&fontSize=50&fontAlignY=35&desc=Full%20Stack%20Developer&descSize=18&descAlignY=55&animation=fadeIn)
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Hey+There!+👋+I'm+Jeet+Mondal;Full+Stack+Developer+💻;Building+Amazing+Web+Experiences+🚀;Always+Learning+New+Technologies+📚" alt="Typing SVG" />
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00A8FF&center=true&vCenter=true&width=500&lines=Building+Scalable+Web+Applications;Clean+Code+%7C+Modern+Solutions;Open+for+Collaborations)](https://git.io/typing-svg)
 
 <br/>
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.del.alma_?igsh=MTFocmpxYW03em94aA==)
-[![GitHub followers](https://img.shields.io/github/followers/Jeet1511?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511?tab=followers)
-[![Profile Views](https://komarev.com/ghpvc/?username=Jeet1511&style=for-the-badge&color=brightgreen)](https://github.com/Jeet1511)
+<a href="https://github.com/Jeet1511"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
+<a href="mailto:jeetmondal1685@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
+<a href="https://www.instagram.com/_echo.del.alma_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=Jeet1511&style=flat-square&color=00A8FF&label=Profile+Views"/>
 
 </div>
 
 ---
 
-## 🚀 About Me
+<img src="https://img.shields.io/badge/About_Me-00A8FF?style=for-the-badge&logo=aboutdotme&logoColor=white"/>
+
+Full Stack Developer from **India** focused on building efficient, scalable web applications. I specialize in solving complex problems and creating seamless user experiences with clean, maintainable code.
 
 ```javascript
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char choice[10];
-    int ans = 0;
-
-    printf("What do you want? (Gold or Diamond): ");
-    scanf("%9s", choice);
-
-    if (strcmp(choice, "Gold") == 0 || strcmp(choice, "gold") == 0)
-        ans = 1;
-    else if (strcmp(choice, "Diamond") == 0 || strcmp(choice, "diamond") == 0)
-        ans = 2;
-
-    switch (ans) {
-        case 1:
-            printf("You have a good eye! Gold is also valuable, sometimes more than diamonds.\n");
-            break;
-
-        case 2:
-            printf("Hope you will be happy! Best of luck to keep it.\n");
-            break;
-
-        default:
-            printf("Invalid choice.\n");
-    }
-
-    return 0;
-}
-
+const jeet = {
+    code: ["JavaScript", "Python", "HTML", "CSS"],
+    technologies: {
+        frontEnd: ["HTML5", "CSS3", "JavaScript"],
+        backEnd: ["Node.js", "Express", "Flask"],
+        tools: ["Git", "VS Code", "Vercel"]
+    },
+    currentProject: "ExpressBasket - E-commerce Platform",
+    philosophy: "Write code that humans can read"
+};
 ```
 
 ---
 
-## 🛠️ Tech Stack & Tools
+<img src="https://img.shields.io/badge/Tech_Stack-00A8FF?style=for-the-badge&logo=stackshare&logoColor=white"/>
 
 <div align="center">
 
-### Languages
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-### Frameworks & Libraries
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+| Category | Technologies |
+|:--------:|:------------:|
+| **Languages** | ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
+| **Frameworks** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) |
+| **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) |
 
 </div>
 
 ---
 
-## 📊 GitHub Statistics
+<img src="https://img.shields.io/badge/Featured_Projects-00A8FF?style=for-the-badge&logo=github&logoColor=white"/>
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&count_private=true&hide_border=true&title_color=a9fef7&icon_color=a9fef7&text_color=c9d1d9&bg_color=0d1117" alt="Jeet Mondal github stats" /> 
-  
-  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=dark&hide_border=true&background=0D1117&stroke=a9fef7&ring=a9fef7&fire=a9fef7&currStreakLabel=a9fef7" />
-</div>
+<table>
+<tr>
+<td align="center" width="50%">
 
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&hide_border=true&title_color=a9fef7&text_color=c9d1d9&bg_color=0d1117&langs_count=6" />
-</div>
+### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=shoppingcart&logoColor=white" height="18"/> ExpressBasket
 
----
+Modern e-commerce platform with robust product management and seamless checkout experience
 
-## 📈 Activity Graph
+<br/>
 
-<div align="center">
-  
-[![Jeet's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jeet1511&bg_color=0d1117&color=a9fef7&line=a9fef7&point=ffffff&area=true&hide_border=true)](https://github.com/Jeet1511)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-</div>
+<br/>
 
----
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/ExpressBasket)
 
-## 🔥 Featured Projects
+</td>
+<td align="center" width="50%">
 
-<div align="center">
+### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=python&logoColor=white" height="18"/> ff-likes-v3
 
-| Project | Description | Tech Stack |
-|---------|-------------|------------|
-| 🛒 [**ExpressBasket**](https://github.com/Jeet1511/ExpressBasket) | Modern e-commerce platform with 235+ deployments | Node.js, Express, JavaScript |
-| 🛍️ [**basket**](https://github.com/Jeet1511/basket) | Shopping basket application | HTML, CSS, JavaScript |
-| 🔐 [**HTML-Login-Page-Test**](https://github.com/Jeet1511/HTML-Login-Page-Test) | Login page testing (⭐ 3 stars) | HTML, CSS |
-| 🐍 [**ff-likes-v3**](https://github.com/Jeet1511/ff-likes-v3) | Python web application | Python, Flask |
+Dynamic web application built with Flask for efficient content management and delivery
 
-</div>
+<br/>
 
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 
-## 💼 What I'm Currently Working On
+<br/>
 
-- 🛒 **ExpressBasket** - A modern e-commerce platform with 235+ deployments
-- 🎨 Building intuitive and responsive user interfaces
-- 📚 Learning advanced backend development techniques
-- 🌟 Contributing to open-source projects
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/ff-likes-v3)
 
----
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
 
-## 🎯 2026 Goals
+### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=shoppingbag&logoColor=white" height="18"/> Basket
 
-- ✅ Master full-stack development
-- ✅ Contribute to more open-source projects
-- ✅ Build scalable web applications
-- ✅ Learn new frameworks and technologies
-- ✅ Collaborate with amazing developers
+Frontend shopping basket with intuitive UI and smooth user interactions
 
----
+<br/>
 
-## 📫 Let's Connect
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-<div align="center">
+<br/>
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_echo.del.alma_?igsh=MTFocmpxYW03em94aA==)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/basket)
 
-**💬Yoo! Feel free to reach out for collaborations or just a friendly chat!**
+</td>
+<td align="center" width="50%">
 
-</div>
+### <img src="https://img.shields.io/badge/-00A8FF?style=flat-square&logo=lock&logoColor=white" height="18"/> Login Page
 
----
+Clean and responsive login template with modern design patterns
 
-## 💭 Random Quote
+<br/>
 
-<div align="center">
-  
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
+<br/>
+
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/HTML-Login-Page-Test)
+
+</td>
+</tr>
+</table>
 </div>
 
 ---
 
+<img src="https://img.shields.io/badge/GitHub_Statistics-00A8FF?style=for-the-badge&logo=github&logoColor=white"/>
+
 <div align="center">
 
-### 💡 "Code is like humor. When you have to explain it, it's bad." – Cory House
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&theme=transparent&hide_border=true&title_color=00A8FF&icon_color=00A8FF&text_color=ffffff&bg_color=0d1117"/>
+<img width="48%" src="https://github-readme-streak-stats.herokuapp.com?user=Jeet1511&theme=transparent&hide_border=true&ring=00A8FF&fire=00A8FF&currStreakLabel=00A8FF&sideLabels=00A8FF&background=0D1117&currStreakNum=ffffff&sideNums=ffffff&dates=888888"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
+<br/>
 
-**⭐ Star my repositories if you find them interesting!**
-
-** by Jeet Mondal**
-
-*Last Updated: 2026-01-17 04:09:18*
+<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&theme=transparent&hide_border=true&title_color=00A8FF&text_color=ffffff&bg_color=0d1117"/>
 
 </div>
+
+<br/>
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Jeet1511&bg_color=0d1117&color=00A8FF&line=00A8FF&point=ffffff&area=true&area_color=00A8FF&hide_border=true)
+
+</div>
+
+---
+
+<img src="https://img.shields.io/badge/Current_Focus-00A8FF?style=for-the-badge&logo=target&logoColor=white"/>
+
+<br/>
+
+<div align="left">
+
+<img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Scaling **ExpressBasket** with new features and optimizations
+
+<img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Learning **System Design** & **Database Optimization**
+
+<img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Contributing to **Open Source** projects
+
+<img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Open to **Collaboration Opportunities**
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Let's_Connect-00A8FF?style=for-the-badge&logo=handshake&logoColor=white"/>
+
+<br/><br/>
+
+*Open to collaborations and interesting projects*
+
+<br/>
+
+<a href="mailto:jeetmondal1685@gmail.com"><img src="https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
+<a href="https://github.com/Jeet1511"><img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Star_my_repos_if_you_find_them_useful!-004e92?style=flat-square"/>
+
+</div>
+
+<br/>
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=0:000428,100:004e92&section=footer)
