@@ -9,7 +9,7 @@
 
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=0:000428,100:004e92&section=header&text=Jeet%20Mondal&fontColor=ffffff&fontSize=50&fontAlignY=35&desc=Full%20Stack%20Developer&descSize=18&descAlignY=55&animation=fadeIn)
+![Header](https://capsule-render.vercel.app/api?type=waving&height=200&color=0:000428,100:004e92&section=header&text=Jeet%20Mondal&fontColor=ffffff&fontSize=50&fontAlignY=35&desc=Aspiring%20Full%20Stack%20Developer&descSize=18&descAlignY=55&animation=fadeIn)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00A8FF&center=true&vCenter=true&width=500&lines=Building+Scalable+Web+Applications;Clean+Code+%7C+Modern+Solutions;Open+for+Collaborations)](https://git.io/typing-svg)<!-- github:Jeet1511 -->
 
