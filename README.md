@@ -242,7 +242,7 @@ Clean and responsive login template with modern design patterns
 
 <div align="left">
 
-<img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Scaling **ExpressBasket** with new features and optimizations
+<img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Currently creating projects with full **creativity**
 
 <img src="https://img.shields.io/badge/▸-004e92?style=flat-square"/> &nbsp; Learning **System Design** & **Database Optimization**
 
