@@ -141,36 +141,33 @@ Modern e-commerce platform with robust product management and seamless checkout 
 
 <br/>
 
-[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/ExpressBasket)<!--https://github.com/Jeet1511/Jeet1511-->
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/ExpressBasket)
 
 </td>
-<td align="center" width="50%"><!-- @Jeet1511 -->
+<td align="center" width="50%">
 
-### ff-likes-v3
+### Monitor
 
-Dynamic web application built with Flask for efficient content management and delivery
+High-performance server monitoring dashboard with glassmorphism design
 
 <br/>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-<!-- Yooo genius!! before copying just understand that this is my Template so make sure to gimme some credit!! otherwise it will not work. - github.com/Jeet1511 -->
-
-<!-- Yooo genius!! before copying just understand that this is my Template so make sure to gimme some credit!! otherwise it will not work. - github.com/Jeet1511 -->
-
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 <br/>
 
-[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/ff-likes-v3)<!-- src:Jeet1511 -->
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/Monitor)
 
 </td>
-</tr><!-- template-id:jeet1511 -->
+</tr>
 <tr>
 <td align="center" width="50%">
 
-### Basket
+### Portfolio
 
-Frontend shopping basket with intuitive UI and smooth user interactions
+Personal portfolio site showcasing skills and projects with a clean, modern interface
 
 <br/>
 
@@ -180,27 +177,24 @@ Frontend shopping basket with intuitive UI and smooth user interactions
 
 <br/>
 
-[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/basket)
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/Portfolio)
 
 </td>
 <td align="center" width="50%">
-<!-- Yooo genius!! before copying just understand that this is my Template so make sure to gimme some credit!! otherwise it will not work. - github.com/Jeet1511 -->
 
-<!-- Yooo genius!! before copying just understand that this is my Template so make sure to gimme some credit!! otherwise it will not work. - github.com/Jeet1511 -->
+### EliteZero
 
-
-### Login Page
-
-Clean and responsive login template with modern design patterns
+Fun and interactive Discord chatbot designed for community engagement
 
 <br/>
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)
 
 <br/>
 
-[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/HTML-Login-Page-Test)
+[![View Project](https://img.shields.io/badge/View_Project-004e92?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511/EliteZero)
 
 </td>
 </tr>
