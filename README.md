@@ -293,4 +293,4 @@ At the end...<br>
 
 <!-- Yooo genius!! before copying just understand that this is my Template so make sure to gimme some credit!! otherwise it will not work. - github.com/Jeet1511 -->
 
-<!-- HAHHAHAA HAHHAHAH HAHAHAAH AHAHAHAH -->
+<!-- HAHHAHAA HAHHAHAH HAHAHAAH AHAHAHAH --  adb shell pm uninstall --user 0 com.infinix.smartpanel>
