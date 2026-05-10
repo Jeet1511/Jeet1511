@@ -14,7 +14,7 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-evoz.vercel.app-8B5CF6?style=for-the-badge)](https://evoz.vercel.app/jeet1511)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-JEET1511-8B5CF6?style=for-the-badge)](https://evoz.vercel.app/jeet1511)
 &nbsp;
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
 &nbsp;
@@ -50,7 +50,7 @@ I build web applications end-to-end — backend APIs, React frontends, database 
 
 **Tools & Cloud**
 
-<img src="https://skillicons.dev/icons?i=git,aws,vercel,render,postman&perline=6"/>
+<img src="https://skillicons.dev/icons?i=git,aws,postman&perline=6"/>
 
 </div>
 
@@ -60,9 +60,7 @@ I build web applications end-to-end — backend APIs, React frontends, database 
 
 <div align="center">
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Jeet1511&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&text_color=c9d1d9&count_private=true&include_all_commits=true&cache_seconds=1800"/>
-&nbsp;
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeet1511&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&langs_count=7&hide=css,html&cache_seconds=1800"/>
+
 
 </div>
 
@@ -160,7 +158,7 @@ Personal portfolio — no framework. Plain HTML, CSS, vanilla JS. Because not ev
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_See_My_Work-evoz.vercel.app/jeet1511-8B5CF6?style=for-the-badge)](https://evoz.vercel.app/jeet1511)
+[![Portfolio](https://img.shields.io/badge/🌐_See_My_Work-JEET1511-8B5CF6?style=for-the-badge)](https://evoz.vercel.app/jeet1511)
 &nbsp;
 [![Gmail](https://img.shields.io/badge/Say_Hello-jeetmondal1685%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
 
