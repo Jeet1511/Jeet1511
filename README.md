@@ -160,7 +160,7 @@ Personal portfolio — no framework. Plain HTML, CSS, vanilla JS. Because not ev
 
 [![Portfolio](https://img.shields.io/badge/🌐_See_My_Work-JEET1511-8B5CF6?style=for-the-badge)](https://evoz.vercel.app/jeet1511)
 &nbsp;
-[![Gmail](https://img.shields.io/badge/Say_Hello-jeetmondal1685%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-Jeet-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jeet1511)
 <br/>
