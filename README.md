@@ -18,7 +18,7 @@
 &nbsp;
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE-HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jeet1511)
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jeet1511)
 
@@ -162,6 +162,7 @@ Personal portfolio — no framework. Plain HTML, CSS, vanilla JS. Because not ev
 &nbsp;
 [![Gmail](https://img.shields.io/badge/Say_Hello-jeetmondal1685%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jeetmondal1685@gmail.com)
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jeet1511)
 <br/>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0f0c29,50:1a1a5e,100:302b63&section=footer)
