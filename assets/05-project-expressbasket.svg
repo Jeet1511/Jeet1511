@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 360" width="890" height="360" role="img" aria-label="ExpressBasket — e-commerce platform">
+  <defs>
+    <radialGradient id="mesh" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4EA7FF" stop-opacity="0.07"/><stop offset="1" stop-color="#4EA7FF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="hs" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4EA7FF" stop-opacity="0"/><stop offset="0.5" stop-color="#4EA7FF" stop-opacity="0.18"/><stop offset="1" stop-color="#4EA7FF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4EA7FF"/><stop offset="1" stop-color="#9BC4FF"/></linearGradient>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" seed="14"/><feColorMatrix type="saturate" values="0"/></filter>
+    <clipPath id="frame"><rect width="890" height="360"/></clipPath>
+    <clipPath id="mock"><rect x="64" y="48" width="376" height="272" rx="12"/></clipPath>
+  </defs>
+  <style>
+    text{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;text-rendering:geometricPrecision}
+    .rise{opacity:0;animation:rise 1.1s cubic-bezier(.22,.61,.36,1) forwards}
+    .d1{animation-delay:.1s}.d2{animation-delay:.26s}.d3{animation-delay:.42s}.d4{animation-delay:.58s}.d5{animation-delay:.74s}
+    @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    .sweep{animation:sp 7s ease-in-out infinite}
+    @keyframes sp{0%{transform:translateX(0)}60%{transform:translateX(150px)}100%{transform:translateX(0)}}
+    .pulse{animation:pulse 3.2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+    .btnglo{animation:bg 4s ease-in-out infinite alternate}
+    @keyframes bg{from{opacity:.85}to{opacity:1}}
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="890" height="360" fill="#06070B"/>
+    <circle cx="700" cy="180" r="280" fill="url(#mesh)"/>
+    <text x="826" y="250" text-anchor="end" font-size="120" font-weight="700" fill="#0E1016" opacity="0.5" letter-spacing="-4">05</text>
+
+    <!-- mock storefront window -->
+    <rect x="64" y="48" width="376" height="272" rx="12" fill="#0E1016" stroke="#1C2030"/>
+    <circle cx="84" cy="64" r="3" fill="#1C2030"/><circle cx="100" cy="64" r="3" fill="#1C2030"/><circle cx="116" cy="64" r="3" fill="#1C2030"/>
+    <rect x="150" y="56" width="140" height="14" rx="7" fill="#14171F"/>
+    <text x="220" y="66" text-anchor="middle" font-size="8" fill="#5C6473">expressbasket.app</text>
+    <line x1="64" y1="80" x2="440" y2="80" stroke="#1C2030"/>
+
+    <g clip-path="url(#mock)">
+      <rect class="sweep" x="74" y="92" width="22" height="216" fill="url(#hs)"/>
+    </g>
+
+    <!-- product tiles 2x2 -->
+    <g>
+      <rect x="80" y="94" width="78" height="78" rx="6" fill="#14171F" stroke="#1C2030"/>
+      <rect x="88" y="102" width="62" height="44" rx="3" fill="#1C2030"/>
+      <rect x="88" y="152" width="34" height="4" rx="2" fill="#5C6473"/>
+      <rect x="88" y="160" width="20" height="4" rx="2" fill="#4EA7FF"/>
+
+      <rect x="166" y="94" width="78" height="78" rx="6" fill="#14171F" stroke="#1C2030"/>
+      <rect x="174" y="102" width="62" height="44" rx="3" fill="#1C2030"/>
+      <rect x="174" y="152" width="34" height="4" rx="2" fill="#5C6473"/>
+      <rect x="174" y="160" width="20" height="4" rx="2" fill="#5C6473"/>
+
+      <rect x="80" y="180" width="78" height="78" rx="6" fill="#14171F" stroke="#1C2030"/>
+      <rect x="88" y="188" width="62" height="44" rx="3" fill="#1C2030"/>
+      <rect x="88" y="238" width="34" height="4" rx="2" fill="#5C6473"/>
+      <rect x="88" y="246" width="20" height="4" rx="2" fill="#5C6473"/>
+
+      <rect x="166" y="180" width="78" height="78" rx="6" fill="#14171F" stroke="#1C2030"/>
+      <rect x="174" y="188" width="62" height="44" rx="3" fill="#1C2030"/>
+      <rect x="174" y="238" width="34" height="4" rx="2" fill="#5C6473"/>
+      <rect x="174" y="246" width="20" height="4" rx="2" fill="#5C6473"/>
+    </g>
+
+    <!-- cart panel -->
+    <rect x="258" y="94" width="170" height="200" rx="8" fill="#14171F" stroke="#1C2030"/>
+    <text x="270" y="112" font-size="10" font-weight="600" fill="#F4F6FB">Cart</text>
+    <circle class="pulse" cx="412" cy="108" r="7" fill="#4EA7FF"/>
+    <text x="412" y="111" text-anchor="middle" font-size="8" font-weight="700" fill="#06070B">3</text>
+    <line x1="270" y1="122" x2="416" y2="122" stroke="#1C2030"/>
+    <rect x="270" y="134" width="100" height="5" rx="2" fill="#5C6473"/>
+    <rect x="270" y="144" width="60" height="4" rx="2" fill="#1C2030"/>
+    <rect x="270" y="160" width="100" height="5" rx="2" fill="#5C6473"/>
+    <rect x="270" y="170" width="50" height="4" rx="2" fill="#1C2030"/>
+    <rect x="270" y="186" width="100" height="5" rx="2" fill="#5C6473"/>
+    <rect x="270" y="196" width="70" height="4" rx="2" fill="#1C2030"/>
+    <line x1="270" y1="214" x2="416" y2="214" stroke="#1C2030"/>
+    <text x="270" y="232" font-size="9" fill="#5C6473">Total</text>
+    <text x="416" y="232" text-anchor="end" font-size="11" font-weight="600" fill="#F4F6FB">$248.00</text>
+    <rect class="btnglo" x="270" y="244" width="146" height="28" rx="6" fill="url(#btn)"/>
+    <text x="343" y="262" text-anchor="middle" font-size="10" font-weight="600" fill="#06070B">Checkout</text>
+
+    <!-- text right -->
+    <g class="rise d1">
+      <rect x="472" y="78" width="22" height="2" fill="#4EA7FF"/>
+      <text x="502" y="86" font-size="11" letter-spacing="3" fill="#9BA3B4">E-COMMERCE PLATFORM</text>
+    </g>
+    <text class="rise d2" x="470" y="134" font-size="32" font-weight="650" letter-spacing="-.4" fill="#F4F6FB">ExpressBasket</text>
+    <g class="rise d3">
+      <text x="472" y="170" font-size="15" fill="#9BA3B4">A full-stack commerce platform with cart,</text>
+      <text x="472" y="192" font-size="15" fill="#9BA3B4">checkout flows, and live inventory.</text>
+    </g>
+    <line class="rise d4" x1="472" y1="220" x2="826" y2="220" stroke="#1C2030"/>
+    <text class="rise d4" x="472" y="244" font-size="12.5" fill="#9BA3B4">React &#183; Node.js &#183; MongoDB</text>
+    <g class="rise d5">
+      <circle class="pulse" cx="478" cy="280" r="3" fill="#4EA7FF"/>
+      <text x="488" y="284" font-size="12" fill="#9BA3B4">Live</text>
+      <text x="826" y="284" text-anchor="end" font-size="13" font-weight="500" fill="#4EA7FF">View repository &#8594;</text>
+    </g>
+  </g>
+  <rect width="890" height="360" fill="#000000" opacity="0.03" filter="url(#grain)"/>
+</svg>
