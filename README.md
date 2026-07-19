@@ -1,4 +1,4 @@
-<div align="center"> 
+<div align="center">  
 
 <!-- 01 · HERO -->
 <img src="./assets/hero.svg" width="100%" alt="Jeet Mondal — Building AI-powered products"/>
