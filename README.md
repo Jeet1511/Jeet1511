@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center"> 
 
 <img src="./assets/01-hero.svg" width="100%" alt="Jeet Mondal — Full Stack Developer & AI Engineer"/>
 
