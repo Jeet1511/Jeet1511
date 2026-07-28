@@ -33,14 +33,10 @@
   <img src="./assets/trophies.svg?v=4" width="800" alt="Trophy vault">
 </div>
 
-<!-- ══════ 6. CONTRIBUTION SNAKE (generated daily by .github/workflows/github-snake.yml) ══════ -->
+<!-- ══════ 6. SNAKE.EXE — eats the board, spells JEET ══════ -->
 <div align="center">
   <br>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake.svg">
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake-dark.svg" width="820">
-  </picture>
+  <img src="./assets/snake-jeet.svg?v=1" width="820" alt="Snake eats the contribution board and reveals JEET">
   <br><br>
   <sub><b>⚒ Forged by Jeet Mondal — Code. Coffee. Repeat. ☕</b></sub>
 </div>
