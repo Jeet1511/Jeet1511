@@ -1,81 +1,44 @@
-<div align="center" style="max-width: 820px; margin: 0 auto; overflow: hidden;">
-
-<!-- <style>
-  table { border: none; border-collapse: collapse; }
-  .project-card { transition: transform 0.3s ease, filter 0.3s ease; border-radius: 12px; }
-  .project-card:hover { transform: scale(1.05); filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.6)); }
-</style> -->
-
-<!-- 1. TOP SHEET (Banner) -->
-<table align="center" style="border: none; border-collapse: collapse; width: 820px;">
-  <tr>
-    <td align="center" style="border: none; padding: 0; line-height: 0;">
-      <img src="./assets/banner.svg?v=1#gh-dark-mode-only" width="820px" style="margin-bottom: -150px; display: block;">
-      <img src="./assets/banner-light.svg?v=1#gh-light-mode-only" width="820px" style="margin-bottom: -150px; display: block;">
-    </td>
-  </tr>
-  <!-- 2. ID CARD BESIDE TECH STACK (Overlaps banner) -->
-  <tr>
-    <td align="center" style="border: none; padding: 0; line-height: 0;">
-      <table align="center" style="border: none; border-collapse: collapse; width: 820px;">
-        <tr>
-          <td align="center" style="border: none; padding: 0; vertical-align: bottom; width: 280px;">
-            <img src="./assets/workshop-badge.svg?v=1" width="280px" style="display: block; position: relative; z-index: 2;">
-          </td>
-          <td align="center" style="border: none; padding: 0 10px; vertical-align: middle; width: 540px;">
-            <img src="./assets/tech-stack.svg?v=1" width="540px" style="display: block;">
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<!-- 3. VIEWS & CONNECT (Directly under top card) -->
-<div align="center" style="margin-top: 30px;">
-  <a href="mailto:jeetmondal1685@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://github.com/jeet1511"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/jeet1511/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <img src="https://komarev.com/ghpvc/?username=jeet1511&color=D4AF37&style=for-the-badge&label=Profile+Views">
-</div>
-
-<!-- 4. PROJECTS -->
+<!-- ══════════════════════════ 1. TOP SHEET (Banner) ══════════════════════════ -->
 <div align="center">
-  <br><br>
-  <h2><img src="https://img.shields.io/badge/-PROJECTS-D4AF37?style=for-the-badge&logo=github&logoColor=black"></h2>
-  <table align="center" style="border: none; border-collapse: collapse; width: 820px;">
-    <tr>
-      <td align="center" style="border: none; padding: 5px;"><img class="project-card" src="./assets/project-vm-manager.svg?v=1" width="400px"></td>
-      <td align="center" style="border: none; padding: 5px;"><img class="project-card" src="./assets/project-healthfy.svg?v=1" width="400px"></td>
-    </tr>
-    <tr>
-      <td align="center" style="border: none; padding: 5px;"><img class="project-card" src="./assets/project-expressbasket.svg?v=1" width="400px"></td>
-      <td align="center" style="border: none; padding: 5px;"><img class="project-card" src="./assets/project-elitezero.svg?v=1" width="400px"></td>
-    </tr>
-  </table>
+  <img src="./assets/banner.svg?v=2#gh-dark-mode-only" width="820" alt="Jeet Mondal — Full Stack Dev banner">
+  <img src="./assets/banner-light.svg?v=2#gh-light-mode-only" width="820" alt="Jeet Mondal — Full Stack Dev banner">
 </div>
 
-<!-- 5. STATS -->
+<!-- ══════════════════ 2. ID CARD BESIDE TECH STACK ══════════════════ -->
+<div align="center">
+  <img src="./assets/workshop-badge.svg?v=2" width="266" alt="Workshop access badge"><img src="./assets/tech-stack.svg?v=2" width="532" alt="Tech stack orbit">
+</div>
+
+<!-- ══════════════════ 3. VIEWS & CONNECT ══════════════════ -->
+<div align="center">
+  <a href="mailto:jeetmondal1685@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://github.com/jeet1511"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/jeet1511/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <img src="https://komarev.com/ghpvc/?username=jeet1511&color=D4AF37&style=for-the-badge&label=Profile+Views" alt="Profile views">
+</div>
+
+<!-- ══════════════════ 4. PROJECTS ══════════════════ -->
 <div align="center">
   <br>
-  <table align="center" style="border: none; border-collapse: collapse; width: 820px;">
-    <tr>
-      <td align="center" style="border: none; padding: 5px;"><img src="./assets/stats.svg?v=1" width="260px"></td>
-      <td align="center" style="border: none; padding: 5px;"><img src="./assets/langs.svg?v=1" width="260px"></td>
-      <td align="center" style="border: none; padding: 5px;"><img src="./assets/trophies.svg?v=1" width="260px"></td>
-    </tr>
-  </table>
+  <img src="https://img.shields.io/badge/-PROJECTS-D4AF37?style=for-the-badge&logo=github&logoColor=black" alt="Projects">
+  <br><br>
+  <a href="https://github.com/jeet1511/vm-manager"><img src="./assets/project-vm-manager.svg?v=2" width="400" alt="VM Manager"></a><a href="https://github.com/jeet1511/healthfy"><img src="./assets/project-healthfy.svg?v=2" width="400" alt="Healthfy"></a>
+  <a href="https://github.com/jeet1511/expressbasket"><img src="./assets/project-expressbasket.svg?v=2" width="400" alt="ExpressBasket"></a><a href="https://github.com/jeet1511/elitezero"><img src="./assets/project-elitezero.svg?v=2" width="400" alt="EliteZero"></a>
 </div>
 
+<!-- ══════════════════ 5. STATS ══════════════════ -->
+<div align="center">
+  <br>
+  <img src="./assets/stats.svg?v=2" width="266" alt="Combat stats"><img src="./assets/langs.svg?v=2" width="266" alt="Language loadout"><img src="./assets/trophies.svg?v=2" width="266" alt="Trophy vault">
 </div>
 
-<!-- 6. CONTRIBUTION SNAKE (generated daily by .github/workflows/github-snake.yml) -->
+<!-- ══════ 6. CONTRIBUTION SNAKE (generated daily by .github/workflows/github-snake.yml) ══════ -->
 <div align="center">
   <br>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake.svg">
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake-dark.svg" width="820px">
+    <img alt="contribution snake" src="https://raw.githubusercontent.com/jeet1511/jeet1511/output/github-snake-dark.svg" width="820">
   </picture>
   <br><br>
   <sub><b>⚒ Forged by Jeet Mondal — Code. Coffee. Repeat. ☕</b></sub>
