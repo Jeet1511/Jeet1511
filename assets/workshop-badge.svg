@@ -32,7 +32,7 @@
     </filter>
     <!-- clips (anti-bleed) -->
     <clipPath id="faceCrop"><circle cx="0" cy="220" r="80"/></clipPath>
-    <clipPath id="cardClip"><rect x="-150" y="140" width="300" height="380" rx="12"/></clipPath>
+    <clipPath id="cardClip"><polygon points="-122,140 122,140 150,168 150,492 122,520 -122,520 -150,492 -150,168"/></clipPath>
   </defs>
 
   <!-- ================= PHYSICS RIG (exact nested structure) ================= -->
@@ -57,7 +57,7 @@
           <circle cx="0" cy="120" r="15" fill="none" stroke="#4A4B50" stroke-width="1.4" stroke-dasharray="6 5"/>
 
           <!-- ============ CARD BASE ============ -->
-          <rect x="-150" y="140" width="300" height="380" rx="12" fill="#1E1F22" stroke="#D4AF37" stroke-width="1.6"/>
+          <polygon points="-122,140 122,140 150,168 150,492 122,520 -122,520 -150,492 -150,168" fill="#1E1F22" stroke="#D4AF37" stroke-width="1.6" stroke-linejoin="round"/>
           <g clip-path="url(#cardClip)">
             <rect x="-150" y="140" width="300" height="380" fill="url(#cardSheen)"/>
             <!-- subtle inner grid -->
@@ -89,7 +89,7 @@
             <text x="0" y="316" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="9" fill="#6E6F74" text-anchor="middle" letter-spacing="4">⬢ WORKSHOP ACCESS ⬢</text>
             <text x="0" y="340" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="27" fill="url(#badgeGold)" text-anchor="middle" letter-spacing="1">JEET MONDAL</text>
             <text x="0" y="370" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="13" fill="#E8E8E8" text-anchor="middle" letter-spacing="3">FULL STACK ARCHITECT</text>
-            <text x="0" y="390" font-family="Consolas, monospace" font-size="13" fill="#6E6F74" text-anchor="middle">@jeet1511</text>
+            <text x="0" y="390" font-family="Consolas, monospace" font-weight="bold" font-size="13" fill="#FFFFFF" text-anchor="middle" filter="url(#badgeGlow)">@jeet1511</text>
 
             <!-- ============ CLEARANCE (glitch) ============ -->
             <g font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" text-anchor="middle" letter-spacing="2">
@@ -108,7 +108,7 @@
             <rect x="-92" y="440" width="184" height="1.4" fill="#36373B"/>
 
             <!-- ============ STAMPED BARCODE ============ -->
-            <g fill="#6E6F74">
+            <g fill="#FFFFFF">
               <rect x="-90" y="456" width="4" height="36"/><rect x="-83" y="456" width="2" height="36"/>
               <rect x="-77" y="456" width="5" height="36"/><rect x="-69" y="456" width="2" height="36"/>
               <rect x="-63" y="456" width="3" height="36"/><rect x="-56" y="456" width="6" height="36"/>
@@ -124,7 +124,7 @@
               <rect x="68" y="456" width="3" height="36"/><rect x="74" y="456" width="2" height="36"/>
               <rect x="79" y="456" width="6" height="36"/><rect x="88" y="456" width="2" height="36"/>
             </g>
-            <text x="0" y="506" font-family="Consolas, monospace" font-size="9" fill="#6E6F74" text-anchor="middle" letter-spacing="4">ID-1511-MERN-OMEGA</text>
+            <text x="0" y="506" font-family="Consolas, monospace" font-weight="bold" font-size="9" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">ID-1511-MERN-OMEGA</text>
 
             <!-- ============ HOLOGRAPHIC SHINE (clipped to card) ============ -->
             <rect x="-320" y="120" width="90" height="420" fill="url(#holoShine)" transform="skewX(-18)">
@@ -134,6 +134,84 @@
 
 
         </g>
+      </g>
+    </g>
+  </g>
+  <!-- ============ GOLDEN SPRINKLES + ROAMING PARTICLES ============ -->
+  <g>
+    <!-- comet orbiter tracing the card outline (clockwise) -->
+    <g opacity="0.9">
+      <g>
+        <line x1="-14" y1="0" x2="0" y2="0" stroke="#FFD700" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="0" cy="0" r="2" fill="#FFF6C0" filter="url(#badgeGlow)"/>
+        <animateMotion dur="15s" begin="2.4s" repeatCount="indefinite" rotate="auto" path="M74,128 L326,128 L362,164 L362,496 L326,532 L74,532 L38,496 L38,164 Z"/>
+      </g>
+    </g>
+    <!-- smaller orbiter, counter-clockwise -->
+    <circle r="1.4" fill="#FFD700" opacity="0.7">
+      <animateMotion dur="21s" begin="3s" repeatCount="indefinite" path="M38,164 L38,496 L74,532 L326,532 L362,496 L362,164 L326,128 L74,128 Z"/>
+    </circle>
+
+    <!-- rising gold sprinkles (left margin) -->
+    <g>
+      <circle cx="24" cy="470" r="1.6" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.7;0" dur="6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -30" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="40" cy="372" r="1.2" fill="#FFD700" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="7s" begin="1.8s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -24" dur="7s" begin="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="14" cy="296" r="2" fill="#FFD700" opacity="0"><animate attributeName="opacity" values="0;0.55;0" dur="8s" begin="3.2s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -34" dur="8s" begin="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="44" cy="212" r="1.3" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.65;0" dur="6.5s" begin="0.9s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -26" dur="6.5s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="26" cy="128" r="1.5" fill="#D4AF37" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="7.5s" begin="2.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -28" dur="7.5s" begin="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="44" cy="64" r="1.2" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.55;0" dur="6s" begin="4.1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -22" dur="6s" begin="4.1s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- rising gold sprinkles (right margin) -->
+    <g>
+      <circle cx="376" cy="496" r="1.8" fill="#FFD700" opacity="0"><animate attributeName="opacity" values="0;0.65;0" dur="7s" begin="0.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -32" dur="7s" begin="0.6s" repeatCount="indefinite"/></circle>
+      <circle cx="358" cy="398" r="1.2" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="6s" begin="2.2s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -24" dur="6s" begin="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="386" cy="306" r="1.5" fill="#FFD700" opacity="0"><animate attributeName="opacity" values="0;0.55;0" dur="8s" begin="3.8s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -30" dur="8s" begin="3.8s" repeatCount="indefinite"/></circle>
+      <circle cx="356" cy="218" r="1.3" fill="#D4AF37" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="6.8s" begin="1.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -26" dur="6.8s" begin="1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="374" cy="126" r="1.6" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="7.2s" begin="4.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -28" dur="7.2s" begin="4.6s" repeatCount="indefinite"/></circle>
+      <circle cx="388" cy="66" r="1.2" fill="#FFD700" opacity="0"><animate attributeName="opacity" values="0;0.5;0" dur="6.4s" begin="5.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -22" dur="6.4s" begin="5.4s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- sprinkles floating up from below the card -->
+    <g>
+      <circle cx="120" cy="560" r="1.4" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="7s" begin="1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -20" dur="7s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="576" r="1.7" fill="#FFD700" opacity="0"><animate attributeName="opacity" values="0;0.55;0" dur="8s" begin="2.8s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -24" dur="8s" begin="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="286" cy="558" r="1.3" fill="#FFE9A0" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="6.6s" begin="4.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0; 0 -20" dur="6.6s" begin="4.4s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- spinning diamond confetti -->
+    <g fill="#FFD700">
+      <g transform="translate(62,106)" opacity="0">
+        <rect x="-2.4" y="-2.4" width="4.8" height="4.8"><animateTransform attributeName="transform" type="rotate" values="0;180" dur="5s" begin="1.2s" repeatCount="indefinite"/></rect>
+        <animate attributeName="opacity" values="0;0.55;0" dur="5s" begin="1.2s" repeatCount="indefinite"/>
+      </g>
+      <g transform="translate(338,556)" opacity="0">
+        <rect x="-2" y="-2" width="4" height="4" fill="#FFE9A0"><animateTransform attributeName="transform" type="rotate" values="45;225" dur="6s" begin="3.4s" repeatCount="indefinite"/></rect>
+        <animate attributeName="opacity" values="0;0.5;0" dur="6s" begin="3.4s" repeatCount="indefinite"/>
+      </g>
+      <g transform="translate(346,98)" opacity="0">
+        <rect x="-2.2" y="-2.2" width="4.4" height="4.4" fill="#D4AF37"><animateTransform attributeName="transform" type="rotate" values="0;-180" dur="5.5s" begin="5s" repeatCount="indefinite"/></rect>
+        <animate attributeName="opacity" values="0;0.5;0" dur="5.5s" begin="5s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- twinkling four-point stars -->
+    <g fill="#FFF6C0">
+      <g transform="translate(44,132)">
+        <path d="M0,-6 L1.4,-1.4 L6,0 L1.4,1.4 L0,6 L-1.4,1.4 L-6,0 L-1.4,-1.4 Z" opacity="0">
+          <animate attributeName="opacity" values="0;0.8;0" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" values="0.4;1;0.4" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g transform="translate(356,528)">
+        <path d="M0,-6 L1.4,-1.4 L6,0 L1.4,1.4 L0,6 L-1.4,1.4 L-6,0 L-1.4,-1.4 Z" opacity="0">
+          <animate attributeName="opacity" values="0;0.75;0" dur="3.8s" begin="2.1s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" values="0.4;1;0.4" dur="3.8s" begin="2.1s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g transform="translate(368,150)">
+        <path d="M0,-5 L1.2,-1.2 L5,0 L1.2,1.2 L0,5 L-1.2,1.2 L-5,0 L-1.2,-1.2 Z" opacity="0">
+          <animate attributeName="opacity" values="0;0.7;0" dur="4.4s" begin="3.6s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" values="0.4;1;0.4" dur="4.4s" begin="3.6s" repeatCount="indefinite"/>
+        </path>
       </g>
     </g>
   </g>
