@@ -1,61 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" overflow="hidden">
   <defs>
-    <!-- Blueprint grid pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#36373B" stroke-width="0.5" opacity="0.3"/>
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="40 40" dur="20s" repeatCount="indefinite"/>
-    </pattern>
+    <!-- BRIGHT name gradient: white to amber with animated cycling -->
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0A868">
+        <animate attributeName="stop-color" values="#F0A868;#FFFFFF;#F0A868" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
 
-    <!-- CRT scanlines pattern -->
-    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="1280" y2="0" stroke="white" stroke-width="1" opacity="0.06"/>
-    </pattern>
+    <!-- Scan reveal gradient (vertical transparent→amber→transparent) -->
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4915D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#D4915D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D4915D" stop-opacity="0"/>
+    </linearGradient>
 
-    <!-- Breathing forge glow gradient -->
+    <!-- Diagonal white shine gradient for text sweep -->
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="white" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="white" stop-opacity="0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Metal gradient for card surface -->
+    <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A2B2E"/>
+      <stop offset="50%" stop-color="#4a4d56"/>
+      <stop offset="100%" stop-color="#1A1B1F"/>
+    </linearGradient>
+
+    <!-- Breathing forge glow (radial amber) -->
     <radialGradient id="forgeGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#D4915D" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#D4915D" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Name gradient: Gunmetal to Amber -->
-    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#36373B"/>
-      <stop offset="100%" stop-color="#D4915D">
-        <animate attributeName="stop-color" values="#D4915D;#36373B;#D4915D" dur="4s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#36373B" stroke-width="0.5" opacity="0.3"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="40 40" dur="20s" repeatCount="indefinite"/>
+    </pattern>
 
-    <!-- Shine gradient for name sweep -->
-    <linearGradient id="textShine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="white" stop-opacity="0"/>
-      <stop offset="45%" stop-color="white" stop-opacity="0"/>
-      <stop offset="50%" stop-color="white" stop-opacity="0.4"/>
-      <stop offset="55%" stop-color="white" stop-opacity="0"/>
-      <stop offset="100%" stop-color="white" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Right panel clip -->
-    <clipPath id="rightClip">
+    <!-- Character clip -->
+    <clipPath id="charClip">
       <rect x="650" y="0" width="630" height="480"/>
     </clipPath>
 
-    <!-- Name text clip for shine -->
+    <!-- Name text clip for shine effect -->
     <clipPath id="nameClip">
-      <text x="60" y="270" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" letter-spacing="4">JEET MONDAL</text>
+      <text x="40" y="240" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" letter-spacing="4">JEET MONDAL</text>
     </clipPath>
 
-    <!-- Glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <!-- Card clip for badge shine -->
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="300" height="400" rx="12"/>
+    </clipPath>
 
-    <!-- Terminal background gradient -->
-    <linearGradient id="termBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1E1F22"/>
-      <stop offset="100%" stop-color="#0A0A0B"/>
-    </linearGradient>
+    <!-- Face crop circle (card-local coords) -->
+    <clipPath id="faceCrop">
+      <circle cx="150" cy="140" r="75"/>
+    </clipPath>
+
+    <!-- Hex bolt symbol -->
+    <symbol id="hexBolt" viewBox="-8 -8 16 16">
+      <polygon points="0,-7 6,-3.5 6,3.5 0,7 -6,3.5 -6,-3.5" fill="#36373B" stroke="#4a4d56" stroke-width="1"/>
+      <circle cx="0" cy="0" r="2.5" fill="#1A1B1F"/>
+    </symbol>
   </defs>
 
   <!-- ===== BACKGROUND ===== -->
@@ -64,214 +77,193 @@
   <!-- Kinetic grid -->
   <rect width="1280" height="480" fill="url(#grid)"/>
 
-  <!-- CRT scanlines -->
-  <rect width="1280" height="480" fill="url(#scanlines)">
-    <animateTransform attributeName="transform" type="translate" values="0 0; 0 4" dur="0.5s" repeatCount="indefinite"/>
-  </rect>
-
   <!-- Breathing forge glow -->
-  <circle cx="300" cy="240" r="280" fill="url(#forgeGlow)" filter="url(#glow)">
+  <circle cx="300" cy="240" r="280" fill="url(#forgeGlow)">
     <animate attributeName="r" values="280;350;280" dur="6s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Floating particles -->
-  <circle cx="100" cy="400" r="2" fill="#D4915D" opacity="0.6">
-    <animate attributeName="cy" values="400;100;400" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.6;0" dur="7s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="500" cy="450" r="1.5" fill="#36373B" opacity="0.4">
-    <animate attributeName="cy" values="450;150;450" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.4;0" dur="9s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="200" cy="380" r="2.5" fill="#D4915D" opacity="0.5">
-    <animate attributeName="cy" values="380;80;380" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="400" cy="420" r="1" fill="#D4915D" opacity="0.3">
-    <animate attributeName="cy" values="420;200;420" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.3;0" dur="8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="580" cy="350" r="2" fill="#36373B" opacity="0.5">
-    <animate attributeName="cy" values="350;50;350" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0" dur="10s" repeatCount="indefinite"/>
-  </circle>
-
   <!-- ===== LEFT SIDE (x=40 to 600) ===== -->
 
-  <!-- Terminal Box -->
-  <g transform="translate(40, 30)">
-    <rect width="520" height="150" rx="8" fill="url(#termBg)" stroke="#36373B" stroke-width="1"/>
+  <!-- 1. Terminal Box -->
+  <g transform="translate(40, 40)">
+    <rect width="520" height="140" rx="8" fill="#0F0F11" stroke="#36373B" stroke-width="1"/>
 
     <!-- Terminal header dots -->
-    <circle cx="16" cy="16" r="5" fill="#ff5f57"/>
-    <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
-    <circle cx="56" cy="16" r="5" fill="#28c840"/>
+    <circle cx="16" cy="14" r="5" fill="#ff5f57"/>
+    <circle cx="36" cy="14" r="5" fill="#ffbd2e"/>
+    <circle cx="56" cy="14" r="5" fill="#28c840"/>
 
-    <!-- Terminal prompt text -->
-    <text x="20" y="50" font-family="'Courier New', monospace" font-size="13" fill="#D4915D">
+    <!-- Scrolling grey logs behind -->
+    <g opacity="0.25" font-family="'Courier New', monospace" font-size="10" fill="#8a8a8e">
+      <text x="20" y="70">pinging node 42... latency 12ms</text>
+      <text x="20" y="85">allocating memory block 0xAF...</text>
+      <text x="20" y="100">compiling modules... [##########] 100%</text>
+      <text x="20" y="115">pinging node 42... latency 12ms</text>
+      <text x="20" y="130">allocating memory block 0xAF...</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -30" dur="4s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Phase 1: Boot sequence -->
+    <text x="20" y="45" font-family="'Courier New', monospace" font-size="13" fill="#D4915D" opacity="1">
+      <tspan>[BOOT]</tspan>
+      <tspan fill="#8a8a8e"> initializing profile...</tspan>
+      <animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;0.3;0.35;0.9;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Phase 2: Execution prompt -->
+    <text x="20" y="45" font-family="'Courier New', monospace" font-size="13" fill="#D4915D" opacity="0">
       <tspan>admin@grid:~$ </tspan>
       <tspan fill="#e0e0e0">execute profile.md</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3;0.35;0.9;1" dur="6s" repeatCount="indefinite"/>
     </text>
 
     <!-- Blinking cursor -->
-    <rect x="215" y="38" width="10" height="16" fill="#D4915D">
-      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1s" repeatCount="indefinite"/>
+    <rect x="230" y="33" width="10" height="16" fill="#D4915D" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3;0.35;0.9;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1s" repeatCount="indefinite"/>
     </rect>
-
-    <!-- Scrolling background logs -->
-    <g opacity="0.3" font-family="'Courier New', monospace" font-size="10" fill="#8a8a8e">
-      <text x="20" y="75">pinging node 42... latency 12ms</text>
-      <text x="20" y="90">allocating memory block 0xAF...</text>
-      <text x="20" y="105">compiling modules... [##########] 100%</text>
-      <text x="20" y="120">pinging node 42... latency 12ms</text>
-      <text x="20" y="135">allocating memory block 0xAF...</text>
-      <text x="20" y="150">compiling modules... [##########] 100%</text>
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -30" dur="4s" repeatCount="indefinite"/>
-    </g>
   </g>
 
-  <!-- Name "JEET MONDAL" -->
+  <!-- 2. Name "JEET MONDAL" — BRIGHT white-to-amber -->
   <g>
-    <!-- Main name text with gradient fill -->
-    <text x="60" y="270" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" fill="url(#nameGrad)" letter-spacing="4">JEET MONDAL</text>
+    <text x="40" y="240" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" fill="url(#nameGrad)" letter-spacing="4">JEET MONDAL</text>
 
-    <!-- Skewed shine sweep clipped to text -->
+    <!-- Shine sweep clipped to name -->
     <g clip-path="url(#nameClip)">
-      <rect x="-200" y="200" width="100" height="80" fill="url(#textShine)" transform="skewX(-20)">
-        <animateTransform attributeName="transform" type="translate" from="-100 0" to="900 0" dur="3s" repeatCount="indefinite" additive="sum"/>
+      <rect x="-200" y="170" width="120" height="90" fill="url(#shineGrad)" transform="skewX(-20)">
+        <animateTransform attributeName="transform" type="translate" from="-200 0" to="900 0" dur="3.5s" repeatCount="indefinite" additive="sum"/>
       </rect>
     </g>
   </g>
 
-  <!-- Subtitle / Role -->
-  <text x="60" y="300" font-family="'Courier New', monospace" font-size="14" fill="#8a8a8e" letter-spacing="2">System Architect // Full Stack Tactician</text>
+  <!-- 3. Subtitle -->
+  <text x="40" y="275" font-family="'Courier New', monospace" font-size="14" fill="#8a8a8e" letter-spacing="2">Full Stack Dev // MERN Architect</text>
 
-  <!-- Tech Stack Pills -->
-  <g transform="translate(60, 320)">
-    <!-- React -->
-    <rect x="0" y="0" width="70" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1s" fill="freeze"/>
-    </rect>
-    <text x="35" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      React
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1s" fill="freeze"/>
-    </text>
-
-    <!-- JavaScript -->
-    <rect x="80" y="0" width="90" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
-    </rect>
-    <text x="125" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      JavaScript
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
-    </text>
-
-    <!-- Python -->
-    <rect x="180" y="0" width="75" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.4s" fill="freeze"/>
-    </rect>
-    <text x="217" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      Python
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.4s" fill="freeze"/>
-    </text>
-
-    <!-- Java -->
-    <rect x="265" y="0" width="60" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.6s" fill="freeze"/>
-    </rect>
-    <text x="295" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      Java
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.6s" fill="freeze"/>
-    </text>
-
-    <!-- MERN -->
-    <rect x="335" y="0" width="65" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.8s" fill="freeze"/>
-    </rect>
-    <text x="367" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      MERN
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.8s" fill="freeze"/>
-    </text>
-
-    <!-- C -->
-    <rect x="410" y="0" width="40" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2s" fill="freeze"/>
-    </rect>
-    <text x="430" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      C
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2s" fill="freeze"/>
-    </text>
-
-    <!-- Shell -->
-    <rect x="460" y="0" width="60" height="26" rx="4" fill="#1E1F22" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.2s" fill="freeze"/>
-    </rect>
-    <text x="490" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0e0" opacity="0">
-      Shell
-      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.2s" fill="freeze"/>
-    </text>
-  </g>
-
-  <!-- Code Editor Card -->
-  <g transform="translate(40, 370)">
-    <rect width="520" height="100" rx="8" fill="#0A0A0B" stroke="#36373B" stroke-width="1"/>
-    <!-- Editor header -->
+  <!-- 4. Code Editor Card -->
+  <g transform="translate(40, 300)">
+    <rect width="520" height="150" rx="8" fill="#0F0F11" stroke="#36373B" stroke-width="1"/>
+    <!-- Title bar -->
     <rect width="520" height="24" rx="8" fill="#1E1F22"/>
     <circle cx="14" cy="12" r="4" fill="#ff5f57"/>
     <circle cx="30" cy="12" r="4" fill="#ffbd2e"/>
     <circle cx="46" cy="12" r="4" fill="#28c840"/>
 
-    <!-- Code lines typing effect -->
-    <text x="16" y="44" font-family="'Courier New', monospace" font-size="12" opacity="0">
+    <!-- JSX snippet typed line by line -->
+    <text x="16" y="46" font-family="'Courier New', monospace" font-size="12" opacity="0">
       <tspan fill="#c678dd">const</tspan><tspan fill="#e0e0e0"> architect = {</tspan>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.5s" fill="freeze"/>
     </text>
-    <text x="16" y="60" font-family="'Courier New', monospace" font-size="12" opacity="0">
+    <text x="16" y="64" font-family="'Courier New', monospace" font-size="12" opacity="0">
       <tspan fill="#e0e0e0">  name: </tspan><tspan fill="#98c379">'Jeet Mondal'</tspan><tspan fill="#e0e0e0">,</tspan>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.8s" fill="freeze"/>
     </text>
-    <text x="16" y="76" font-family="'Courier New', monospace" font-size="12" opacity="0">
+    <text x="16" y="82" font-family="'Courier New', monospace" font-size="12" opacity="0">
       <tspan fill="#e0e0e0">  stack: [</tspan><tspan fill="#98c379">'React'</tspan><tspan fill="#e0e0e0">, </tspan><tspan fill="#98c379">'Node'</tspan><tspan fill="#e0e0e0">],</tspan>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.1s" fill="freeze"/>
     </text>
-    <text x="16" y="92" font-family="'Courier New', monospace" font-size="12" opacity="0">
+    <text x="16" y="100" font-family="'Courier New', monospace" font-size="12" opacity="0">
       <tspan fill="#e0e0e0">  focus: </tspan><tspan fill="#d19a66">Infinity</tspan>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.4s" fill="freeze"/>
     </text>
-    <text x="16" y="108" font-family="'Courier New', monospace" font-size="12" opacity="0">
+    <text x="16" y="118" font-family="'Courier New', monospace" font-size="12" opacity="0">
       <tspan fill="#e0e0e0">}; return </tspan><tspan fill="#c678dd">&lt;System</tspan><tspan fill="#e0e0e0"> status=</tspan><tspan fill="#98c379">'online'</tspan><tspan fill="#c678dd"> /&gt;</tspan><tspan fill="#e0e0e0">;</tspan>
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.7s" fill="freeze"/>
     </text>
   </g>
 
-  <!-- ===== RIGHT SIDE (x=650 to 1240) ===== -->
+  <!-- ===== RIGHT SIDE (x=650 to 1280) ===== -->
 
-  <!-- Character Image -->
-  <g clip-path="url(#rightClip)">
-    <image href="assets/avatar.png" x="650" y="0" width="630" height="480" preserveAspectRatio="xMidYMax slice"/>
-  </g>
+  <!-- 1. Character with scan reveal -->
+  <g clip-path="url(#charClip)">
+    <rect x="650" y="0" width="630" height="480" fill="#0F0F11"/>
+    <image href="assets/full-body.png" x="650" y="0" width="630" height="480" preserveAspectRatio="xMidYMax slice"/>
 
-  <!-- Amber scanning line sweep -->
-  <g clip-path="url(#rightClip)">
-    <line x1="650" y1="0" x2="1280" y2="0" stroke="#D4915D" stroke-width="2" opacity="0.6" filter="url(#glow)">
-      <animate attributeName="y1" values="-100;480" dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="-100;480" dur="3.5s" repeatCount="indefinite"/>
+    <!-- Scan reveal effect -->
+    <rect x="650" y="0" width="630" height="120" fill="url(#scanGrad)" opacity="0.9">
+      <animateTransform attributeName="transform" type="translate" from="0 -120" to="0 480" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <line x1="650" y1="120" x2="1280" y2="120" stroke="#D4915D" stroke-width="2" opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" from="0 -120" to="0 480" dur="3.5s" repeatCount="indefinite"/>
     </line>
-    <rect x="650" y="0" width="630" height="20" fill="#D4915D" opacity="0.05">
-      <animate attributeName="y" values="-110;470" dur="3.5s" repeatCount="indefinite"/>
-    </rect>
   </g>
 
-  <!-- "BUILD WITH PURPOSE" marquee sign -->
-  <g transform="translate(870, 20)">
-    <rect width="260" height="36" rx="4" fill="#36373B" stroke="#D4915D" stroke-width="1" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2s" fill="freeze"/>
-    </rect>
-    <text x="130" y="24" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#D4915D" letter-spacing="3" opacity="0">
-      BUILD WITH PURPOSE
-      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2s" fill="freeze"/>
-    </text>
+  <!-- 2. "BUILD WITH PURPOSE" — upper right, NOT over face -->
+  <g transform="translate(900, 50)">
+    <rect x="0" y="0" width="240" height="40" rx="4" fill="none" stroke="#D4915D" stroke-width="2"/>
+    <text x="120" y="26" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="#D4915D" text-anchor="middle" letter-spacing="2">BUILD WITH PURPOSE</text>
+  </g>
+
+  <!-- 3. ID Card with physics animation -->
+  <g transform="translate(970, 20)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-2 0 0; 2 0 0; -2 0 0" keyTimes="0; 0.5; 1" dur="4s" begin="2.1s" repeatCount="indefinite"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 0 0; -20 0 0; 15 0 0; -10 0 0; 5 0 0; 0 0 0" keyTimes="0; 0.15; 0.3; 0.5; 0.7; 1" dur="2.1s" fill="freeze"/>
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 -400; 0 0" keyTimes="0; 1" calcMode="spline" keySplines="0.5 0 1 1" dur="0.3s" fill="freeze"/>
+
+          <!-- Strap + ring -->
+          <rect x="-10" y="0" width="20" height="80" fill="#0F0F11"/>
+          <circle cx="0" cy="80" r="12" fill="none" stroke="#36373B" stroke-width="4"/>
+
+          <!-- Card content -->
+          <g transform="translate(-150, 100)">
+            <rect x="0" y="0" width="300" height="400" rx="12" fill="#0F0F11" stroke="#151618" stroke-width="2"/>
+            <rect x="10" y="10" width="280" height="380" rx="8" fill="url(#metalGrad)" stroke="#D4915D" stroke-width="1" stroke-opacity="0.5"/>
+
+            <!-- Shine sweep clipped to card -->
+            <g clip-path="url(#cardClip)">
+              <rect x="-250" y="-50" width="100" height="500" fill="url(#shineGrad)" transform="skewX(-20)">
+                <animateTransform attributeName="transform" type="translate" from="-250 0" to="350 0" dur="4s" repeatCount="indefinite"/>
+              </rect>
+            </g>
+
+            <!-- Hex bolts -->
+            <use href="#hexBolt" x="25" y="25"/>
+            <use href="#hexBolt" x="275" y="25"/>
+            <use href="#hexBolt" x="25" y="375"/>
+            <use href="#hexBolt" x="275" y="375"/>
+
+            <!-- Title -->
+            <text x="150" y="45" font-size="12" fill="#D4915D" font-weight="bold" letter-spacing="3" text-anchor="middle">TACTICAL DATA-SHARD</text>
+            <line x1="30" y1="55" x2="270" y2="55" stroke="#151618" stroke-width="1"/>
+
+            <!-- Face crop with id-pfp.png -->
+            <image href="assets/id-pfp.png" x="0" y="-50" width="300" height="350" clip-path="url(#faceCrop)" preserveAspectRatio="xMidYMid slice"/>
+
+            <!-- Targeting brackets -->
+            <path d="M60,130 L60,110 L80,110 M220,110 L240,110 L240,130 M60,170 L60,190 L80,190 M220,190 L240,190 L240,170" stroke="#D4915D" stroke-width="2" fill="none"/>
+
+            <!-- Text -->
+            <text x="150" y="260" font-size="24" fill="#E0E0E0" font-weight="bold" text-anchor="middle" font-family="Arial Black, sans-serif">JEET MONDAL</text>
+            <text x="150" y="285" font-size="14" fill="#A0A0A0" text-anchor="middle">FULL STACK ARCHITECT</text>
+            <text x="150" y="305" font-size="12" fill="#666666" text-anchor="middle">@jeet1511</text>
+
+            <!-- CLEARANCE: OMEGA with glitch -->
+            <text x="40" y="350" font-size="14" fill="#D4915D" font-weight="bold" letter-spacing="2">
+              CLEARANCE: OMEGA
+              <animate attributeName="x" values="40;42;39;40;40;41;40" keyTimes="0;0.1;0.2;0.3;0.6;0.8;1" dur="2.5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="1;0.7;1;0.9;1" dur="0.3s" repeatCount="indefinite"/>
+            </text>
+
+            <!-- Barcode -->
+            <rect x="180" y="335" width="2" height="20" fill="#E0E0E0"/>
+            <rect x="184" y="335" width="3" height="20" fill="#E0E0E0"/>
+            <rect x="189" y="335" width="1" height="20" fill="#E0E0E0"/>
+            <rect x="192" y="335" width="4" height="20" fill="#E0E0E0"/>
+            <rect x="198" y="335" width="2" height="20" fill="#E0E0E0"/>
+            <rect x="202" y="335" width="1" height="20" fill="#E0E0E0"/>
+            <rect x="205" y="335" width="3" height="20" fill="#E0E0E0"/>
+            <rect x="210" y="335" width="2" height="20" fill="#E0E0E0"/>
+            <rect x="214" y="335" width="4" height="20" fill="#E0E0E0"/>
+            <rect x="220" y="335" width="1" height="20" fill="#E0E0E0"/>
+            <rect x="223" y="335" width="3" height="20" fill="#E0E0E0"/>
+            <rect x="228" y="335" width="2" height="20" fill="#E0E0E0"/>
+          </g>
+        </g>
+      </g>
+    </g>
   </g>
 
 </svg>

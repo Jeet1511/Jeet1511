@@ -1,79 +1,91 @@
 <style>
-  /* ── Table Row Hover ── */
-  table tbody tr:hover {
-    background: #1E1F22 !important;
-    border-left: 3px solid #D4915D;
-    transition: all 0.3s ease;
-  }
+  /* Table row hover */
+  table tr { transition: all 0.3s ease; }
+  table tr:hover { background-color: #1E1F22; }
+  table tr:hover td:first-child { border-left: 3px solid #D4915D; }
 
-  /* ── Table Header Charging Line ── */
-  .charging-line {
-    height: 3px;
-    background: linear-gradient(90deg, #D4915D, #F0A868);
-    animation: charge 2.5s ease-in-out infinite;
-    border-radius: 2px;
+  /* Header charging line */
+  table th { position: relative; padding-bottom: 8px; }
+  table th::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0%; height: 2px;
+    background: #D4915D;
+    animation: chargeLine 2s ease-in-out infinite;
   }
-  @keyframes charge {
-    0%   { width: 0%; }
-    50%  { width: 100%; }
+  @keyframes chargeLine {
+    0% { width: 0%; }
+    50% { width: 100%; }
     100% { width: 0%; }
   }
 
-  /* ── Projects Table Gradient Pan on Hover ── */
-  .projects-table tr:hover td {
-    background: linear-gradient(135deg, #1E1F22 0%, #2A2C30 50%, #1E1F22 100%);
-    background-size: 200% 200%;
-    animation: pan 1.5s ease infinite;
-  }
-  @keyframes pan {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+  /* Project card hover */
+  .project-card { transition: transform 0.3s ease; }
+  .project-card:hover { transform: scale(1.02); }
 
-  /* ── Section Divider Draw Animation ── */
+  /* Section divider draw */
   .divider-line {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s ease-in-out forwards;
   }
-  @keyframes draw {
-    to { stroke-dashoffset: 0; }
-  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
 </style>
 
 <!-- ═══════════════════════════════════════════════ -->
-<!--              BANNER + BADGE OVERLAP             -->
+<!--                     BANNER                      -->
 <!-- ═══════════════════════════════════════════════ -->
 
 <div align="center">
-  <table align="center" style="border: none; border-collapse: collapse; max-width: 900px;">
-    <tr>
-      <td align="center" style="border: none; padding: 0; line-height: 0;">
-        <img src="./assets/banner.svg?v=1#gh-dark-mode-only" width="100%" style="margin-bottom: -150px; display: block;">
-        <img src="./assets/banner-light.svg?v=1#gh-light-mode-only" width="100%" style="margin-bottom: -150px; display: block;">
-      </td>
-    </tr>
-    <tr>
-      <td align="center" style="border: none; padding: 0; line-height: 0;">
-        <img src="./assets/workshop-badge.svg?v=1" width="350px" style="display: block; position: relative; z-index: 2;">
-      </td>
-    </tr>
-  </table>
+  <img src="./assets/banner.svg?v=2#gh-dark-mode-only" width="100%" style="display: block;">
+  <img src="./assets/banner-light.svg?v=2#gh-light-mode-only" width="100%" style="display: block;">
 </div>
 
-<br/>
+<!-- ═══════════════════════════════════════════════ -->
+<!--               ORBIT / TECH STACK                -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<br>
+<div align="center">
+  <img src="./assets/orbit.svg?v=1" alt="Tech Stack" width="890">
+</div>
 
 <!-- ═══════════════════════════════════════════════ -->
-<!--                   ABOUT ME                      -->
+<!--                    PROJECTS                     -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<br>
+<div align="center">
+
+## Projects
+
+<table align="center"><tr>
+  <td align="center"><img src="./assets/project-vm-manager.svg?v=1" width="440" alt="VM Manager"></td>
+  <td align="center"><img src="./assets/project-healthfy.svg?v=1" width="440" alt="Healthfy"></td>
+</tr><tr>
+  <td align="center"><img src="./assets/project-expressbasket.svg?v=1" width="440" alt="ExpressBasket"></td>
+  <td align="center"><img src="./assets/project-elitezero.svg?v=1" width="440" alt="EliteZero"></td>
+</tr></table>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--              SECTION DIVIDER (1)                -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<div align="center">
+  <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='20' viewBox='0 0 600 20'><line class='divider-line' x1='0' y1='10' x2='600' y2='10' stroke='%23D4915D' stroke-width='2' fill='none' stroke-dasharray='1000' stroke-dashoffset='1000'><animate attributeName='stroke-dashoffset' from='1000' to='0' dur='3s' fill='freeze'/></line></svg>" alt="divider" width="600"/>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--                    ABOUT ME                     -->
 <!-- ═══════════════════════════════════════════════ -->
 
 <div align="center">
   <h2>
     <img src="https://img.shields.io/badge/About_Me-36373B?style=for-the-badge&logo=starship&logoColor=D4915D&labelColor=36373B" alt="About Me"/>
   </h2>
-
-  <div class="charging-line" style="width: 60%; margin: 0 auto;"></div>
 
   <br/>
 
@@ -109,17 +121,13 @@
   </table>
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════ -->
-<!--              SECTION DIVIDER (1)                -->
+<!--              SECTION DIVIDER (2)                -->
 <!-- ═══════════════════════════════════════════════ -->
 
 <div align="center">
   <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='20' viewBox='0 0 600 20'><line class='divider-line' x1='0' y1='10' x2='600' y2='10' stroke='%23D4915D' stroke-width='2' fill='none' stroke-dasharray='1000' stroke-dashoffset='1000'><animate attributeName='stroke-dashoffset' from='1000' to='0' dur='3s' fill='freeze'/></line></svg>" alt="divider" width="600"/>
 </div>
-
-<br/>
 
 <!-- ═══════════════════════════════════════════════ -->
 <!--                    SKILLS                       -->
@@ -129,8 +137,6 @@
   <h2>
     <img src="https://img.shields.io/badge/Skills-36373B?style=for-the-badge&logo=react&logoColor=D4915D&labelColor=36373B" alt="Skills"/>
   </h2>
-
-  <div class="charging-line" style="width: 60%; margin: 0 auto;"></div>
 
   <br/>
 
@@ -162,17 +168,13 @@
   </table>
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════ -->
-<!--              SECTION DIVIDER (2)                -->
+<!--              SECTION DIVIDER (3)                -->
 <!-- ═══════════════════════════════════════════════ -->
 
 <div align="center">
   <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='20' viewBox='0 0 600 20'><line class='divider-line' x1='0' y1='10' x2='600' y2='10' stroke='%23D4915D' stroke-width='2' fill='none' stroke-dasharray='1000' stroke-dashoffset='1000'><animate attributeName='stroke-dashoffset' from='1000' to='0' dur='3s' fill='freeze'/></line></svg>" alt="divider" width="600"/>
 </div>
-
-<br/>
 
 <!-- ═══════════════════════════════════════════════ -->
 <!--               STATS ROW (3 cards)               -->
@@ -183,8 +185,6 @@
     <img src="https://img.shields.io/badge/GitHub_Stats-36373B?style=for-the-badge&logo=github&logoColor=D4915D&labelColor=36373B" alt="Stats"/>
   </h2>
 
-  <div class="charging-line" style="width: 60%; margin: 0 auto;"></div>
-
   <br/>
 
   <table align="center"><tr>
@@ -194,17 +194,13 @@
   </tr></table>
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════ -->
-<!--              SECTION DIVIDER (3)                -->
+<!--              SECTION DIVIDER (4)                -->
 <!-- ═══════════════════════════════════════════════ -->
 
 <div align="center">
   <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='20' viewBox='0 0 600 20'><line class='divider-line' x1='0' y1='10' x2='600' y2='10' stroke='%23D4915D' stroke-width='2' fill='none' stroke-dasharray='1000' stroke-dashoffset='1000'><animate attributeName='stroke-dashoffset' from='1000' to='0' dur='3s' fill='freeze'/></line></svg>" alt="divider" width="600"/>
 </div>
-
-<br/>
 
 <!-- ═══════════════════════════════════════════════ -->
 <!--                   CONTACT                       -->
@@ -214,8 +210,6 @@
   <h2>
     <img src="https://img.shields.io/badge/Contact_Me-36373B?style=for-the-badge&logo=mail.ru&logoColor=D4915D&labelColor=36373B" alt="Contact"/>
   </h2>
-
-  <div class="charging-line" style="width: 60%; margin: 0 auto;"></div>
 
   <br/>
 
@@ -232,14 +226,12 @@
   </a>
 </div>
 
-<br/>
-
 <!-- ═══════════════════════════════════════════════ -->
 <!--              PROFILE VIEWS COUNTER              -->
 <!-- ═══════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=jeet1511&color=D4915D&style=flat-square" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=jeet1511&color=D4915D&style=flat-square" alt="Profile views">
 </div>
 
 <br/>
