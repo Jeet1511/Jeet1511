@@ -1,9 +1,3 @@
-<!-- <style>
-  table { border: none; border-collapse: collapse; }
-  table tr { transition: all 0.3s ease; }
-  table tr:hover { background-color: #1E1F22; border-left: 3px solid #D4AF37; }
-</style> -->
-
 <!-- 1. TOP SHEET (Banner with negative margin to pull next row up) -->
 <div align="center">
   <table align="center" style="border: none; border-collapse: collapse; max-width: 900px;">
@@ -37,12 +31,12 @@
   <h2><img src="https://img.shields.io/badge/-PROJECTS-D4AF37?style=for-the-badge&logo=github&logoColor=black" alt="Projects"></h2>
   <table align="center">
     <tr>
-      <td align="center"><img src="./assets/project-vm-manager.svg?v=2" width="440"></td>
-      <td align="center"><img src="./assets/project-healthfy.svg?v=2" width="440"></td>
+      <td align="center"><img class="project-card" src="./assets/project-vm-manager.svg?v=2" width="440"></td>
+      <td align="center"><img class="project-card" src="./assets/project-healthfy.svg?v=2" width="440"></td>
     </tr>
     <tr>
-      <td align="center"><img src="./assets/project-expressbasket.svg?v=2" width="440"></td>
-      <td align="center"><img src="./assets/project-elitezero.svg?v=2" width="440"></td>
+      <td align="center"><img class="project-card" src="./assets/project-expressbasket.svg?v=2" width="440"></td>
+      <td align="center"><img class="project-card" src="./assets/project-elitezero.svg?v=2" width="440"></td>
     </tr>
   </table>
 </div>

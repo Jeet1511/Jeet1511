@@ -33,6 +33,11 @@
     </pattern>
     <filter id="blobBlur"><feGaussianBlur stdDeviation="50"/></filter>
     <clipPath id="charClip"><rect x="650" y="0" width="630" height="480"/></clipPath>
+    <clipPath id="typeClip">
+      <rect x="0" y="0" width="0" height="150">
+        <animate attributeName="width" from="0" to="520" dur="4s" begin="2.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+      </rect>
+    </clipPath>
     <clipPath id="nameClip"><text x="40" y="240" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" letter-spacing="4">JEET MONDAL</text></clipPath>
   </defs>
 
@@ -62,6 +67,22 @@
 
   <!-- Grid overlay -->
   <rect width="1280" height="480" fill="url(#grid)"/>
+
+  <!-- Matrix Data Rain -->
+  <g font-family="'Courier New', monospace" font-size="10" fill="#D4AF37" opacity="0.12">
+    <text x="80" y="0">0<tspan><animate attributeName="y" from="-20" to="500" dur="4s" repeatCount="indefinite"/></tspan></text>
+    <text x="160" y="0">1<tspan><animate attributeName="y" from="-40" to="500" dur="5.5s" repeatCount="indefinite"/></tspan></text>
+    <text x="240" y="0">F<tspan><animate attributeName="y" from="-10" to="500" dur="3.8s" repeatCount="indefinite"/></tspan></text>
+    <text x="320" y="0">0<tspan><animate attributeName="y" from="-60" to="500" dur="6.2s" repeatCount="indefinite"/></tspan></text>
+    <text x="400" y="0">1<tspan><animate attributeName="y" from="-30" to="500" dur="4.7s" repeatCount="indefinite"/></tspan></text>
+    <text x="480" y="0">F<tspan><animate attributeName="y" from="-50" to="500" dur="5s" repeatCount="indefinite"/></tspan></text>
+    <text x="700" y="0">0<tspan><animate attributeName="y" from="-20" to="500" dur="4.3s" repeatCount="indefinite"/></tspan></text>
+    <text x="800" y="0">1<tspan><animate attributeName="y" from="-45" to="500" dur="5.8s" repeatCount="indefinite"/></tspan></text>
+    <text x="900" y="0">F<tspan><animate attributeName="y" from="-15" to="500" dur="3.5s" repeatCount="indefinite"/></tspan></text>
+    <text x="1000" y="0">0<tspan><animate attributeName="y" from="-55" to="500" dur="6.5s" repeatCount="indefinite"/></tspan></text>
+    <text x="1100" y="0">1<tspan><animate attributeName="y" from="-25" to="500" dur="4.1s" repeatCount="indefinite"/></tspan></text>
+    <text x="1200" y="0">F<tspan><animate attributeName="y" from="-35" to="500" dur="5.3s" repeatCount="indefinite"/></tspan></text>
+  </g>
 
   <!-- ==================== LEFT SIDE ==================== -->
 
@@ -157,26 +178,23 @@
     <circle cx="52" cy="12" r="5" fill="#27C93F"/>
 
     <!-- JSX lines -->
-    <text x="14" y="46" class="term-text" font-size="12" fill="#D4AF37" opacity="0">
-      <tspan fill="#36373B">const</tspan> architect = {
-      <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="0.3s" fill="freeze"/>
-    </text>
-    <text x="14" y="62" class="term-text" font-size="12" opacity="0">
-      <tspan fill="#888888">  name: </tspan><tspan fill="#D4AF37">'Jeet Mondal'</tspan><tspan fill="#888888">,</tspan>
-      <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="0.3s" fill="freeze"/>
-    </text>
-    <text x="14" y="78" class="term-text" font-size="12" opacity="0">
-      <tspan fill="#888888">  stack: </tspan><tspan fill="#D4AF37">['React', 'Node']</tspan><tspan fill="#888888">,</tspan>
-      <animate attributeName="opacity" from="0" to="1" begin="3.1s" dur="0.3s" fill="freeze"/>
-    </text>
-    <text x="14" y="94" class="term-text" font-size="12" opacity="0">
-      <tspan fill="#888888">  focus: </tspan><tspan fill="#C5A028">Infinity</tspan>
-      <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="0.3s" fill="freeze"/>
-    </text>
-    <text x="14" y="110" class="term-text" font-size="12" fill="#888888" opacity="0">
-      }; <tspan fill="#36373B">return</tspan> &lt;System status=<tspan fill="#D4AF37">'online'</tspan> /&gt;;
-      <animate attributeName="opacity" from="0" to="1" begin="3.7s" dur="0.3s" fill="freeze"/>
-    </text>
+    <g clip-path="url(#typeClip)">
+      <text x="14" y="46" class="term-text" font-size="12" fill="#D4AF37">
+        <tspan fill="#36373B">const</tspan> architect = {
+      </text>
+      <text x="14" y="62" class="term-text" font-size="12">
+        <tspan fill="#888888">  name: </tspan><tspan fill="#D4AF37">'Jeet Mondal'</tspan><tspan fill="#888888">,</tspan>
+      </text>
+      <text x="14" y="78" class="term-text" font-size="12">
+        <tspan fill="#888888">  stack: </tspan><tspan fill="#D4AF37">['React', 'Node']</tspan><tspan fill="#888888">,</tspan>
+      </text>
+      <text x="14" y="94" class="term-text" font-size="12">
+        <tspan fill="#888888">  focus: </tspan><tspan fill="#C5A028">Infinity</tspan>
+      </text>
+      <text x="14" y="110" class="term-text" font-size="12" fill="#888888">
+        }; <tspan fill="#36373B">return</tspan> &lt;System status=<tspan fill="#D4AF37">'online'</tspan> /&gt;;
+      </text>
+    </g>
 
     <!-- Audio Equalizer -->
     <g transform="translate(14, 130)">
@@ -228,6 +246,19 @@
   <!-- Character with scan reveal -->
   <g clip-path="url(#charClip)">
     <rect x="650" y="0" width="630" height="480" fill="#0A0A0B"/>
+    <!-- Radar Pulse -->
+    <circle cx="965" cy="240" r="20" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="20;200" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="965" cy="240" r="20" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="20;200" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="965" cy="240" r="20" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="20;200" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
     <image href="assets/avatar.png" x="650" y="0" width="630" height="480" preserveAspectRatio="xMidYMax slice"/>
     <rect x="650" y="0" width="630" height="120" fill="url(#scanGrad)" opacity="0.9">
       <animateTransform attributeName="transform" type="translate" from="0 -120" to="0 480" dur="3.5s" repeatCount="indefinite"/>
