@@ -37,6 +37,18 @@
 <div align="center">
   <br>
   <img src="./assets/snake-jeet.svg?v=4" width="100%" alt="Snake eats the JEET letters">
+</div>
+
+<!-- ══════ 7. OUTRO — thanks & connect ══════ -->
+<div align="center">
+  <br>
+  <b>Thanks for visiting.</b> <sub>wanna know more about this profile?</sub>
   <br><br>
-  <sub><b>⚒ Forged by Jeet Mondal — Code. Coffee. Repeat. ☕</b></sub>
+  <img src="https://img.shields.io/badge/LET'S_CONNECT-0A0A0B?style=flat-square&labelColor=0A0A0B&color=0A0A0B" alt="Let's connect">
+  <br>
+  <a href="https://www.instagram.com/_4n0s_/">
+    <img src="https://img.shields.io/badge/Instagram-__4n0s__-D4AF37?style=for-the-badge&logo=instagram&logoColor=E4405F&labelColor=0A0A0B" alt="Instagram — _4n0s_">
+  </a>
+  <br><br>
+  <sub>~ Jeet Mondal</sub>
 </div>
