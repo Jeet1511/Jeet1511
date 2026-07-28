@@ -1,32 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" overflow="hidden">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" overflow="hidden">
   <defs>
     <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#C5A028"/>
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
     </linearGradient>
     <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
     </radialGradient>
-    <filter id="nodeGlow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="lineGlow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <filter id="nodeGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       text { font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
-      @keyframes spinCW { to { transform: rotate(360deg); } }
-      @keyframes spinCCW { to { transform: rotate(-360deg); } }
-      @keyframes corePulse { 0%,100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.08); opacity: 1; } }
-      @keyframes glowPulse { 0%,100% { opacity: 0.15; } 50% { opacity: 0.5; } }
-      .ring-inner { transform-origin: 300px 200px; animation: spinCW 20s linear infinite; }
-      .ring-mid { transform-origin: 300px 200px; animation: spinCCW 30s linear infinite; }
-      .ring-outer { transform-origin: 300px 200px; animation: spinCW 40s linear infinite; }
-      .core-group { transform-origin: 300px 200px; animation: corePulse 3s ease-in-out infinite; }
-      .glow-line { animation: glowPulse 2.5s ease-in-out infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes spinR { to { transform: rotate(-360deg); } }
+      @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+      .ring1 { transform-origin: 300px 200px; animation: spin 20s linear infinite; }
+      .ring2 { transform-origin: 300px 200px; animation: spinR 30s linear infinite; }
+      .ring3 { transform-origin: 300px 200px; animation: spin 40s linear infinite; }
+      .core-pulse { animation: pulse 3s ease-in-out infinite; transform-origin: 300px 200px; }
     </style>
   </defs>
 
@@ -37,116 +28,85 @@
   <text x="24" y="30" font-family="'Courier New', monospace" font-size="11" fill="#36373B" letter-spacing="3">03 · TECH STACK</text>
   <text x="576" y="30" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#36373B">7 tools in orbit</text>
 
-  <!-- Core ambient glow -->
+  <!-- Core Glow -->
   <circle cx="300" cy="200" r="120" fill="url(#coreGlow)"/>
 
   <!-- Orbital Rings -->
-  <!-- Inner ring r=70 -->
-  <circle cx="300" cy="200" r="70" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="4 6" opacity="0.7"/>
-  <!-- Middle ring r=110 -->
-  <circle cx="300" cy="200" r="110" fill="none" stroke="#1E1F22" stroke-width="1" stroke-dasharray="3 8" opacity="0.6"/>
-  <!-- Outer ring r=155 -->
-  <circle cx="300" cy="200" r="155" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="5 5" opacity="0.5"/>
+  <circle cx="300" cy="200" r="70" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="4 6" opacity="0.6"/>
+  <circle cx="300" cy="200" r="110" fill="none" stroke="#1E1F22" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+  <circle cx="300" cy="200" r="155" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="5 5" opacity="0.4"/>
 
-  <!-- ===== GLOWING CONNECTING LINES (core to each node) ===== -->
-  <!-- Inner ring nodes (rotate with ring) -->
-  <g class="ring-inner">
-    <!-- Line to React at 0° (370, 200) -->
-    <line x1="300" y1="200" x2="370" y2="200" stroke="#D4AF37" stroke-width="0.7" filter="url(#lineGlow)" class="glow-line"/>
-    <!-- Line to Python at 120° (265, 139) -->
-    <line x1="300" y1="200" x2="265" y2="139" stroke="#D4AF37" stroke-width="0.7" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 0.4s"/>
-    <!-- Line to Java at 240° (265, 261) -->
-    <line x1="300" y1="200" x2="265" y2="261" stroke="#D4AF37" stroke-width="0.7" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 0.8s"/>
-
-    <!-- React node at 0° -->
+  <!-- Inner Ring (CW, r=70) — React, Python, Java -->
+  <g class="ring1">
+    <!-- React at 0° -->
     <g transform="translate(370, 200)">
-      <circle r="24" fill="#1E1F22" stroke="#61DAFB" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="24" fill="none" stroke="#61DAFB" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="9" fill="#61DAFB" font-weight="bold" dominant-baseline="middle">React</text>
+      <circle r="20" fill="#1E1F22" stroke="#61DAFB" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <ellipse cx="0" cy="0" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1"/>
+      <ellipse cx="0" cy="0" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1" transform="rotate(60)"/>
+      <ellipse cx="0" cy="0" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1" transform="rotate(120)"/>
+      <circle r="2" fill="#61DAFB"/>
+      <text y="30" text-anchor="middle" font-size="8" fill="#61DAFB">React</text>
     </g>
-
-    <!-- Python node at 120° -->
+    <!-- Python at 120° -->
     <g transform="translate(265, 139)">
-      <circle r="24" fill="#1E1F22" stroke="#3776AB" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="24" fill="none" stroke="#3776AB" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="9" fill="#3776AB" font-weight="bold" dominant-baseline="middle">Python</text>
+      <circle r="20" fill="#1E1F22" stroke="#3776AB" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <path d="M-6,-4 Q-6,-10 0,-10 Q6,-10 6,-4 L6,0 L-6,0Z" fill="#3776AB" opacity="0.8"/>
+      <path d="M6,4 Q6,10 0,10 Q-6,10 -6,4 L-6,0 L6,0Z" fill="#FFD43B" opacity="0.8"/>
+      <circle cx="-3" cy="-6" r="1.5" fill="#FFF"/>
+      <circle cx="3" cy="6" r="1.5" fill="#FFF"/>
+      <text y="30" text-anchor="middle" font-size="8" fill="#3776AB">Python</text>
     </g>
-
-    <!-- Java node at 240° -->
+    <!-- Java at 240° -->
     <g transform="translate(265, 261)">
-      <circle r="24" fill="#1E1F22" stroke="#ED8B00" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="24" fill="none" stroke="#ED8B00" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="9" fill="#ED8B00" font-weight="bold" dominant-baseline="middle">Java</text>
+      <circle r="20" fill="#1E1F22" stroke="#ED8B00" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <path d="M-6,-6 L6,-6 L6,4 Q6,8 2,8 L-2,8 Q-6,8 -6,4Z" fill="none" stroke="#ED8B00" stroke-width="1.2"/>
+      <path d="M6,-2 Q10,-2 10,2 Q10,5 6,5" fill="none" stroke="#ED8B00" stroke-width="1"/>
+      <path d="M-3,-9 Q-1,-12 1,-9" fill="none" stroke="#ED8B00" stroke-width="0.8" opacity="0.6"/>
+      <path d="M0,-10 Q2,-13 4,-10" fill="none" stroke="#ED8B00" stroke-width="0.8" opacity="0.6"/>
+      <text y="30" text-anchor="middle" font-size="8" fill="#ED8B00">Java</text>
     </g>
   </g>
 
-  <!-- Middle ring nodes (rotate CCW) -->
-  <g class="ring-mid">
-    <!-- Lines to middle ring nodes -->
-    <line x1="300" y1="200" x2="410" y2="145" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 1.2s"/>
-    <line x1="300" y1="200" x2="190" y2="200" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 1.6s"/>
-    <line x1="300" y1="200" x2="410" y2="255" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 2s"/>
-
-    <!-- JS node -->
-    <g transform="translate(410, 145)">
-      <circle r="20" fill="#1E1F22" stroke="#F7DF1E" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="20" fill="none" stroke="#F7DF1E" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="8" fill="#F7DF1E" font-weight="bold" dominant-baseline="middle">JS</text>
+  <!-- Middle Ring (CCW, r=110) — JavaScript, MERN, C -->
+  <g class="ring2">
+    <!-- JS at ~60° -->
+    <g transform="translate(395, 105)">
+      <circle r="20" fill="#1E1F22" stroke="#F7DF1E" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <rect x="-8" y="-8" width="16" height="16" rx="2" fill="#F7DF1E"/>
+      <text x="0" y="4" text-anchor="middle" font-size="10" font-weight="bold" fill="#000">JS</text>
+      <text y="30" text-anchor="middle" font-size="8" fill="#F7DF1E">JavaScript</text>
     </g>
-
-    <!-- MERN node -->
+    <!-- MERN at 180° -->
     <g transform="translate(190, 200)">
-      <circle r="20" fill="#1E1F22" stroke="#68A063" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="20" fill="none" stroke="#68A063" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="8" fill="#68A063" font-weight="bold" dominant-baseline="middle">MERN</text>
+      <circle r="20" fill="#1E1F22" stroke="#68A063" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <text x="0" y="4" text-anchor="middle" font-size="8" font-weight="bold" fill="#68A063">MERN</text>
+      <text y="30" text-anchor="middle" font-size="8" fill="#68A063">MERN</text>
     </g>
-
-    <!-- C node -->
-    <g transform="translate(410, 255)">
-      <circle r="20" fill="#1E1F22" stroke="#A8B9CC" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="20" fill="none" stroke="#A8B9CC" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="8" fill="#A8B9CC" font-weight="bold" dominant-baseline="middle">C</text>
+    <!-- C at ~300° -->
+    <g transform="translate(395, 295)">
+      <circle r="20" fill="#1E1F22" stroke="#A8B9CC" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="bold" fill="#A8B9CC">C</text>
+      <text y="30" text-anchor="middle" font-size="8" fill="#A8B9CC">C</text>
     </g>
   </g>
 
-  <!-- Outer ring nodes (rotate CW slow) -->
-  <g class="ring-outer">
-    <!-- Line to Shell -->
-    <line x1="300" y1="200" x2="300" y2="45" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 0.6s"/>
-
-    <!-- Shell node -->
+  <!-- Outer Ring (CW, r=155) — Shell -->
+  <g class="ring3">
+    <!-- Shell at 90° -->
     <g transform="translate(300, 45)">
-      <circle r="18" fill="#1E1F22" stroke="#89E051" stroke-width="1.5" filter="url(#nodeGlow)" opacity="0.9"/>
-      <circle r="18" fill="none" stroke="#89E051" stroke-width="0.5" opacity="0.3"/>
-      <text y="1" text-anchor="middle" font-size="8" fill="#89E051" font-weight="bold" dominant-baseline="middle">Shell</text>
+      <circle r="20" fill="#1E1F22" stroke="#89E051" stroke-width="1.5" filter="url(#nodeGlow)"/>
+      <text x="0" y="1" text-anchor="middle" font-size="8" font-weight="bold" fill="#89E051">&gt;_</text>
+      <text y="30" text-anchor="middle" font-size="8" fill="#89E051">Shell</text>
     </g>
   </g>
 
-  <!-- ===== CENTRAL CORE HEXAGON ===== -->
-  <g class="core-group">
-    <!-- Outer glow hex -->
-    <polygon points="300,168 328,184 328,216 300,232 272,216 272,184" fill="url(#coreGrad)" opacity="0.15" filter="url(#nodeGlow)"/>
-    <!-- Main hex -->
-    <polygon points="300,172 325,186 325,214 300,228 275,214 275,186" fill="url(#coreGrad)" opacity="0.9"/>
-    <!-- Hex border -->
-    <polygon points="300,172 325,186 325,214 300,228 275,214 275,186" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
-    <!-- Inner hex accent -->
-    <polygon points="300,180 317,190 317,210 300,220 283,210 283,190" fill="none" stroke="#0A0A0B" stroke-width="0.5" opacity="0.4"/>
+  <!-- Central Core -->
+  <g class="core-pulse">
+    <polygon points="300,170 326,185 326,215 300,230 274,215 274,185" fill="url(#coreGrad)" opacity="0.9"/>
+    <polygon points="300,170 326,185 326,215 300,230 274,215 274,185" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
   </g>
-
-  <!-- CORE label -->
-  <text x="300" y="204" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#0A0A0B" dominant-baseline="middle">CORE</text>
+  <text x="300" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#0A0A0B">CORE</text>
 
   <!-- Footer -->
   <text x="24" y="385" font-family="'Courier New', monospace" font-size="10" fill="#36373B">// always learning, always building</text>
-
-  <!-- Decorative corner accents -->
-  <line x1="16" y1="16" x2="16" y2="40" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="16" y1="16" x2="40" y2="16" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="584" y1="16" x2="584" y2="40" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="584" y1="16" x2="560" y2="16" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="16" y1="384" x2="16" y2="360" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="16" y1="384" x2="40" y2="384" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="584" y1="384" x2="584" y2="360" stroke="#36373B" stroke-width="1" opacity="0.4"/>
-  <line x1="584" y1="384" x2="560" y2="384" stroke="#36373B" stroke-width="1" opacity="0.4"/>
 </svg>
