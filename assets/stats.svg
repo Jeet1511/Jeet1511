@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" width="460" height="200" overflow="hidden" role="img" aria-label="GitHub stats">
+  <defs>
+    <linearGradient id="stGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/><stop offset="50%" stop-color="#FFD700"/><stop offset="100%" stop-color="#B8860B"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="stGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="stClip"><rect x="0" y="0" width="460" height="200" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#stClip)">
+    <rect x="1" y="1" width="458" height="198" rx="14" fill="#1E1F22" stroke="#36373B" stroke-width="2"/>
+    <rect x="1" y="1" width="458" height="198" rx="14" fill="none" stroke="#D4AF37" stroke-width="1.4">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="22" y="32" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="15" fill="url(#stGold)" letter-spacing="2">⚡ COMBAT STATS</text>
+    <line x1="22" y1="42" x2="200" y2="42" stroke="#36373B" stroke-width="1.4"/>
+
+    <!-- stat rows sliding in -->
+    <g font-family="Consolas, monospace" font-size="13">
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="-40 0; 0 0" dur="0.5s" begin="0.2s" fill="freeze"/>
+        <text x="26" y="70" fill="#E8E8E8">★ Total Stars</text><text x="250" y="70" fill="#FFD700" font-weight="bold" text-anchor="end">▮▮▮▮▮</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="-40 0; 0 0" dur="0.5s" begin="0.5s" fill="freeze"/>
+        <text x="26" y="98" fill="#E8E8E8">⇅ Commits (2026)</text><text x="250" y="98" fill="#FFD700" font-weight="bold" text-anchor="end">▮▮▮▮▮▮▮</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="-40 0; 0 0" dur="0.5s" begin="0.8s" fill="freeze"/>
+        <text x="26" y="126" fill="#E8E8E8">⑂ Pull Requests</text><text x="250" y="126" fill="#FFD700" font-weight="bold" text-anchor="end">▮▮▮▮</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.1s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="-40 0; 0 0" dur="0.5s" begin="1.1s" fill="freeze"/>
+        <text x="26" y="154" fill="#E8E8E8">◉ Issues Crushed</text><text x="250" y="154" fill="#FFD700" font-weight="bold" text-anchor="end">▮▮▮</text>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.4s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="-40 0; 0 0" dur="0.5s" begin="1.4s" fill="freeze"/>
+        <text x="26" y="182" fill="#6E6F74">↻ Contributed To — always shipping</text>
+      </g>
+    </g>
+
+    <!-- animated rank ring -->
+    <g transform="translate(370, 105)">
+      <circle cx="0" cy="0" r="52" fill="#0A0A0B" stroke="#36373B" stroke-width="8"/>
+      <circle cx="0" cy="0" r="52" fill="none" stroke="url(#stGold)" stroke-width="8" stroke-linecap="round"
+              stroke-dasharray="326.7" stroke-dashoffset="326.7" transform="rotate(-90)" filter="url(#stGlow)">
+        <animate attributeName="stroke-dashoffset" values="326.7;49" dur="1.8s" begin="0.4s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+      </circle>
+      <text x="0" y="8" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="30" fill="#FFD700" text-anchor="middle" opacity="0">S+
+        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.6s" fill="freeze"/>
+      </text>
+      <text x="0" y="26" font-family="Consolas, monospace" font-size="9" fill="#6E6F74" text-anchor="middle">RANK</text>
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4 8" opacity="0.5">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="12s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

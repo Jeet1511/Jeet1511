@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 480" width="1280" height="480" overflow="hidden" role="img" aria-label="Jeet Mondal - Full Stack Dev banner">
+  <defs>
+    <!-- ============ GRADIENTS ============ -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="45%" stop-color="#FFD700"/>
+      <stop offset="60%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="30%" stop-color="#FFD700"/>
+      <stop offset="55%" stop-color="#FFF3B0"/>
+      <stop offset="80%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0; 0.6 0; -0.6 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="gunmetalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#36373B"/>
+      <stop offset="50%" stop-color="#1E1F22"/>
+      <stop offset="100%" stop-color="#2A2B2F"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="80%" stop-color="#D4AF37" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="heroFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A0A0B" stop-opacity="1"/>
+      <stop offset="18%" stop-color="#0A0A0B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A0A0B" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="blobGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobSlate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#36373B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1E1F22" stop-opacity="0"/>
+    </radialGradient>
+    <!-- ============ PATTERN / FILTERS ============ -->
+    <pattern id="diagGrid" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <path d="M 0 0 L 0 46 M 0 0 L 46 0" stroke="#36373B" stroke-width="0.6" opacity="0.35"/>
+    </pattern>
+    <filter id="blobBlur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+    <filter id="goldGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- ============ CLIPS (anti-bleed) ============ -->
+    <clipPath id="bannerClip"><rect x="0" y="0" width="1280" height="480"/></clipPath>
+    <clipPath id="heroClip"><rect x="650" y="0" width="630" height="480"/></clipPath>
+    <clipPath id="termClip"><rect x="40" y="30" width="300" height="78" rx="8"/></clipPath>
+    <clipPath id="editorClip"><rect x="355" y="30" width="250" height="135" rx="8"/></clipPath>
+    <clipPath id="quoteClip"><rect x="40" y="300" width="360" height="36" rx="6"/></clipPath>
+    <clipPath id="marqueeClip"><rect x="660" y="18" width="610" height="34"/></clipPath>
+    <clipPath id="nameClip">
+      <text x="40" y="240" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" letter-spacing="2">JEET MONDAL</text>
+    </clipPath>
+    <clipPath id="cmdType"><rect x="56" y="52" width="0" height="28"><animate attributeName="width" values="0;0;236;236" keyTimes="0;0.1;0.55;1" dur="6s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="tagType"><rect x="52" y="304" width="0" height="30"><animate attributeName="width" values="0;0;290;290" keyTimes="0;0.15;0.6;1" dur="7s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- ============ BASE ============ -->
+    <rect x="0" y="0" width="1280" height="480" fill="#0A0A0B"/>
+
+    <!-- ============ LAVA-LAMP BLOBS ============ -->
+    <g filter="url(#blobBlur)">
+      <path d="M0,0 C120,-60 240,60 160,140 C90,210 -80,160 -60,60 Z" fill="url(#blobGold)" transform="translate(180,120)">
+        <animateTransform attributeName="transform" type="translate" values="180,120; 340,300; 120,220; 180,120" dur="26s" repeatCount="indefinite"/>
+      </path>
+      <path d="M0,0 C160,-40 260,120 140,200 C40,260 -120,140 -40,20 Z" fill="url(#blobSlate)" transform="translate(760,320)">
+        <animateTransform attributeName="transform" type="translate" values="760,320; 560,120; 880,220; 760,320" dur="32s" repeatCount="indefinite"/>
+      </path>
+      <path d="M0,0 C100,-80 240,0 200,120 C160,220 -60,200 -60,80 Z" fill="url(#blobGold)" transform="translate(1080,60)">
+        <animateTransform attributeName="transform" type="translate" values="1080,60; 940,260; 1160,180; 1080,60" dur="29s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- ============ DIAGONAL GRID ============ -->
+    <rect x="0" y="0" width="1280" height="480" fill="url(#diagGrid)"/>
+
+    <!-- ============ 20 GOLD PARTICLES ============ -->
+    <g fill="#FFD700">
+      <circle cx="60"  cy="500" r="1.6" opacity="0.7"><animate attributeName="cy" values="500;-20" dur="9s"  begin="0s"    repeatCount="indefinite"/></circle>
+      <circle cx="130" cy="500" r="1.1" opacity="0.5"><animate attributeName="cy" values="500;-20" dur="12s" begin="1.2s"  repeatCount="indefinite"/></circle>
+      <circle cx="205" cy="500" r="1.9" opacity="0.8"><animate attributeName="cy" values="500;-20" dur="8s"  begin="2.4s"  repeatCount="indefinite"/></circle>
+      <circle cx="280" cy="500" r="1.3" opacity="0.6"><animate attributeName="cy" values="500;-20" dur="11s" begin="0.6s"  repeatCount="indefinite"/></circle>
+      <circle cx="350" cy="500" r="1.0" opacity="0.45"><animate attributeName="cy" values="500;-20" dur="13s" begin="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="425" cy="500" r="1.7" opacity="0.75"><animate attributeName="cy" values="500;-20" dur="9.5s" begin="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="495" cy="500" r="1.2" opacity="0.55"><animate attributeName="cy" values="500;-20" dur="10.5s" begin="4s" repeatCount="indefinite"/></circle>
+      <circle cx="560" cy="500" r="1.5" opacity="0.65"><animate attributeName="cy" values="500;-20" dur="8.6s" begin="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="640" cy="500" r="1.1" opacity="0.5"><animate attributeName="cy" values="500;-20" dur="12.4s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="705" cy="500" r="1.8" opacity="0.7"><animate attributeName="cy" values="500;-20" dur="9.2s" begin="3.6s" repeatCount="indefinite"/></circle>
+      <circle cx="775" cy="500" r="1.2" opacity="0.5"><animate attributeName="cy" values="500;-20" dur="11.6s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="845" cy="500" r="1.4" opacity="0.6"><animate attributeName="cy" values="500;-20" dur="10s" begin="4.4s" repeatCount="indefinite"/></circle>
+      <circle cx="915" cy="500" r="1.0" opacity="0.4"><animate attributeName="cy" values="500;-20" dur="13.4s" begin="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="985" cy="500" r="1.7" opacity="0.75"><animate attributeName="cy" values="500;-20" dur="8.8s" begin="0.4s" repeatCount="indefinite"/></circle>
+      <circle cx="1055" cy="500" r="1.2" opacity="0.55"><animate attributeName="cy" values="500;-20" dur="11.2s" begin="3.3s" repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="500" r="1.5" opacity="0.65"><animate attributeName="cy" values="500;-20" dur="9.7s" begin="1.1s" repeatCount="indefinite"/></circle>
+      <circle cx="1185" cy="500" r="1.1" opacity="0.5"><animate attributeName="cy" values="500;-20" dur="12.8s" begin="4.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1245" cy="500" r="1.8" opacity="0.7"><animate attributeName="cy" values="500;-20" dur="8.3s" begin="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="380" cy="500" r="0.9" opacity="0.4"><animate attributeName="cy" values="500;-20" dur="14s" begin="5.5s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="500" r="0.9" opacity="0.4"><animate attributeName="cy" values="500;-20" dur="14.6s" begin="6.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- ============ RIGHT SIDE : HERO IMAGE (x=650 to 1240) ============ -->
+    <g clip-path="url(#heroClip)">
+      <image href="assets/full-body.png" x="650" y="0" width="630" height="480" preserveAspectRatio="xMidYMax slice"/>
+      <rect x="650" y="0" width="630" height="480" fill="url(#heroFade)"/>
+    </g>
+
+    <!-- ============ MARQUEE "BUILD WITH PURPOSE" (top right) ============ -->
+    <g clip-path="url(#marqueeClip)">
+      <rect x="660" y="18" width="610" height="34" fill="#0A0A0B" opacity="0.55"/>
+      <g font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#D4AF37" opacity="0.9">
+        <text x="660" y="41" letter-spacing="4">BUILD WITH PURPOSE ✦ SHIP WITH PRIDE ✦ BUILD WITH PURPOSE ✦ SHIP WITH PRIDE ✦ BUILD WITH PURPOSE ✦</text>
+        <animateTransform attributeName="transform" type="translate" values="0 0; -640 0" dur="14s" repeatCount="indefinite"/>
+      </g>
+      <line x1="660" y1="52" x2="1270" y2="52" stroke="#36373B" stroke-width="1"/>
+    </g>
+
+    <!-- ============ FULL-WIDTH SCANNER SWEEP (full 1280px) ============ -->
+    <g>
+      <rect x="0" y="-100" width="1280" height="100" fill="url(#scanGrad)"/>
+      <line x1="0" y1="-2" x2="1280" y2="-2" stroke="#FFD700" stroke-width="2" opacity="0.85" filter="url(#goldGlow)"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 580" dur="5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- ============ LEFT : LIVING TERMINAL ============ -->
+    <g>
+      <rect x="40" y="30" width="300" height="78" rx="8" fill="#1E1F22" stroke="#36373B" stroke-width="1.4"/>
+      <g clip-path="url(#termClip)">
+        <!-- scrolling grey system logs -->
+        <g font-family="Consolas, monospace" font-size="8" fill="#4A4B50" opacity="0.8">
+          <g>
+            <text x="52" y="46">[ OK ] mounted /dev/forge — kernel 6.9-tactical</text>
+            <text x="52" y="58">[ OK ] daemon: mern-stack.service active (running)</text>
+            <text x="52" y="70">[ OK ] gpu: rendering pipeline — gold shaders loaded</text>
+            <text x="52" y="82">[ OK ] net: handshake github.com:443 — verified</text>
+            <text x="52" y="94">[ OK ] cron: coffee.timer scheduled — repeat=true</text>
+            <text x="52" y="106">[ OK ] auth: user jeet1511 — clearance OMEGA</text>
+            <text x="52" y="118">[ OK ] build: empire.jsx compiled — 0 warnings</text>
+            <text x="52" y="130">[ OK ] deploy: production — status 200</text>
+            <animateTransform attributeName="transform" type="translate" values="0 0; 0 -96" dur="8s" repeatCount="indefinite"/>
+          </g>
+        </g>
+        <rect x="40" y="30" width="300" height="26" fill="#2A2B2F"/>
+        <circle cx="56" cy="43" r="4" fill="#FF5F56"/>
+        <circle cx="70" cy="43" r="4" fill="#FFBD2E"/>
+        <circle cx="84" cy="43" r="4" fill="#27C93F"/>
+        <text x="190" y="47" font-family="Consolas, monospace" font-size="10" fill="#6E6F74" text-anchor="middle">admin@forge — bash</text>
+        <!-- typed command -->
+        <g clip-path="url(#cmdType)">
+          <text x="56" y="76" font-family="Consolas, monospace" font-size="12" font-weight="bold" fill="#FFD700">admin@forge:~$ <tspan fill="#E8E8E8">execute profile.md</tspan></text>
+        </g>
+        <rect x="290" y="66" width="7" height="13" fill="#FFD700">
+          <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="56;56;292;292" keyTimes="0;0.1;0.55;1" dur="6s" repeatCount="indefinite"/>
+        </rect>
+        <text x="56" y="96" font-family="Consolas, monospace" font-size="10" fill="#27C93F" opacity="0">
+          &gt; identity confirmed. rendering…
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6;0.7;1" dur="6s" repeatCount="indefinite"/>
+        </text>
+      </g>
+    </g>
+
+    <!-- ============ LEFT : CODE EDITOR CARD ============ -->
+    <g>
+      <rect x="355" y="30" width="250" height="135" rx="8" fill="#1E1F22" stroke="#36373B" stroke-width="1.4"/>
+      <g clip-path="url(#editorClip)">
+        <rect x="355" y="30" width="250" height="22" fill="#2A2B2F"/>
+        <rect x="363" y="34" width="86" height="18" rx="4" fill="#0A0A0B"/>
+        <text x="406" y="47" font-family="Consolas, monospace" font-size="10" fill="#D4AF37" text-anchor="middle">empire.jsx ●</text>
+        <!-- line numbers -->
+        <g font-family="Consolas, monospace" font-size="9" fill="#4A4B50">
+          <text x="366" y="68">1</text><text x="366" y="81">2</text><text x="366" y="94">3</text>
+          <text x="366" y="107">4</text><text x="366" y="120">5</text><text x="366" y="133">6</text>
+        </g>
+        <!-- typed code, line by line (mask rects shrink away) -->
+        <g font-family="Consolas, monospace" font-size="9.5">
+          <text x="380" y="68" fill="#C586C0">const <tspan fill="#4FC1FF">buildEmpire</tspan> <tspan fill="#E8E8E8">= () =&gt; {</tspan></text>
+          <rect x="380" y="60" width="222" height="11" fill="#1E1F22"><animate attributeName="width" values="222;0" dur="0.9s" begin="0.4s" fill="freeze"/></rect>
+          <text x="388" y="81" fill="#569CD6">const <tspan fill="#9CDCFE">stack</tspan> <tspan fill="#E8E8E8">= [</tspan><tspan fill="#CE9178">'M','E','R','N'</tspan><tspan fill="#E8E8E8">];</tspan></text>
+          <rect x="388" y="73" width="214" height="11" fill="#1E1F22"><animate attributeName="width" values="214;0" dur="0.9s" begin="1.4s" fill="freeze"/></rect>
+          <text x="388" y="94" fill="#9CDCFE">fuel<tspan fill="#E8E8E8">:</tspan> <tspan fill="#CE9178">'☕ coffee.exe'</tspan><tspan fill="#E8E8E8">,</tspan></text>
+          <rect x="388" y="86" width="214" height="11" fill="#1E1F22"><animate attributeName="width" values="214;0" dur="0.9s" begin="2.4s" fill="freeze"/></rect>
+          <text x="388" y="107" fill="#DCDCAA">while<tspan fill="#E8E8E8">(</tspan><tspan fill="#569CD6">alive</tspan><tspan fill="#E8E8E8">) </tspan><tspan fill="#DCDCAA">ship</tspan><tspan fill="#E8E8E8">(</tspan><tspan fill="#CE9178">'🚀'</tspan><tspan fill="#E8E8E8">);</tspan></text>
+          <rect x="388" y="99" width="214" height="11" fill="#1E1F22"><animate attributeName="width" values="214;0" dur="0.9s" begin="3.4s" fill="freeze"/></rect>
+          <text x="388" y="120" fill="#C586C0">return <tspan fill="#808080">&lt;</tspan><tspan fill="#4EC9B0">Legacy</tspan> <tspan fill="#9CDCFE">infinite</tspan> <tspan fill="#808080">/&gt;</tspan>;</text>
+          <rect x="388" y="112" width="214" height="11" fill="#1E1F22"><animate attributeName="width" values="214;0" dur="0.9s" begin="4.4s" fill="freeze"/></rect>
+          <text x="380" y="133" fill="#E8E8E8">};  <tspan fill="#6A9955">// Code. Coffee. Repeat.</tspan></text>
+          <rect x="380" y="125" width="222" height="11" fill="#1E1F22"><animate attributeName="width" values="222;0" dur="0.9s" begin="5.4s" fill="freeze"/></rect>
+        </g>
+        <!-- glowing audio equalizer -->
+        <g fill="url(#goldGrad)" filter="url(#goldGlow)">
+          <rect x="380" y="146" width="5" height="12" rx="1"><animate attributeName="height" values="12;4;14;6;12" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y" values="146;154;144;152;146" dur="1.1s" repeatCount="indefinite"/></rect>
+          <rect x="390" y="150" width="5" height="8" rx="1"><animate attributeName="height" values="8;15;5;12;8" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="150;143;153;146;150" dur="0.9s" repeatCount="indefinite"/></rect>
+          <rect x="400" y="144" width="5" height="14" rx="1"><animate attributeName="height" values="14;6;16;8;14" dur="1.3s" repeatCount="indefinite"/><animate attributeName="y" values="144;152;142;150;144" dur="1.3s" repeatCount="indefinite"/></rect>
+          <rect x="410" y="149" width="5" height="9" rx="1"><animate attributeName="height" values="9;16;6;13;9" dur="1s" repeatCount="indefinite"/><animate attributeName="y" values="149;142;152;145;149" dur="1s" repeatCount="indefinite"/></rect>
+          <rect x="420" y="145" width="5" height="13" rx="1"><animate attributeName="height" values="13;5;15;7;13" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y" values="145;153;143;151;145" dur="1.2s" repeatCount="indefinite"/></rect>
+          <rect x="430" y="151" width="5" height="7" rx="1"><animate attributeName="height" values="7;14;5;11;7" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="151;144;153;147;151" dur="0.8s" repeatCount="indefinite"/></rect>
+          <rect x="440" y="147" width="5" height="11" rx="1"><animate attributeName="height" values="11;16;6;14;11" dur="1.05s" repeatCount="indefinite"/><animate attributeName="y" values="147;142;152;144;147" dur="1.05s" repeatCount="indefinite"/></rect>
+        </g>
+        <text x="596" y="156" font-family="Consolas, monospace" font-size="8.5" fill="#6E6F74" text-anchor="end">▶ compiling: greatness.mp3</text>
+      </g>
+    </g>
+
+    <!-- ============ LEFT : NAME ============ -->
+    <text x="40" y="240" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" letter-spacing="2" fill="url(#nameGrad)" filter="url(#goldGlow)">JEET MONDAL</text>
+    <!-- shine sweep clipped strictly to the name text -->
+    <g clip-path="url(#nameClip)">
+      <rect x="-140" y="170" width="80" height="90" fill="url(#shineGrad)" transform="skewX(-20)">
+        <animate attributeName="x" values="-140;700" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ============ LEFT : CYCLING ROLE TITLES ============ -->
+    <g font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="21" letter-spacing="3">
+      <text x="40" y="281" fill="#D4AF37">&gt;_ FULL STACK DEV
+        <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.3;0.34;0.63;0.66;0.96;1" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="40" y="281" fill="#D4AF37" opacity="0">&gt;_ MERN ARCHITECT
+        <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.3;0.34;0.63;0.66;0.96;1" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="40" y="281" fill="#D4AF37" opacity="0">&gt;_ PROBLEM SOLVER
+        <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.3;0.34;0.63;0.66;0.96;1" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <rect x="256" y="264" width="10" height="20" fill="#FFD700">
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ============ LEFT : TAGLINE QUOTE BOX ============ -->
+    <g>
+      <rect x="40" y="300" width="360" height="36" rx="6" fill="#1E1F22" stroke="#36373B" stroke-width="1.2"/>
+      <rect x="40" y="300" width="4" height="36" rx="2" fill="url(#goldGrad)"/>
+      <g clip-path="url(#tagType)">
+        <text x="56" y="324" font-family="Consolas, monospace" font-size="16" font-weight="bold" fill="#E8E8E8">“ <tspan fill="#FFD700">Code. Coffee. Repeat.</tspan> ”</text>
+      </g>
+      <rect x="352" y="310" width="8" height="16" fill="#D4AF37">
+        <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ============ LEFT : STAMPED METAL HEX PILLS ============ -->
+    <g font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="11" text-anchor="middle">
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.3s" fill="freeze"/>
+        <polygon points="58,356 92,356 102,378 92,400 58,400 48,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="75" y="383" fill="#FFD700">REACT</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.6s" fill="freeze"/>
+        <polygon points="120,356 150,356 160,378 150,400 120,400 110,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="135" y="383" fill="#FFD700">JS</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.9s" fill="freeze"/>
+        <polygon points="178,356 216,356 226,378 216,400 178,400 168,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="197" y="383" fill="#FFD700">PYTHON</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2s" fill="freeze"/>
+        <polygon points="244,356 276,356 286,378 276,400 244,400 234,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="260" y="383" fill="#FFD700">JAVA</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.5s" fill="freeze"/>
+        <polygon points="304,356 338,356 348,378 338,400 304,400 294,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="321" y="383" fill="#FFD700">MERN</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.8s" fill="freeze"/>
+        <polygon points="366,356 392,356 402,378 392,400 366,400 356,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="379" y="383" fill="#FFD700">C</text></g>
+      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.1s" fill="freeze"/>
+        <polygon points="420,356 454,356 464,378 454,400 420,400 410,378" fill="url(#gunmetalGrad)" stroke="#D4AF37" stroke-width="1.3"/>
+        <text x="437" y="383" fill="#FFD700">SHELL</text></g>
+    </g>
+
+    <!-- ============ LEFT : STATUS FOOTER ============ -->
+    <g font-family="Consolas, monospace" font-size="11" fill="#6E6F74">
+      <circle cx="46" cy="440" r="4" fill="#27C93F" filter="url(#goldGlow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="58" y="444">SYSTEM ONLINE — github.com/jeet1511 — FORGING SINCE DAY ONE</text>
+    </g>
+
+    <!-- ============ FRAME ============ -->
+    <rect x="1.5" y="1.5" width="1277" height="477" rx="10" fill="none" stroke="#36373B" stroke-width="3"/>
+    <rect x="1.5" y="1.5" width="1277" height="477" rx="10" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.7">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <!-- corner accents -->
+    <path d="M14,34 L14,14 L34,14" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1246,14 L1266,14 L1266,34" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1266,446 L1266,466 L1246,466" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+    <path d="M34,466 L14,466 L14,446" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

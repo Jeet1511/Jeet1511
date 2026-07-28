@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" width="460" height="200" overflow="hidden" role="img" aria-label="Most used languages">
+  <defs>
+    <linearGradient id="lgGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B"/><stop offset="50%" stop-color="#FFD700"/><stop offset="100%" stop-color="#B8860B"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="lgClip"><rect x="0" y="0" width="460" height="200" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#lgClip)">
+    <rect x="1" y="1" width="458" height="198" rx="14" fill="#1E1F22" stroke="#36373B" stroke-width="2"/>
+    <rect x="1" y="1" width="458" height="198" rx="14" fill="none" stroke="#D4AF37" stroke-width="1.4">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="22" y="30" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="15" fill="url(#lgGold)" letter-spacing="2">▚ LANGUAGE LOADOUT</text>
+    <text x="440" y="30" font-family="Consolas, monospace" font-size="10" fill="#6E6F74" text-anchor="end">$ loading…
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
+    </text>
+    <line x1="22" y1="40" x2="438" y2="40" stroke="#36373B" stroke-width="1.4"/>
+
+    <!-- terminal-style loading bars -->
+    <g font-family="Consolas, monospace" font-size="11.5">
+      <text x="26" y="63" fill="#61DAFB">JavaScript</text>
+      <rect x="130" y="53" width="252" height="11" rx="3" fill="#0A0A0B" stroke="#36373B" stroke-width="0.8"/>
+      <rect x="132" y="55" width="0" height="7" rx="2" fill="#F7DF1E">
+        <animate attributeName="width" values="0;188" dur="1.2s" begin="0.3s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+      </rect>
+      <text x="438" y="63" fill="#E8E8E8" text-anchor="end" opacity="0">38%<animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.4s" fill="freeze"/></text>
+
+      <text x="26" y="90" fill="#61DAFB">React/JSX</text>
+      <rect x="130" y="80" width="252" height="11" rx="3" fill="#0A0A0B" stroke="#36373B" stroke-width="0.8"/>
+      <rect x="132" y="82" width="0" height="7" rx="2" fill="#61DAFB">
+        <animate attributeName="width" values="0;124" dur="1.2s" begin="0.6s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+      </rect>
+      <text x="438" y="90" fill="#E8E8E8" text-anchor="end" opacity="0">25%<animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.7s" fill="freeze"/></text>
+
+      <text x="26" y="117" fill="#3776AB">Python</text>
+      <rect x="130" y="107" width="252" height="11" rx="3" fill="#0A0A0B" stroke="#36373B" stroke-width="0.8"/>
+      <rect x="132" y="109" width="0" height="7" rx="2" fill="#3776AB">
+        <animate attributeName="width" values="0;84" dur="1.2s" begin="0.9s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+      </rect>
+      <text x="438" y="117" fill="#E8E8E8" text-anchor="end" opacity="0">17%<animate attributeName="opacity" values="0;1" dur="0.4s" begin="2s" fill="freeze"/></text>
+
+      <text x="26" y="144" fill="#E76F00">Java</text>
+      <rect x="130" y="134" width="252" height="11" rx="3" fill="#0A0A0B" stroke="#36373B" stroke-width="0.8"/>
+      <rect x="132" y="136" width="0" height="7" rx="2" fill="#E76F00">
+        <animate attributeName="width" values="0;59" dur="1.2s" begin="1.2s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+      </rect>
+      <text x="438" y="144" fill="#E8E8E8" text-anchor="end" opacity="0">12%<animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.3s" fill="freeze"/></text>
+
+      <text x="26" y="171" fill="#4EAA25">C / Shell</text>
+      <rect x="130" y="161" width="252" height="11" rx="3" fill="#0A0A0B" stroke="#36373B" stroke-width="0.8"/>
+      <rect x="132" y="163" width="0" height="7" rx="2" fill="#4EAA25">
+        <animate attributeName="width" values="0;40" dur="1.2s" begin="1.5s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+      </rect>
+      <text x="438" y="171" fill="#E8E8E8" text-anchor="end" opacity="0">8%<animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.6s" fill="freeze"/></text>
+    </g>
+
+    <text x="26" y="190" font-family="Consolas, monospace" font-size="9" fill="#6E6F74">jeet1511@github:~$ analyze --stack MERN <tspan fill="#FFD700">█<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></tspan></text>
+  </g>
+</svg>
