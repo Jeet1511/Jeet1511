@@ -22,14 +22,15 @@
   <br>
   <img src="https://img.shields.io/badge/-PROJECTS-D4AF37?style=for-the-badge&logo=github&logoColor=black" alt="Projects">
   <br><br>
-  <a href="https://github.com/jeet1511/vm-manager"><img src="./assets/project-vm-manager.svg?v=2" width="400" alt="VM Manager"></a><a href="https://github.com/jeet1511/healthfy"><img src="./assets/project-healthfy.svg?v=2" width="400" alt="Healthfy"></a>
-  <a href="https://github.com/jeet1511/expressbasket"><img src="./assets/project-expressbasket.svg?v=2" width="400" alt="ExpressBasket"></a><a href="https://github.com/jeet1511/elitezero"><img src="./assets/project-elitezero.svg?v=2" width="400" alt="EliteZero"></a>
+  <a href="https://github.com/Jeet1511/VM-Manager"><img src="./assets/project-vm-manager.svg?v=2" width="400" alt="VM Manager"></a><a href="https://github.com/Jeet1511/healthfy"><img src="./assets/project-healthfy.svg?v=2" width="400" alt="Healthfy"></a>
+  <a href="https://github.com/Jeet1511/ExpressBasket"><img src="./assets/project-expressbasket.svg?v=2" width="400" alt="ExpressBasket"></a><a href="https://github.com/Jeet1511/EliteZero"><img src="./assets/project-elitezero.svg?v=2" width="400" alt="EliteZero"></a>
 </div>
 
 <!-- ══════════════════ 5. STATS ══════════════════ -->
 <div align="center">
   <br>
-  <img src="./assets/stats.svg?v=2" width="266" alt="Combat stats"><img src="./assets/langs.svg?v=2" width="266" alt="Language loadout"><img src="./assets/trophies.svg?v=2" width="266" alt="Trophy vault">
+  <img src="./assets/stats.svg?v=3" width="400" alt="Combat stats"><img src="./assets/langs.svg?v=3" width="400" alt="Language loadout">
+  <img src="./assets/trophies.svg?v=3" width="800" alt="Trophy vault">
 </div>
 
 <!-- ══════ 6. CONTRIBUTION SNAKE (generated daily by .github/workflows/github-snake.yml) ══════ -->
