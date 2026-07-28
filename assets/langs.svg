@@ -3,12 +3,12 @@
   <defs>
     <!-- Grid pattern -->
     <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2C2C2E" stroke-width="0.5" opacity="0.4"/>
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#36373B" stroke-width="0.5" opacity="0.4"/>
     </pattern>
   </defs>
   
   <!-- Background -->
-  <rect x="0" y="0" width="460" height="200" rx="12" fill="#1A1A1E"/>
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="#1E1F22"/>
   
   <!-- Animated grid background -->
   <rect x="0" y="0" width="460" height="200" rx="12" fill="url(#grid)">
@@ -16,21 +16,21 @@
   </rect>
   
   <!-- Pulsing gold border glow -->
-  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.3">
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.3">
     <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Corner accents -->
-  <path d="M 2 14 L 2 6 Q 2 2 6 2 L 14 2" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 446 2 L 454 2 Q 458 2 458 6 L 458 14" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 2 186 L 2 194 Q 2 198 6 198 L 14 198" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 446 198 L 454 198 Q 458 198 458 194 L 458 186" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 2 14 L 2 6 Q 2 2 6 2 L 14 2" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 446 2 L 454 2 Q 458 2 458 6 L 458 14" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 2 186 L 2 194 Q 2 198 6 198 L 14 198" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 446 198 L 454 198 Q 458 198 458 194 L 458 186" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
   
   <!-- Title -->
-  <text x="230" y="28" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#FFF8DC" letter-spacing="2">TOP LANGUAGES</text>
+  <text x="230" y="28" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#E0E0E0" letter-spacing="2">TOP LANGUAGES</text>
   
   <!-- Terminal header -->
-  <text x="20" y="50" font-family="'Courier New', monospace" font-size="11" fill="#FFD700" opacity="0.8">&gt; language_analysis --top</text>
+  <text x="20" y="50" font-family="'Courier New', monospace" font-size="11" fill="#D4AF37" opacity="0.8">&gt; language_analysis --top</text>
   
   <!-- Language bars -->
   <!-- React 30% -->
@@ -39,8 +39,8 @@
     <rect x="90" y="64" width="0" height="10" rx="2" fill="#61DAFB" opacity="0.8">
       <animate attributeName="width" from="0" to="102" dur="0.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="64" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="73" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">30%</text>
+    <rect x="90" y="64" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="73" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">30%</text>
   </g>
   
   <!-- JavaScript 25% -->
@@ -49,8 +49,8 @@
     <rect x="90" y="84" width="0" height="10" rx="2" fill="#F7DF1E" opacity="0.8">
       <animate attributeName="width" from="0" to="85" dur="0.8s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="84" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="93" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">25%</text>
+    <rect x="90" y="84" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="93" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">25%</text>
   </g>
   
   <!-- Python 18% -->
@@ -59,8 +59,8 @@
     <rect x="90" y="104" width="0" height="10" rx="2" fill="#3776AB" opacity="0.8">
       <animate attributeName="width" from="0" to="61" dur="0.8s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="104" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="113" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">18%</text>
+    <rect x="90" y="104" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="113" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">18%</text>
   </g>
   
   <!-- Java 12% -->
@@ -69,8 +69,8 @@
     <rect x="90" y="124" width="0" height="10" rx="2" fill="#ED8B00" opacity="0.8">
       <animate attributeName="width" from="0" to="41" dur="0.8s" begin="0.65s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="124" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="133" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">12%</text>
+    <rect x="90" y="124" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="133" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">12%</text>
   </g>
   
   <!-- MERN 8% -->
@@ -79,8 +79,8 @@
     <rect x="90" y="144" width="0" height="10" rx="2" fill="#68A063" opacity="0.8">
       <animate attributeName="width" from="0" to="27" dur="0.8s" begin="0.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="144" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="153" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">8%</text>
+    <rect x="90" y="144" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="153" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">8%</text>
   </g>
   
   <!-- C 4% -->
@@ -89,8 +89,8 @@
     <rect x="90" y="164" width="0" height="10" rx="2" fill="#A8B9CC" opacity="0.8">
       <animate attributeName="width" from="0" to="14" dur="0.8s" begin="0.95s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="164" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="173" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">4%</text>
+    <rect x="90" y="164" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="173" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">4%</text>
   </g>
   
   <!-- Shell 3% -->
@@ -99,7 +99,7 @@
     <rect x="90" y="184" width="0" height="10" rx="2" fill="#89E051" opacity="0.8">
       <animate attributeName="width" from="0" to="10" dur="0.8s" begin="1.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
     </rect>
-    <rect x="90" y="184" width="340" height="10" rx="2" fill="none" stroke="#2C2C2E" stroke-width="0.5"/>
-    <text x="430" y="193" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#FFF8DC">3%</text>
+    <rect x="90" y="184" width="340" height="10" rx="2" fill="none" stroke="#36373B" stroke-width="0.5"/>
+    <text x="430" y="193" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#E0E0E0">3%</text>
   </g>
 </svg>

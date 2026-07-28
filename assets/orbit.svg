@@ -1,144 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 440" width="890" height="440" role="img" aria-label="Jeet Mondal - Tech Stack">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" overflow="hidden">
   <defs>
-    <linearGradient id="obg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0a0f24"/>
-      <stop offset="1" stop-color="#060918"/>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#C5A028"/>
     </linearGradient>
-    <radialGradient id="ohalo" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".3"/>
-      <stop offset=".55" stop-color="#22d3ee" stop-opacity=".1"/>
-      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="ocore" cx=".35" cy=".3" r=".9">
-      <stop offset="0" stop-color="#22d3ee"/>
-      <stop offset=".55" stop-color="#6366f1"/>
-      <stop offset="1" stop-color="#7c3aed"/>
-    </radialGradient>
-    <linearGradient id="otg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#67e8f9"/>
-      <stop offset="1" stop-color="#c4b5fd"/>
-    </linearGradient>
-    <linearGradient id="oring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity=".7"/>
-      <stop offset=".5" stop-color="#8b5cf6" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#22d3ee" stop-opacity=".7"/>
-    </linearGradient>
-    <filter id="oglow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <style>
-      text{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif}
-      .mono{font-family:'Cascadia Code','Fira Code',Consolas,monospace}
-      @keyframes sp{to{transform:rotate(360deg)}}
-      @keyframes spR{to{transform:rotate(-360deg)}}
-      .pu{animation:pu 4s ease-in-out infinite;transform-origin:445px 228px}
-      @keyframes pu{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
-      .tw{animation:twa 2.6s ease-in-out infinite}
-      @keyframes twa{0%,100%{opacity:.15}50%{opacity:1}}
+      text { font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes spinR { to { transform: rotate(-360deg); } }
+      .ring1 { transform-origin: 300px 200px; animation: spin 20s linear infinite; }
+      .ring2 { transform-origin: 300px 200px; animation: spinR 30s linear infinite; }
+      .ring3 { transform-origin: 300px 200px; animation: spin 40s linear infinite; }
+      .core-pulse { animation: pulse 3s ease-in-out infinite; transform-origin: 300px 200px; }
+      @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
     </style>
   </defs>
 
-  <rect x="4" y="4" width="882" height="432" rx="20" fill="url(#obg)" stroke="#1b2340"/>
+  <!-- Background -->
+  <rect width="600" height="400" fill="#0A0A0B" rx="16"/>
 
-  <!-- header -->
-  <text x="32" y="40" class="mono" font-size="12" letter-spacing="4" fill="#475569">03 · TECH STACK</text>
-  <text x="858" y="40" text-anchor="end" class="mono" font-size="11" fill="#475569">08 tools in orbit</text>
-  <text x="32" y="418" class="mono" font-size="11" fill="#475569">// always learning, always building</text>
+  <!-- Header -->
+  <text x="24" y="30" font-family="'Courier New', monospace" font-size="11" fill="#36373B" letter-spacing="3">03 · TECH STACK</text>
+  <text x="576" y="30" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#36373B">7 tools in orbit</text>
 
-  <!-- halo + decorative rings -->
-  <circle cx="445" cy="228" r="185" fill="url(#ohalo)"/>
-  <g style="transform-origin:445px 228px;animation:spR 70s linear infinite">
-    <circle cx="445" cy="228" r="188" fill="none" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 9"/>
-    <circle cx="445" cy="40" r="2.4" fill="#22d3ee"/>
-    <circle cx="445" cy="416" r="2.4" fill="#8b5cf6"/>
-  </g>
+  <!-- Glow -->
+  <circle cx="300" cy="200" r="120" fill="url(#coreGlow)"/>
 
-  <!-- ===== revolving system ===== -->
-  <g style="transform-origin:445px 228px;animation:sp 46s linear infinite">
-    <circle cx="445" cy="228" r="150" fill="none" stroke="url(#oring)" stroke-width="1.1" stroke-dasharray="3 7" opacity=".8"/>
-    <circle class="tw" cx="445" cy="78" r="2.6" fill="#67e8f9"/>
-    <circle class="tw" cx="295" cy="228" r="2.6" fill="#c4b5fd" style="animation-delay:-1.3s"/>
+  <!-- Orbital rings (Amber/Gunmetal) -->
+  <circle cx="300" cy="200" r="80" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="4 6" opacity="0.6"/>
+  <circle cx="300" cy="200" r="120" fill="none" stroke="#1E1F22" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+  <circle cx="300" cy="200" r="160" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="5 5" opacity="0.4"/>
 
-    <!-- TypeScript  0 deg  (595,228) -->
-    <g style="transform-origin:595px 228px;animation:spR 46s linear infinite">
-      <circle cx="595" cy="228" r="26" fill="#0f172a" fill-opacity=".9" stroke="#3178c6" stroke-width="1.4"/>
-      <rect x="584" y="217" width="22" height="22" rx="5" fill="#3178c6"/>
-      <text x="595" y="233" text-anchor="middle" font-size="11" font-weight="800" fill="#ffffff">TS</text>
-      <text x="595" y="272" text-anchor="middle" font-size="11" fill="#94a3b8">TypeScript</text>
+  <!-- Rotating group with tech elements -->
+  <g class="ring1">
+    <!-- React at 0° (380, 200) -->
+    <g transform="translate(380, 200)">
+      <circle r="20" fill="#1E1F22" stroke="#61DAFB" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="9" fill="#61DAFB" font-weight="bold">React</text>
     </g>
-
-    <!-- React  45 deg  (551,334) -->
-    <g style="transform-origin:551px 334px;animation:spR 46s linear infinite">
-      <circle cx="551" cy="334" r="26" fill="#0f172a" fill-opacity=".9" stroke="#61dafb" stroke-width="1.4"/>
-      <ellipse cx="551" cy="334" rx="12" ry="4.6" fill="none" stroke="#61dafb" stroke-width="1.5"/>
-      <ellipse cx="551" cy="334" rx="12" ry="4.6" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(60 551 334)"/>
-      <ellipse cx="551" cy="334" rx="12" ry="4.6" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(120 551 334)"/>
-      <circle cx="551" cy="334" r="2.2" fill="#61dafb"/>
-      <text x="551" y="378" text-anchor="middle" font-size="11" fill="#94a3b8">React</text>
+    <!-- Python at 120° -->
+    <g transform="translate(240, 92)">
+      <circle r="20" fill="#1E1F22" stroke="#3776AB" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="9" fill="#3776AB" font-weight="bold">Python</text>
     </g>
-
-    <!-- Next.js  90 deg  (445,378) -->
-    <g style="transform-origin:445px 378px;animation:spR 46s linear infinite">
-      <circle cx="445" cy="378" r="26" fill="#0f172a" fill-opacity=".9" stroke="#e2e8f0" stroke-width="1.4"/>
-      <circle cx="445" cy="378" r="12" fill="#000000" stroke="#ffffff" stroke-width="1.2"/>
-      <text x="445" y="383" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff">N</text>
-      <text x="445" y="422" text-anchor="middle" font-size="11" fill="#94a3b8">Next.js</text>
-    </g>
-
-    <!-- Node.js  135 deg  (339,334) -->
-    <g style="transform-origin:339px 334px;animation:spR 46s linear infinite">
-      <circle cx="339" cy="334" r="26" fill="#0f172a" fill-opacity=".9" stroke="#6cc24a" stroke-width="1.4"/>
-      <polygon points="351,334 345,344.4 333,344.4 327,334 333,323.6 345,323.6" fill="#6cc24a" fill-opacity=".15" stroke="#6cc24a" stroke-width="1.4"/>
-      <text x="339" y="338" text-anchor="middle" font-size="10" font-weight="800" fill="#6cc24a">JS</text>
-      <text x="339" y="378" text-anchor="middle" font-size="11" fill="#94a3b8">Node.js</text>
-    </g>
-
-    <!-- Python  180 deg  (295,228) -->
-    <g style="transform-origin:295px 228px;animation:spR 46s linear infinite">
-      <circle cx="295" cy="228" r="26" fill="#0f172a" fill-opacity=".9" stroke="#3776ab" stroke-width="1.4"/>
-      <rect x="286" y="216" width="18" height="10" rx="5" fill="#3776ab"/>
-      <rect x="286" y="230" width="18" height="10" rx="5" fill="#ffd43b"/>
-      <circle cx="291" cy="221" r="1.2" fill="#ffffff"/>
-      <circle cx="299" cy="235" r="1.2" fill="#1e293b"/>
-      <text x="295" y="272" text-anchor="middle" font-size="11" fill="#94a3b8">Python</text>
-    </g>
-
-    <!-- Docker  225 deg  (339,122) -->
-    <g style="transform-origin:339px 122px;animation:spR 46s linear infinite">
-      <circle cx="339" cy="122" r="26" fill="#0f172a" fill-opacity=".9" stroke="#0db7ed" stroke-width="1.4"/>
-      <path d="M326,124 h26 l-3,8 h-20 z" fill="#0db7ed"/>
-      <rect x="329" y="116" width="6" height="6" fill="#0db7ed" opacity=".9"/>
-      <rect x="336" y="116" width="6" height="6" fill="#0db7ed" opacity=".9"/>
-      <rect x="343" y="116" width="6" height="6" fill="#0db7ed" opacity=".9"/>
-      <rect x="336" y="109" width="6" height="6" fill="#0db7ed" opacity=".9"/>
-      <text x="339" y="166" text-anchor="middle" font-size="11" fill="#94a3b8">Docker</text>
-    </g>
-
-    <!-- MongoDB  270 deg  (445,78) -->
-    <g style="transform-origin:445px 78px;animation:spR 46s linear infinite">
-      <circle cx="445" cy="78" r="26" fill="#0f172a" fill-opacity=".9" stroke="#47a248" stroke-width="1.4"/>
-      <path d="M445,66 C452,71 452,83 445,89 C438,83 438,71 445,66 Z" fill="#47a248"/>
-      <line x1="445" y1="70" x2="445" y2="91" stroke="#0f172a" stroke-width="1.2"/>
-      <text x="445" y="122" text-anchor="middle" font-size="11" fill="#94a3b8">MongoDB</text>
-    </g>
-
-    <!-- Git  315 deg  (551,122) -->
-    <g style="transform-origin:551px 122px;animation:spR 46s linear infinite">
-      <circle cx="551" cy="122" r="26" fill="#0f172a" fill-opacity=".9" stroke="#f05033" stroke-width="1.4"/>
-      <rect x="542" y="113" width="18" height="18" rx="4" transform="rotate(45 551 122)" fill="#f05033"/>
-      <path d="M547.5,125.5 V118.5 M547.5,121.5 Q547.5,118.5 550.5,118.5 H554.5" stroke="#ffffff" stroke-width="1.4" fill="none"/>
-      <circle cx="547.5" cy="125.5" r="2" fill="#ffffff"/>
-      <circle cx="554.5" cy="118.5" r="2" fill="#ffffff"/>
-      <text x="551" y="166" text-anchor="middle" font-size="11" fill="#94a3b8">Git</text>
+    <!-- Java at 240° -->
+    <g transform="translate(240, 308)">
+      <circle r="20" fill="#1E1F22" stroke="#ED8B00" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="9" fill="#ED8B00" font-weight="bold">Java</text>
     </g>
   </g>
 
-  <!-- core -->
-  <circle class="pu" cx="445" cy="228" r="44" fill="url(#ocore)" filter="url(#oglow)"/>
-  <circle cx="445" cy="228" r="44" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="1"/>
-  <g style="transform-origin:445px 228px;animation:sp 9s linear infinite">
-    <circle cx="445" cy="228" r="56" fill="none" stroke="#67e8f9" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1 6"/>
+  <g class="ring2">
+    <!-- JavaScript at 60° -->
+    <g transform="translate(420, 104)">
+      <circle r="18" fill="#1E1F22" stroke="#F7DF1E" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="8" fill="#F7DF1E" font-weight="bold">JS</text>
+    </g>
+    <!-- MERN at 180° -->
+    <g transform="translate(140, 200)">
+      <circle r="18" fill="#1E1F22" stroke="#68A063" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="8" fill="#68A063" font-weight="bold">MERN</text>
+    </g>
+    <!-- C at 300° -->
+    <g transform="translate(420, 296)">
+      <circle r="18" fill="#1E1F22" stroke="#A8B9CC" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="8" fill="#A8B9CC" font-weight="bold">C</text>
+    </g>
   </g>
-  <text x="445" y="237" text-anchor="middle" class="mono" font-size="20" font-weight="700" fill="url(#otg)">&lt;/&gt;</text>
+
+  <g class="ring3">
+    <!-- Shell at 90° -->
+    <g transform="translate(300, 40)">
+      <circle r="16" fill="#1E1F22" stroke="#89E051" stroke-width="1.5"/>
+      <text y="4" text-anchor="middle" font-size="8" fill="#89E051" font-weight="bold">Shell</text>
+    </g>
+  </g>
+
+  <!-- Central core -->
+  <g class="core-pulse">
+    <circle cx="300" cy="200" r="30" fill="url(#coreGrad)" opacity="0.9"/>
+    <circle cx="300" cy="200" r="30" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  </g>
+  <text x="300" y="205" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#0A0A0B">&lt;/&gt;</text>
+
+  <!-- Footer -->
+  <text x="24" y="385" font-family="'Courier New', monospace" font-size="10" fill="#36373B">// always learning, always building</text>
 </svg>

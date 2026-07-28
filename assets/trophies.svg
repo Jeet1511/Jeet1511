@@ -3,7 +3,7 @@
   <defs>
     <!-- Grid pattern -->
     <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2C2C2E" stroke-width="0.5" opacity="0.4"/>
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#36373B" stroke-width="0.5" opacity="0.4"/>
     </pattern>
     
     <!-- Shine gradient -->
@@ -28,7 +28,7 @@
   </defs>
   
   <!-- Background -->
-  <rect x="0" y="0" width="460" height="200" rx="12" fill="#1A1A1E"/>
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="#1E1F22"/>
   
   <!-- Animated grid background -->
   <rect x="0" y="0" width="460" height="200" rx="12" fill="url(#grid)">
@@ -36,29 +36,29 @@
   </rect>
   
   <!-- Pulsing gold border glow -->
-  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.3">
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.3">
     <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Corner accents -->
-  <path d="M 2 14 L 2 6 Q 2 2 6 2 L 14 2" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 446 2 L 454 2 Q 458 2 458 6 L 458 14" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 2 186 L 2 194 Q 2 198 6 198 L 14 198" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
-  <path d="M 446 198 L 454 198 Q 458 198 458 194 L 458 186" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 2 14 L 2 6 Q 2 2 6 2 L 14 2" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 446 2 L 454 2 Q 458 2 458 6 L 458 14" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 2 186 L 2 194 Q 2 198 6 198 L 14 198" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 446 198 L 454 198 Q 458 198 458 194 L 458 186" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
   
   <!-- Title -->
-  <text x="230" y="32" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#FFF8DC" letter-spacing="2">ACHIEVEMENTS</text>
-  <line x1="155" y1="40" x2="305" y2="40" stroke="#FFD700" stroke-width="1" opacity="0.4"/>
+  <text x="230" y="32" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#E0E0E0" letter-spacing="2">ACHIEVEMENTS</text>
+  <line x1="155" y1="40" x2="305" y2="40" stroke="#D4AF37" stroke-width="1" opacity="0.4"/>
   
   <!-- Plaque 1: Quick Draw (Bronze) -->
   <g>
-    <rect x="20" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#B8860B" stroke-width="1.5"/>
+    <rect x="20" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#C5A028" stroke-width="1.5"/>
     <!-- Trophy icon -->
-    <text x="85" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#B8860B" opacity="0.9">&#x26A1;</text>
+    <text x="85" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#C5A028" opacity="0.9">&#x26A1;</text>
     <!-- Label -->
-    <text x="85" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="10" fill="#FFF8DC" letter-spacing="1">QUICK DRAW</text>
+    <text x="85" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="10" fill="#E0E0E0" letter-spacing="1">QUICK DRAW</text>
     <!-- Tier -->
-    <text x="85" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#B8860B" letter-spacing="2">BRONZE</text>
+    <text x="85" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#C5A028" letter-spacing="2">BRONZE</text>
     <!-- Shine sweep -->
     <g clip-path="url(#plaque1Clip)">
       <g transform="rotate(20, 85, 120)">
@@ -71,13 +71,13 @@
   
   <!-- Plaque 2: Pair Extraordinaire (Silver) -->
   <g>
-    <rect x="165" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#D4D0C0" stroke-width="1.5"/>
+    <rect x="165" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#888888" stroke-width="1.5"/>
     <!-- Trophy icon -->
-    <text x="230" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#D4D0C0" opacity="0.9">&#x2764;</text>
+    <text x="230" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#888888" opacity="0.9">&#x2764;</text>
     <!-- Label -->
-    <text x="230" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="9" fill="#FFF8DC" letter-spacing="1">PAIR EXTRAORDINAIRE</text>
+    <text x="230" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="9" fill="#E0E0E0" letter-spacing="1">PAIR EXTRAORDINAIRE</text>
     <!-- Tier -->
-    <text x="230" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#D4D0C0" letter-spacing="2">SILVER</text>
+    <text x="230" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#888888" letter-spacing="2">SILVER</text>
     <!-- Shine sweep -->
     <g clip-path="url(#plaque2Clip)">
       <g transform="rotate(20, 230, 120)">
@@ -90,13 +90,13 @@
   
   <!-- Plaque 3: Star Struck (Gold) -->
   <g>
-    <rect x="310" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#FFD700" stroke-width="1.5"/>
+    <rect x="310" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#D4AF37" stroke-width="1.5"/>
     <!-- Trophy icon -->
-    <text x="375" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#FFD700" opacity="0.9">&#x2605;</text>
+    <text x="375" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#D4AF37" opacity="0.9">&#x2605;</text>
     <!-- Label -->
-    <text x="375" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="10" fill="#FFF8DC" letter-spacing="1">STAR STRUCK</text>
+    <text x="375" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="10" fill="#E0E0E0" letter-spacing="1">STAR STRUCK</text>
     <!-- Tier -->
-    <text x="375" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#FFD700" letter-spacing="2">GOLD</text>
+    <text x="375" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#D4AF37" letter-spacing="2">GOLD</text>
     <!-- Shine sweep -->
     <g clip-path="url(#plaque3Clip)">
       <g transform="rotate(20, 375, 120)">
