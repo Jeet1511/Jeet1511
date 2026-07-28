@@ -36,7 +36,7 @@
 <!-- ══════ 6. SNAKE.EXE — eats the board, spells JEET ══════ -->
 <div align="center">
   <br>
-  <img src="./assets/snake-jeet.svg?v=3" width="820" alt="Snake eats the JEET letters">
+  <img src="./assets/snake-jeet.svg?v=4" width="820" alt="Snake eats the JEET letters">
   <br><br>
   <sub><b>⚒ Forged by Jeet Mondal — Code. Coffee. Repeat. ☕</b></sub>
 </div>
