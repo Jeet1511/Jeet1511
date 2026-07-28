@@ -1,8 +1,7 @@
-<!-- HIDDEN CSS -->
 <!-- <style>
   table { border: none; border-collapse: collapse; }
   table tr { transition: all 0.3s ease; }
-  table tr:hover { background-color: #1E1F22; }
+  table tr:hover { background-color: #1E1F22; border-left: 3px solid #D4AF37; }
 </style> -->
 
 <!-- 1. TOP SHEET (Banner with negative margin to pull next row up) -->
@@ -23,7 +22,7 @@
               <img src="./assets/workshop-badge.svg?v=2" width="300px" style="display: block; position: relative; z-index: 2;">
             </td>
             <td align="center" style="border: none; padding: 0 20px; vertical-align: middle; width: 65%;">
-              <img src="./assets/orbit.svg?v=2" width="100%" style="display: block;">
+              <img src="./assets/tech-stack.svg?v=2" width="100%" style="display: block;">
             </td>
           </tr>
         </table>

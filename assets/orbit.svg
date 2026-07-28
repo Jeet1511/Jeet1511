@@ -8,14 +8,20 @@
       <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
     </radialGradient>
+    <filter id="lineGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <style>
       text { font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
       @keyframes spin { to { transform: rotate(360deg); } }
       @keyframes spinR { to { transform: rotate(-360deg); } }
+      @keyframes glowPulse { 0%,100% { opacity: 0.15; } 50% { opacity: 0.5; } }
       .ring1 { transform-origin: 300px 200px; animation: spin 20s linear infinite; }
       .ring2 { transform-origin: 300px 200px; animation: spinR 30s linear infinite; }
       .ring3 { transform-origin: 300px 200px; animation: spin 40s linear infinite; }
       .core-pulse { animation: pulse 3s ease-in-out infinite; transform-origin: 300px 200px; }
+      .glow-line { animation: glowPulse 2.5s ease-in-out infinite; }
       @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
     </style>
   </defs>
@@ -37,6 +43,10 @@
 
   <!-- Rotating group with tech elements -->
   <g class="ring1">
+    <!-- Connecting lines from core to inner nodes -->
+    <line x1="300" y1="200" x2="380" y2="200" stroke="#D4AF37" stroke-width="0.7" filter="url(#lineGlow)" class="glow-line"/>
+    <line x1="300" y1="200" x2="240" y2="92" stroke="#D4AF37" stroke-width="0.7" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 0.4s"/>
+    <line x1="300" y1="200" x2="240" y2="308" stroke="#D4AF37" stroke-width="0.7" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 0.8s"/>
     <!-- React at 0° (380, 200) -->
     <g transform="translate(380, 200)">
       <circle r="20" fill="#1E1F22" stroke="#61DAFB" stroke-width="1.5"/>
@@ -55,6 +65,10 @@
   </g>
 
   <g class="ring2">
+    <!-- Connecting lines from core to middle nodes -->
+    <line x1="300" y1="200" x2="420" y2="104" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 1.2s"/>
+    <line x1="300" y1="200" x2="140" y2="200" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 1.6s"/>
+    <line x1="300" y1="200" x2="420" y2="296" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 2s"/>
     <!-- JavaScript at 60° -->
     <g transform="translate(420, 104)">
       <circle r="18" fill="#1E1F22" stroke="#F7DF1E" stroke-width="1.5"/>
@@ -73,6 +87,8 @@
   </g>
 
   <g class="ring3">
+    <!-- Connecting line from core to outer node -->
+    <line x1="300" y1="200" x2="300" y2="40" stroke="#D4AF37" stroke-width="0.5" filter="url(#lineGlow)" class="glow-line" style="animation-delay: 0.6s"/>
     <!-- Shell at 90° -->
     <g transform="translate(300, 40)">
       <circle r="16" fill="#1E1F22" stroke="#89E051" stroke-width="1.5"/>

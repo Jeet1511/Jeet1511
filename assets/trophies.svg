@@ -36,8 +36,8 @@
   </rect>
   
   <!-- Pulsing gold border glow -->
-  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.3">
-    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#D4AF37" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Corner accents -->
@@ -52,7 +52,7 @@
   
   <!-- Plaque 1: Quick Draw (Bronze) -->
   <g>
-    <rect x="20" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#C5A028" stroke-width="1.5"/>
+    <rect x="20" y="55" width="130" height="130" rx="8" fill="#0A0A0B" stroke="#C5A028" stroke-width="1.5"/>
     <!-- Trophy icon -->
     <text x="85" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#C5A028" opacity="0.9">&#x26A1;</text>
     <!-- Label -->
@@ -71,7 +71,7 @@
   
   <!-- Plaque 2: Pair Extraordinaire (Silver) -->
   <g>
-    <rect x="165" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#888888" stroke-width="1.5"/>
+    <rect x="165" y="55" width="130" height="130" rx="8" fill="#0A0A0B" stroke="#888888" stroke-width="1.5"/>
     <!-- Trophy icon -->
     <text x="230" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#888888" opacity="0.9">&#x2764;</text>
     <!-- Label -->
@@ -90,7 +90,7 @@
   
   <!-- Plaque 3: Star Struck (Gold) -->
   <g>
-    <rect x="310" y="55" width="130" height="130" rx="8" fill="#0A0A0E" stroke="#D4AF37" stroke-width="1.5"/>
+    <rect x="310" y="55" width="130" height="130" rx="8" fill="#0A0A0B" stroke="#D4AF37" stroke-width="1.5"/>
     <!-- Trophy icon -->
     <text x="375" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#D4AF37" opacity="0.9">&#x2605;</text>
     <!-- Label -->
