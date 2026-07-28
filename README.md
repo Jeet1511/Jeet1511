@@ -30,7 +30,7 @@
 <div align="center">
   <br>
   <img src="./assets/stats.svg?v=3" width="400" alt="Combat stats"><img src="./assets/langs.svg?v=3" width="400" alt="Language loadout">
-  <img src="./assets/trophies.svg?v=3" width="800" alt="Trophy vault">
+  <img src="./assets/trophies.svg?v=4" width="800" alt="Trophy vault">
 </div>
 
 <!-- ══════ 6. CONTRIBUTION SNAKE (generated daily by .github/workflows/github-snake.yml) ══════ -->

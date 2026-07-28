@@ -25,6 +25,13 @@ jobs:
             dist/github-snake.svg?palette=github&color_snake=%23D4AF37&color_dots=%23E9EAEE,%23CBD5E1,%2394A3B8,%23475569,%231E1F22
             dist/github-snake-dark.svg?palette=github-dark&color_snake=%23FFD700&color_dots=%231E1F22,%2336373B,%234A4B50,%23B8860B,%23D4AF37
 
+      - name: Stamp "JEET" onto the snake
+        run: |
+          OVERLAY='<text x="50%" y="56%" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="78" letter-spacing="16" fill="#FFD700" fill-opacity="0.16" stroke="#B8860B" stroke-opacity="0.22" stroke-width="1">JEET</text></svg>'
+          for f in dist/github-snake.svg dist/github-snake-dark.svg; do
+            perl -0777 -pi -e "s|</svg>(?!.*</svg>)|\Q$OVERLAY\E|s" "$f"
+          done
+
       - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
