@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" width="460" height="200" overflow="hidden">
+  <defs>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#36373B" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    
+    <!-- Shine gradient -->
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="45%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="white" stop-opacity="0.2"/>
+      <stop offset="55%" stop-color="white" stop-opacity="0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Plaque clips -->
+    <clipPath id="plaque1Clip">
+      <rect x="20" y="55" width="130" height="130" rx="8"/>
+    </clipPath>
+    <clipPath id="plaque2Clip">
+      <rect x="165" y="55" width="130" height="130" rx="8"/>
+    </clipPath>
+    <clipPath id="plaque3Clip">
+      <rect x="310" y="55" width="130" height="130" rx="8"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="#1E1F22"/>
+  
+  <!-- Animated grid background -->
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="url(#grid)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Pulsing amber border glow -->
+  <rect x="0" y="0" width="460" height="200" rx="12" fill="none" stroke="#D4915D" stroke-width="1.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Corner accents -->
+  <path d="M 2 14 L 2 6 Q 2 2 6 2 L 14 2" fill="none" stroke="#D4915D" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 446 2 L 454 2 Q 458 2 458 6 L 458 14" fill="none" stroke="#D4915D" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 2 186 L 2 194 Q 2 198 6 198 L 14 198" fill="none" stroke="#D4915D" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 446 198 L 454 198 Q 458 198 458 194 L 458 186" fill="none" stroke="#D4915D" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="230" y="32" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="16" fill="#e0e0e0" letter-spacing="2">ACHIEVEMENTS</text>
+  <line x1="155" y1="40" x2="305" y2="40" stroke="#D4915D" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Plaque 1: Quick Draw (Bronze) -->
+  <g>
+    <rect x="20" y="55" width="130" height="130" rx="8" fill="#0F0F11" stroke="#CD7F32" stroke-width="1.5"/>
+    <!-- Trophy icon -->
+    <text x="85" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#CD7F32" opacity="0.9">&#x26A1;</text>
+    <!-- Label -->
+    <text x="85" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="10" fill="#e0e0e0" letter-spacing="1">QUICK DRAW</text>
+    <!-- Tier -->
+    <text x="85" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#CD7F32" letter-spacing="2">BRONZE</text>
+    <!-- Shine sweep -->
+    <g clip-path="url(#plaque1Clip)">
+      <g transform="rotate(20, 85, 120)">
+        <rect x="-80" y="50" width="40" height="150" fill="url(#shineGrad)">
+          <animateTransform attributeName="transform" type="translate" from="-60 0" to="200 0" dur="4s" begin="0s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Plaque 2: Pair Extraordinaire (Silver) -->
+  <g>
+    <rect x="165" y="55" width="130" height="130" rx="8" fill="#0F0F11" stroke="#C0C0C0" stroke-width="1.5"/>
+    <!-- Trophy icon -->
+    <text x="230" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#C0C0C0" opacity="0.9">&#x2764;</text>
+    <!-- Label -->
+    <text x="230" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="9" fill="#e0e0e0" letter-spacing="1">PAIR EXTRAORDINAIRE</text>
+    <!-- Tier -->
+    <text x="230" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#C0C0C0" letter-spacing="2">SILVER</text>
+    <!-- Shine sweep -->
+    <g clip-path="url(#plaque2Clip)">
+      <g transform="rotate(20, 230, 120)">
+        <rect x="-80" y="50" width="40" height="150" fill="url(#shineGrad)">
+          <animateTransform attributeName="transform" type="translate" from="-60 0" to="200 0" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Plaque 3: Star Struck (Amber) -->
+  <g>
+    <rect x="310" y="55" width="130" height="130" rx="8" fill="#0F0F11" stroke="#D4915D" stroke-width="1.5"/>
+    <!-- Trophy icon -->
+    <text x="375" y="105" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="32" fill="#D4915D" opacity="0.9">&#x2605;</text>
+    <!-- Label -->
+    <text x="375" y="135" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="10" fill="#e0e0e0" letter-spacing="1">STAR STRUCK</text>
+    <!-- Tier -->
+    <text x="375" y="155" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#D4915D" letter-spacing="2">AMBER</text>
+    <!-- Shine sweep -->
+    <g clip-path="url(#plaque3Clip)">
+      <g transform="rotate(20, 375, 120)">
+        <rect x="-80" y="50" width="40" height="150" fill="url(#shineGrad)">
+          <animateTransform attributeName="transform" type="translate" from="-60 0" to="200 0" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+  </g>
+</svg>
