@@ -22,8 +22,8 @@
       <stop offset="100%" stop-color="#1a1a1f"/>
     </linearGradient>
     
-    <!-- Amber glow filter -->
-    <filter id="amberGlow">
+    <!-- Gold glow filter -->
+    <filter id="goldGlow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
@@ -45,10 +45,10 @@
           <animateTransform attributeName="transform" type="translate" values="0 -400; 0 0" keyTimes="0; 1" calcMode="spline" keySplines="0.5 0 1 1" dur="0.3s" fill="freeze"/>
           
           <!-- Strap: line from top to card -->
-          <rect x="-4" y="0" width="8" height="120" rx="4" fill="#36373B"/>
+          <rect x="-4" y="0" width="8" height="120" rx="4" fill="#2C2C2E"/>
           
           <!-- Metal ring at pivot -->
-          <circle cx="0" cy="120" r="15" fill="none" stroke="#36373B" stroke-width="4"/>
+          <circle cx="0" cy="120" r="15" fill="none" stroke="#2C2C2E" stroke-width="4"/>
           <animateTransform attributeName="transform" type="rotate" from="0 0 120" to="360 0 120" dur="20s" repeatCount="indefinite" additive="sum"/>
           
           <!-- CARD CONTENT GROUP (card-local coordinates: 0,0 to 300,400) -->
@@ -60,92 +60,92 @@
             </clipPath>
             
             <!-- Card Base -->
-            <rect x="0" y="0" width="300" height="400" rx="12" fill="#0F0F11" stroke="#D4915D" stroke-width="2"/>
+            <rect x="0" y="0" width="300" height="400" rx="12" fill="#0A0A0E" stroke="#FFD700" stroke-width="2"/>
             
             <!-- Inner surface -->
-            <rect x="10" y="10" width="280" height="380" rx="8" fill="url(#metalGrad)" stroke="#D4915D" stroke-width="1"/>
+            <rect x="10" y="10" width="280" height="380" rx="8" fill="url(#metalGrad)" stroke="#FFD700" stroke-width="1"/>
             
             <!-- Title -->
-            <text x="150" y="40" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#D4915D" letter-spacing="3" opacity="0.7">TACTICAL DATA-SHARD</text>
+            <text x="150" y="40" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#FFD700" letter-spacing="3" opacity="0.7">TACTICAL DATA-SHARD</text>
             
             <!-- AVATAR FACE CROP -->
             <image href="assets/id-pfp.png" x="0" y="-50" width="300" height="350" clip-path="url(#faceCrop)" preserveAspectRatio="xMidYMid slice"/>
             
             <!-- Targeting brackets around face crop -->
             <!-- Top-left bracket -->
-            <path d="M 65 60 L 65 50 L 75 50" fill="none" stroke="#D4915D" stroke-width="2"/>
+            <path d="M 65 60 L 65 50 L 75 50" fill="none" stroke="#FFD700" stroke-width="2"/>
             <!-- Top-right bracket -->
-            <path d="M 225 50 L 235 50 L 235 60" fill="none" stroke="#D4915D" stroke-width="2"/>
+            <path d="M 225 50 L 235 50 L 235 60" fill="none" stroke="#FFD700" stroke-width="2"/>
             <!-- Bottom-left bracket -->
-            <path d="M 65 220 L 65 230 L 75 230" fill="none" stroke="#D4915D" stroke-width="2"/>
+            <path d="M 65 220 L 65 230 L 75 230" fill="none" stroke="#FFD700" stroke-width="2"/>
             <!-- Bottom-right bracket -->
-            <path d="M 225 230 L 235 230 L 235 220" fill="none" stroke="#D4915D" stroke-width="2"/>
+            <path d="M 225 230 L 235 230 L 235 220" fill="none" stroke="#FFD700" stroke-width="2"/>
             
             <!-- HUD aperture ring around face -->
-            <circle cx="150" cy="140" r="80" fill="none" stroke="#D4915D" stroke-width="1" opacity="0.5"/>
-            <circle cx="150" cy="140" r="85" fill="none" stroke="#36373B" stroke-width="1" stroke-dasharray="8 4">
+            <circle cx="150" cy="140" r="80" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+            <circle cx="150" cy="140" r="85" fill="none" stroke="#2C2C2E" stroke-width="1" stroke-dasharray="8 4">
               <animateTransform attributeName="transform" type="rotate" from="0 150 140" to="360 150 140" dur="15s" repeatCount="indefinite"/>
             </circle>
             
             <!-- Text: Name -->
-            <text x="150" y="260" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="22" fill="#e0e0e0" letter-spacing="2">JEET MONDAL</text>
+            <text x="150" y="260" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="22" fill="#FFF8DC" letter-spacing="2">JEET MONDAL</text>
             
             <!-- Text: Role -->
-            <text x="150" y="290" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#D4915D" letter-spacing="3">ARCHITECT</text>
+            <text x="150" y="290" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFD700" letter-spacing="3">ARCHITECT</text>
             
             <!-- Text: Handle -->
-            <text x="150" y="310" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#8a8a8e">@jeet1511</text>
+            <text x="150" y="310" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#6a6a6e">@jeet1511</text>
             
             <!-- Barcode -->
             <g transform="translate(80, 330)">
-              <rect x="0" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="5" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="8" y="0" width="4" height="30" fill="#e0e0e0"/>
-              <rect x="14" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="18" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="21" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="26" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="30" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="33" y="0" width="4" height="30" fill="#e0e0e0"/>
-              <rect x="39" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="43" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="46" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="51" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="55" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="58" y="0" width="4" height="30" fill="#e0e0e0"/>
-              <rect x="64" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="68" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="73" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="76" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="80" y="0" width="4" height="30" fill="#e0e0e0"/>
-              <rect x="86" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="89" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="94" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="98" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="101" y="0" width="4" height="30" fill="#e0e0e0"/>
-              <rect x="107" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="111" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="116" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="119" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="123" y="0" width="4" height="30" fill="#e0e0e0"/>
-              <rect x="129" y="0" width="1" height="30" fill="#e0e0e0"/>
-              <rect x="132" y="0" width="3" height="30" fill="#e0e0e0"/>
-              <rect x="137" y="0" width="2" height="30" fill="#e0e0e0"/>
-              <rect x="141" y="0" width="1" height="30" fill="#e0e0e0"/>
+              <rect x="0" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="5" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="8" y="0" width="4" height="30" fill="#FFF8DC"/>
+              <rect x="14" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="18" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="21" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="26" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="30" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="33" y="0" width="4" height="30" fill="#FFF8DC"/>
+              <rect x="39" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="43" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="46" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="51" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="55" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="58" y="0" width="4" height="30" fill="#FFF8DC"/>
+              <rect x="64" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="68" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="73" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="76" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="80" y="0" width="4" height="30" fill="#FFF8DC"/>
+              <rect x="86" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="89" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="94" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="98" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="101" y="0" width="4" height="30" fill="#FFF8DC"/>
+              <rect x="107" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="111" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="116" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="119" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="123" y="0" width="4" height="30" fill="#FFF8DC"/>
+              <rect x="129" y="0" width="1" height="30" fill="#FFF8DC"/>
+              <rect x="132" y="0" width="3" height="30" fill="#FFF8DC"/>
+              <rect x="137" y="0" width="2" height="30" fill="#FFF8DC"/>
+              <rect x="141" y="0" width="1" height="30" fill="#FFF8DC"/>
             </g>
             
             <!-- CLEARANCE: OMEGA with glitch -->
-            <text x="150" y="385" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#D4915D" letter-spacing="2" opacity="0.8">
+            <text x="150" y="385" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#FFD700" letter-spacing="2" opacity="0.8">
               CLEARANCE: OMEGA
               <animateTransform attributeName="transform" type="skewX" values="0;2;0;-1;0" dur="0.3s" repeatCount="indefinite"/>
               <animateTransform attributeName="transform" type="translate" values="0 0;1 0;0 0;-1 0;0 0" dur="0.3s" repeatCount="indefinite" additive="sum"/>
             </text>
             
             <!-- Hex bolts at corners -->
-            <polygon points="15,15 20,12 25,15 25,21 20,24 15,21" fill="#8a8a8e"/>
-            <polygon points="275,15 280,12 285,15 285,21 280,24 275,21" fill="#8a8a8e"/>
-            <polygon points="15,385 20,382 25,385 25,391 20,394 15,391" fill="#8a8a8e"/>
-            <polygon points="275,385 280,382 285,385 285,391 280,394 275,391" fill="#8a8a8e"/>
+            <polygon points="15,15 20,12 25,15 25,21 20,24 15,21" fill="#6a6a6e"/>
+            <polygon points="275,15 280,12 285,15 285,21 280,24 275,21" fill="#6a6a6e"/>
+            <polygon points="15,385 20,382 25,385 25,391 20,394 15,391" fill="#6a6a6e"/>
+            <polygon points="275,385 280,382 285,385 285,391 280,394 275,391" fill="#6a6a6e"/>
             
             <!-- Holographic shine sweep - clipped to card -->
             <g clip-path="url(#cardClip)">
@@ -154,8 +154,8 @@
               </rect>
             </g>
             
-            <!-- Amber edge glow pulse -->
-            <rect x="0" y="0" width="300" height="400" rx="12" fill="none" stroke="#D4915D" stroke-width="1" opacity="0.3">
+            <!-- Gold edge glow pulse -->
+            <rect x="0" y="0" width="300" height="400" rx="12" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3">
               <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" repeatCount="indefinite"/>
             </rect>
             
