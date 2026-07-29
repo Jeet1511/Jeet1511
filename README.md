@@ -1,12 +1,12 @@
 <!-- ══════════════════════════ 1. TOP SHEET (Banner) ══════════════════════════ -->
 <div align="center">
-  <img src="./assets/banner.svg?v=8" width="100%" alt="Jeet Mondal — Full Stack Dev banner">
+  <img src="./assets/banner.svg?v=9" width="100%" alt="Jeet Mondal — Full Stack Dev banner">
 </div>
 
 <!-- ══════════════════ 2. ID CARD BESIDE TECH STACK ══════════════════ -->
 <table width="100%"><tr>
-<td width="33%" align="center"><img src="./assets/workshop-badge.svg?v=3" width="100%" alt="Workshop access badge"></td>
-<td width="67%" align="center"><img src="./assets/tech-stack.svg?v=3" width="100%" alt="Tech stack orbit"></td>
+<td width="33%" align="center"><img src="./assets/workshop-badge.svg?v=4" width="100%" alt="Workshop access badge"></td>
+<td width="67%" align="center"><img src="./assets/tech-stack.svg?v=4" width="100%" alt="Tech stack orbit"></td>
 </tr></table>
 
 <!-- ══════════════════ 3. VIEWS & CONNECT ══════════════════ -->
@@ -25,30 +25,30 @@
 </div>
 <table width="100%">
 <tr>
-<td width="50%"><a href="https://github.com/Jeet1511/VM-Manager"><img src="./assets/project-vm-manager.svg?v=3" width="100%" alt="VM Manager"></a></td>
-<td width="50%"><a href="https://github.com/Jeet1511/healthfy"><img src="./assets/project-healthfy.svg?v=3" width="100%" alt="Healthfy"></a></td>
+<td width="50%"><a href="https://github.com/Jeet1511/VM-Manager"><img src="./assets/project-vm-manager.svg?v=4" width="100%" alt="VM Manager"></a></td>
+<td width="50%"><a href="https://github.com/Jeet1511/healthfy"><img src="./assets/project-healthfy.svg?v=4" width="100%" alt="Healthfy"></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://github.com/Jeet1511/ExpressBasket"><img src="./assets/project-expressbasket.svg?v=3" width="100%" alt="ExpressBasket"></a></td>
-<td width="50%"><a href="https://github.com/Jeet1511/EliteZero"><img src="./assets/project-elitezero.svg?v=3" width="100%" alt="EliteZero"></a></td>
+<td width="50%"><a href="https://github.com/Jeet1511/ExpressBasket"><img src="./assets/project-expressbasket.svg?v=4" width="100%" alt="ExpressBasket"></a></td>
+<td width="50%"><a href="https://github.com/Jeet1511/EliteZero"><img src="./assets/project-elitezero.svg?v=4" width="100%" alt="EliteZero"></a></td>
 </tr>
 </table>
 
 <!-- ══════════════════ 5. STATS ══════════════════ -->
 <table width="100%">
 <tr>
-<td width="50%"><img src="./assets/stats.svg?v=4" width="100%" alt="Combat stats"></td>
-<td width="50%"><img src="./assets/langs.svg?v=4" width="100%" alt="Language loadout"></td>
+<td width="50%"><img src="./assets/stats.svg?v=5" width="100%" alt="Combat stats"></td>
+<td width="50%"><img src="./assets/langs.svg?v=5" width="100%" alt="Language loadout"></td>
 </tr>
 </table>
 <div align="center">
-  <img src="./assets/trophies.svg?v=5" width="98%" alt="Trophy vault">
+  <img src="./assets/trophies.svg?v=6" width="98%" alt="Trophy vault">
 </div>
 
 <!-- ══════ 6. SNAKE.EXE — eats the board, spells JEET ══════ -->
 <div align="center">
   <br>
-  <img src="./assets/snake-jeet.svg?v=4" width="100%" alt="Snake eats the JEET letters">
+  <img src="./assets/snake-jeet.svg?v=5" width="100%" alt="Snake eats the JEET letters">
 </div>
 
 <!-- ══════ 7. OUTRO — thanks & connect ══════ -->
