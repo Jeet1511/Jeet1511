@@ -1,7 +1,10 @@
 <!-- ══════════════════════════ 1. TOP SHEET (Banner) ══════════════════════════ -->
 <div align="center">
-  <img src="./assets/banner.svg?v=6#gh-dark-mode-only" width="100%" alt="Jeet Mondal — Full Stack Dev banner">
-  <img src="./assets/banner-light.svg?v=6#gh-light-mode-only" width="100%" alt="Jeet Mondal — Full Stack Dev banner">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg?v=7">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner.svg?v=7">
+    <img src="./assets/banner.svg?v=7" width="100%" alt="Jeet Mondal — Full Stack Dev banner">
+  </picture>
 </div>
 
 <!-- ══════════════════ 2. ID CARD BESIDE TECH STACK ══════════════════ -->
