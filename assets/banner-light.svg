@@ -130,7 +130,7 @@
     </g>
 
                             <!-- ============ FACETED CRYSTALLINE GOLD (full background) ============ -->
-    <g opacity="0.95">
+    <g><animateMotion dur="34s" repeatCount="indefinite" rotate="0" path="M0,0 C-30,14 -62,28 -82,42 C-95,51 -97,58 -84,57 C-66,55 -38,40 -14,22 C-2,13 5,4 0,0 Z"/><g transform="translate(640,240) scale(1.18) translate(-640,-240)"><g opacity="0.95">
       <polygon points="-20.0,-20.0 94.3,-20.0 69.2,87.2" fill="#C7A55E" opacity="0.12"><animate attributeName="points" values="-20.0,-20.0 94.3,-20.0 69.2,87.2; -20.0,-20.0 94.3,-20.0 71.3,87.2; -20.0,-20.0 94.3,-20.0 54.4,87.2; -20.0,-20.0 94.3,-20.0 52.3,87.2; -20.0,-20.0 94.3,-20.0 69.2,87.2; -20.0,-20.0 94.3,-20.0 71.3,87.2; -20.0,-20.0 94.3,-20.0 54.4,87.2; -20.0,-20.0 94.3,-20.0 52.3,87.2; -20.0,-20.0 94.3,-20.0 69.2,87.2" dur="18s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.12;0.67;0.12" dur="8s" begin="-0.34s" repeatCount="indefinite"/></polygon>
       <polygon points="-20.0,-20.0 69.2,87.2 -20.0,100.2" fill="#B98A22" opacity="0.05"><animate attributeName="points" values="-20.0,-20.0 69.2,87.2 -20.0,100.2; -20.0,-20.0 71.3,87.2 -20.0,100.2; -20.0,-20.0 54.4,87.2 -20.0,100.2; -20.0,-20.0 52.3,87.2 -20.0,100.2; -20.0,-20.0 69.2,87.2 -20.0,100.2; -20.0,-20.0 71.3,87.2 -20.0,100.2; -20.0,-20.0 54.4,87.2 -20.0,100.2; -20.0,-20.0 52.3,87.2 -20.0,100.2; -20.0,-20.0 69.2,87.2 -20.0,100.2" dur="18s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.05;0.53;0.05" dur="8s" begin="-0.55s" repeatCount="indefinite"/></polygon>
       <polygon points="94.3,-20.0 156.5,-20.0 69.2,87.2" fill="#C7A55E" opacity="0.17"><animate attributeName="points" values="94.3,-20.0 156.5,-20.0 69.2,87.2; 94.3,-20.0 156.5,-20.0 71.3,87.2; 94.3,-20.0 156.5,-20.0 54.4,87.2; 94.3,-20.0 156.5,-20.0 52.3,87.2; 94.3,-20.0 156.5,-20.0 69.2,87.2; 94.3,-20.0 156.5,-20.0 71.3,87.2; 94.3,-20.0 156.5,-20.0 54.4,87.2; 94.3,-20.0 156.5,-20.0 52.3,87.2; 94.3,-20.0 156.5,-20.0 69.2,87.2" dur="18s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.17;0.72;0.17" dur="8s" begin="-0.89s" repeatCount="indefinite"/></polygon>
@@ -339,6 +339,53 @@
       </g>
     </g>
 
+    </g></g>
+    <!-- ============ GOLD TEXTURE DRIFT (satin sheen + flakes + hatch) ============ -->
+    <defs>
+      <linearGradient id="satinTex" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A9760A" stop-opacity="0"/><stop offset="0.5" stop-color="#A9760A" stop-opacity="0.55"/><stop offset="1" stop-color="#A9760A" stop-opacity="0"/></linearGradient>
+      <pattern id="flakeTexA" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="12" cy="18" r="1.4" fill="#A9760A"/><circle cx="55" cy="8" r="1" fill="#A9760A"/><rect x="70" y="40" width="2.4" height="2.4" fill="#A67C10" transform="rotate(45 71.2 41.2)"/><circle cx="30" cy="62" r="1.2" fill="#A9760A"/><circle cx="80" cy="78" r="0.9" fill="#A9760A"/><rect x="8" y="80" width="2" height="2" fill="#A67C10" transform="rotate(45 9 81)"/></pattern>
+      <pattern id="flakeTexB" width="120" height="120" patternUnits="userSpaceOnUse"><circle cx="20" cy="30" r="1.6" fill="#A9760A"/><circle cx="90" cy="15" r="1.1" fill="#A9760A"/><circle cx="60" cy="75" r="1.3" fill="#A67C10"/><circle cx="105" cy="100" r="1" fill="#A9760A"/></pattern>
+      <pattern id="hatchTex" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M-8,64 L64,-8" stroke="#A9760A" stroke-width="1" opacity="0.8" fill="none"/><path d="M20,64 L64,20" stroke="#A9760A" stroke-width="0.6" opacity="0.5" fill="none"/></pattern>
+    </defs>
+    <g>
+      <g><rect x="-200" y="-140" width="1700" height="780" fill="url(#flakeTexA)" opacity="0.45"/><animateTransform attributeName="transform" type="translate" values="0 0;-90 90" dur="14s" repeatCount="indefinite"/></g>
+      <g><rect x="-260" y="-160" width="1800" height="820" fill="url(#flakeTexB)" opacity="0.3"/><animateTransform attributeName="transform" type="translate" values="0 0;-120 120" dur="26s" repeatCount="indefinite"/></g>
+      <g><rect x="-120" y="-60" width="1520" height="620" fill="url(#hatchTex)" opacity="0.06"/><animateTransform attributeName="transform" type="translate" values="0 0;-56 0" dur="9s" repeatCount="indefinite"/></g>
+      <rect x="-420" y="-40" width="380" height="560" fill="url(#satinTex)" opacity="0.10" transform="skewX(-18)"><animate attributeName="x" values="1500;-420" dur="17s" repeatCount="indefinite"/></rect>
+      <rect x="-500" y="-40" width="300" height="560" fill="url(#satinTex)" opacity="0.07" transform="skewX(-18)"><animate attributeName="x" values="1560;-500" dur="26s" begin="-9s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <!-- ============ CREATIVE AMBIENT FX (constellations + fireflies + sonar + comet) ============ -->
+    <defs>
+      <linearGradient id="cometGrad" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#A9760A" stop-opacity="0.9"/><stop offset="1" stop-color="#A9760A" stop-opacity="0"/></linearGradient>
+    </defs>
+    <g id="constelA" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0" keyTimes="0;0.05;0.2;0.62;0.8;1" dur="24s" repeatCount="indefinite"/>
+      <path d="M448,52 L502,84 L560,60 L604,96 L632,58" fill="none" stroke="#A9760A" stroke-width="0.7" opacity="0.35" stroke-dasharray="260" stroke-dashoffset="260"><animate attributeName="stroke-dashoffset" values="260;260;0;0;260" keyTimes="0;0.05;0.3;0.8;1" dur="24s" repeatCount="indefinite"/></path>
+      <g fill="#A9760A"><circle cx="448" cy="52" r="1.8"/><circle cx="502" cy="84" r="1.4"/><circle cx="560" cy="60" r="2"/><circle cx="604" cy="96" r="1.4"/><circle cx="632" cy="58" r="1.7"/></g>
+      <circle cx="560" cy="60" r="3.6" fill="none" stroke="#A9760A" stroke-width="0.5" opacity="0.5"><animate attributeName="r" values="2.8;4.6;2.8" dur="3s" repeatCount="indefinite"/></circle>
+    </g>
+    <g id="constelB" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0" keyTimes="0;0.05;0.2;0.62;0.8;1" dur="24s" begin="-12s" repeatCount="indefinite"/>
+      <path d="M404,418 L462,392 L514,424 L578,398" fill="none" stroke="#A9760A" stroke-width="0.7" opacity="0.35" stroke-dasharray="210" stroke-dashoffset="210"><animate attributeName="stroke-dashoffset" values="210;210;0;0;210" keyTimes="0;0.05;0.3;0.8;1" dur="24s" begin="-12s" repeatCount="indefinite"/></path>
+      <g fill="#A9760A"><circle cx="404" cy="418" r="1.5"/><circle cx="462" cy="392" r="1.9"/><circle cx="514" cy="424" r="1.4"/><circle cx="578" cy="398" r="1.7"/></g>
+    </g>
+    <g id="fireflyFx">
+      <circle r="1.6" fill="#A9760A"><animateMotion dur="19s" repeatCount="indefinite" path="M240,330 C280,300 330,320 310,360 C295,390 240,380 240,330 Z"/><animate attributeName="opacity" values="0.15;0.75;0.2;0.65;0.15" dur="4.6s" repeatCount="indefinite"/></circle>
+      <circle r="1.3" fill="#A9760A"><animateMotion dur="23s" begin="-7s" repeatCount="indefinite" path="M520,180 C560,150 610,170 590,215 C575,245 505,225 520,180 Z"/><animate attributeName="opacity" values="0.6;0.15;0.7;0.2;0.6" dur="5.4s" repeatCount="indefinite"/></circle>
+      <circle r="1.8" fill="#A9760A"><animateMotion dur="26s" begin="-13s" repeatCount="indefinite" path="M980,90 C1030,60 1090,80 1060,125 C1040,155 960,135 980,90 Z"/><animate attributeName="opacity" values="0.2;0.7;0.25;0.6;0.2" dur="3.8s" repeatCount="indefinite"/></circle>
+      <circle r="1.2" fill="#A67C10"><animateMotion dur="21s" begin="-4s" repeatCount="indefinite" path="M120,120 C160,95 210,110 190,150 C175,180 105,165 120,120 Z"/><animate attributeName="opacity" values="0.5;0.15;0.6;0.2;0.5" dur="6.2s" repeatCount="indefinite"/></circle>
+    </g>
+    <g id="sonarFx">
+      <circle cx="86" cy="410" r="4" fill="none" stroke="#A9760A" stroke-width="0.9"><animate attributeName="r" values="4;64" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="86" cy="410" r="4" fill="none" stroke="#A9760A" stroke-width="0.7"><animate attributeName="r" values="4;64" dur="7s" begin="-3.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0" dur="7s" begin="-3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="86" cy="410" r="1.8" fill="#A9760A"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="3.5s" repeatCount="indefinite"/></circle>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0.85;0.85;0;0" keyTimes="0;0.03;0.16;0.2;1" dur="16s" repeatCount="indefinite"/>
+      <g><animateMotion dur="16s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.2;1" calcMode="linear" path="M1240,36 L560,190"/><rect x="0" y="-1" width="92" height="2" fill="url(#cometGrad)" transform="rotate(167.3)"/><circle r="2.2" fill="#A9760A"/></g>
+    </g>
+
     <!-- ============ DEPTH BOKEH : FAR LAYER ============ -->
     <g fill="url(#bokeh)" filter="url(#bigBlur)">
       <circle cx="210" cy="120" r="22" opacity="0.10"><animateTransform attributeName="transform" type="translate" values="0 0; 24 -16; 0 0" dur="38s" repeatCount="indefinite"/></circle>
@@ -500,52 +547,6 @@
       
     </g>
 
-    <!-- ============ PREMIUM GOLD HEXAGONS ============ -->
-    <g fill="none" stroke="#A67C10" stroke-width="1.1">
-      <g transform="translate(660,115)" opacity="0.30">
-        <polygon points="48,0 24,41.6 -24,41.6 -48,0 -24,-41.6 24,-41.6">
-          <animateTransform attributeName="transform" type="rotate" values="0;360" dur="70s" repeatCount="indefinite"/>
-        </polygon>
-        <polygon points="34,0 17,29.4 -17,29.4 -34,0 -17,-29.4 17,-29.4" stroke="#A9760A" stroke-width="0.8" opacity="0.7">
-          <animateTransform attributeName="transform" type="rotate" values="360;0" dur="55s" repeatCount="indefinite"/>
-        </polygon>
-        <animate attributeName="opacity" values="0.22;0.38;0.22" dur="9s" repeatCount="indefinite"/>
-      </g>
-      <g transform="translate(660,115)">
-        <polygon points="48,0 24,41.6 -24,41.6 -48,0 -24,-41.6 24,-41.6" fill="none" stroke="#A9760A" stroke-width="1" opacity="0">
-          <animateTransform attributeName="transform" type="scale" values="0.55;1.75" dur="5.5s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.35;0" dur="5.5s" repeatCount="indefinite"/>
-        </polygon>
-        <circle r="2.2" fill="#A9760A" filter="url(#goldGlow)" opacity="0.75">
-          <animateMotion dur="9s" repeatCount="indefinite" path="M58,0 L29,-50.2 L-29,-50.2 L-58,0 L-29,50.2 L29,50.2 Z"/>
-        </circle>
-      </g>
-      <g transform="translate(632,335)" opacity="0.25">
-        <polygon points="28,0 14,24.2 -14,24.2 -28,0 -14,-24.2 14,-24.2" stroke-dasharray="6 5">
-          <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="60s" repeatCount="indefinite"/>
-        </polygon>
-        <animate attributeName="opacity" values="0.18;0.32;0.18" dur="7s" repeatCount="indefinite"/>
-      </g>
-      <g transform="translate(1185,115)" opacity="0.28">
-        <polygon points="36,0 18,31.2 -18,31.2 -36,0 -18,-31.2 18,-31.2">
-          <animateTransform attributeName="transform" type="rotate" values="0;360" dur="80s" repeatCount="indefinite"/>
-        </polygon>
-        <animate attributeName="opacity" values="0.20;0.36;0.20" dur="11s" repeatCount="indefinite"/>
-      </g>
-      <g transform="translate(770,75)" opacity="0.22">
-        <polygon points="24,0 12,20.8 -12,20.8 -24,0 -12,-20.8 12,-20.8" stroke-dasharray="4 4">
-          <animateTransform attributeName="transform" type="rotate" values="360;0" dur="50s" repeatCount="indefinite"/>
-        </polygon>
-        <animate attributeName="opacity" values="0.16;0.28;0.16" dur="8s" repeatCount="indefinite"/>
-      </g>
-      <g transform="translate(700,430)" opacity="0.20">
-        <polygon points="18,0 9,15.6 -9,15.6 -18,0 -9,-15.6 9,-15.6">
-          <animateTransform attributeName="transform" type="rotate" values="0;360" dur="45s" repeatCount="indefinite"/>
-        </polygon>
-        <animate attributeName="opacity" values="0.14;0.26;0.14" dur="6.5s" repeatCount="indefinite"/>
-      </g>
-    </g>
-
     <!-- ============ TAGLINE CYCLER (top right, crossfade) ============ -->
     <g clip-path="url(#marqueeClip)">
       <rect x="660" y="18" width="610" height="34" fill="#FAF6EC" opacity="0.55"/>
@@ -652,14 +653,14 @@
     <!-- ============ LEFT : NAME ============ -->
     <g font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="72" letter-spacing="2" stroke-linejoin="round">
       <text x="40" y="240" fill="none" stroke="#A9760A" stroke-width="8" opacity="0.35" filter="url(#nameHalo)">JEET MONDAL</text>
-      <text x="40" y="240" fill="#EFE7D3" stroke="#A9760A" stroke-width="2.6" paint-order="stroke">JEET MONDAL</text>
+      <text x="40" y="240" fill="#2A2312" stroke="#8A6408" stroke-width="2.6" paint-order="stroke">JEET MONDAL</text>
       <text x="40" y="240" fill="none" stroke="#D0A63A" stroke-width="0.8" opacity="0.9">JEET MONDAL
         <animate attributeName="opacity" values="0.9;0.55;0.9;0.75;0.9" dur="3.4s" repeatCount="indefinite"/>
       </text>
     </g>
     <!-- shine sweep clipped strictly to the name text -->
     <g clip-path="url(#nameClip)">
-      <rect x="-140" y="170" width="80" height="90" fill="url(#shineGrad)" opacity="0.4" transform="skewX(-20)">
+      <rect x="-140" y="170" width="80" height="90" fill="url(#shineGrad)" opacity="0.6" transform="skewX(-20)">
         <animate attributeName="x" values="-140;700" dur="3.2s" repeatCount="indefinite"/>
       </rect>
     </g>
