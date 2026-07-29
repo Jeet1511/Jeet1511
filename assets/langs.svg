@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" width="460" height="200" overflow="hidden" role="img" aria-label="Most used languages">
   <defs>
+    <linearGradient id="lgShine" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFD700" stop-opacity="0"/><stop offset="50%" stop-color="#FFD700" stop-opacity="0.22"/><stop offset="100%" stop-color="#FFD700" stop-opacity="0"/></linearGradient>
     <linearGradient id="lgGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#B8860B"/><stop offset="50%" stop-color="#FFD700"/><stop offset="100%" stop-color="#B8860B"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="5s" repeatCount="indefinite"/>
@@ -11,6 +12,14 @@
     <rect x="1" y="1" width="458" height="198" rx="14" fill="none" stroke="#D4AF37" stroke-width="1.4">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
     </rect>
+    <!-- ambient gold fx -->
+    <g fill="#FFE9A0">
+      <circle cy="186" r="1.2" cx="465"><animate attributeName="cx" values="465;-5" dur="13s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0.45;0" keyTimes="0;0.12;0.85;1" dur="13s" repeatCount="indefinite"/></circle>
+      <circle cy="46" r="1" cx="465" fill="#D4AF37"><animate attributeName="cx" values="465;-5" dur="16s" begin="-8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.45;0.4;0" keyTimes="0;0.12;0.85;1" dur="16s" begin="-8s" repeatCount="indefinite"/></circle>
+      <g transform="translate(402,74)"><path d="M0,-2.6 L0.7,-0.7 L2.6,0 L0.7,0.7 L0,2.6 L-0.7,0.7 L-2.6,0 L-0.7,-0.7 Z"/><animate attributeName="opacity" values="0;0.6;0" dur="3.5s" repeatCount="indefinite"/></g>
+      <g transform="translate(398,128)"><path d="M0,-2.6 L0.7,-0.7 L2.6,0 L0.7,0.7 L0,2.6 L-0.7,0.7 L-2.6,0 L-0.7,-0.7 Z"/><animate attributeName="opacity" values="0;0.5;0" dur="4.4s" begin="-2s" repeatCount="indefinite"/></g>
+      <g transform="translate(410,180)"><path d="M0,-2.6 L0.7,-0.7 L2.6,0 L0.7,0.7 L0,2.6 L-0.7,0.7 L-2.6,0 L-0.7,-0.7 Z"/><animate attributeName="opacity" values="0;0.55;0" dur="3.1s" begin="-1.4s" repeatCount="indefinite"/></g>
+    </g>
     <text x="22" y="30" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="15" fill="url(#lgGold)" letter-spacing="2">▚ LANGUAGE LOADOUT</text>
     <text x="440" y="30" font-family="Consolas, monospace" font-size="10" fill="#6E6F74" text-anchor="end">$ loading…
       <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
@@ -56,5 +65,6 @@
     </g>
 
     <text x="26" y="190" font-family="Consolas, monospace" font-size="9" fill="#6E6F74">jeet1511@github:~$ analyze --stack MERN <tspan fill="#FFD700">█<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></tspan></text>
-  </g>
+      <rect x="-150" y="0" width="70" height="200" fill="url(#lgShine)" transform="skewX(-18)"><animate attributeName="x" values="-740;480" dur="6s" repeatCount="indefinite"/></rect>
+</g>
 </svg>
