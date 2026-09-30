@@ -58,7 +58,7 @@
   <br><br>
   <img src="https://img.shields.io/badge/LET'S_CONNECT-0A0A0B?style=flat-square&labelColor=0A0A0B&color=0A0A0B" alt="Let's connect">
   <br>
-  <a href="https://www.instagram.com/_4n0s_/">
+  <a href="https://www.instagram.com/_kevn.11/">
     <img src="https://img.shields.io/badge/Instagram-__4n0s__-D4AF37?style=for-the-badge&logo=instagram&logoColor=E4405F&labelColor=0A0A0B" alt="Instagram — _4n0s_">
   </a>
   <br><br>
